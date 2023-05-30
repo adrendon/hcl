@@ -1,0 +1,132 @@
+#sectores-content {
+	padding: 50px 0px 15px;
+}
+.indicadores_text {
+	margin-top: 50px;
+}
+.indicador_bloque {
+	margin-bottom: 80px;
+}
+.indicador_bloque .indicador_content_img img {
+	left: 0;
+	margin: auto;
+	max-width: 45%;
+	position: absolute;
+	right: 0;
+	top: -70px;
+}
+.indicador_bloque h2 {
+	margin-top:70px;
+	text-align: center;
+}
+@media (min-width: 360px) {
+	.indicador_bloque .indicador_content_img img {
+		max-width: 35%;
+		top: -90px;
+	}
+}
+@media (min-width: 480px) {
+	.indicador_bloque .indicador_content_img img {
+		max-width: 30%;
+	}
+}
+@media (min-width: 560px) {
+	.indicador_bloque .indicador_content_img img {
+		max-width: 25%;
+		top: -110px;
+	}
+}
+@media (min-width: 767px) {
+	.indicador_bloque .indicador_content_img img {
+		max-width: 15%;
+	}
+	.indicador_bloque h2 {
+		margin-top: 40px;
+	}
+}
+@media (min-width: 992px) {
+	.indicadores_text {
+		margin-top: 0;
+	}
+	.indicador_bloque {
+		margin-bottom: 40px;
+		margin-left: 100px;
+	}
+	.indicador_content_img {
+		left: -45px;
+		position: absolute;
+	}
+	.indicador_bloque .indicador_content_img img {
+		bottom: 0;
+		left: inherit;
+		min-width: 175px;
+		top: 0;
+	}
+	.indicador_bloque h2 {
+		margin-top: 0;
+		text-align: left;
+	}
+}
+.indicadores ul {
+	margin-bottom: 25px;
+}
+.indicadores li {
+	padding: 6px 0 6px 2px;
+}
+.indicadores li a {
+	font-weight: bold;
+}
+.indicador_bloque h3 {
+	position: relative;
+	padding-left: 40px;
+}
+.indicador_bloque h3:before {
+	background-repeat: no-repeat;
+	bottom: 0;
+	content: "";
+	height: 30px;
+	left: 0;
+	margin: auto;
+	position: absolute;
+	top: 0;
+	width: 30px;
+}
+.indicador_bloque .que_es:before {
+	background: url('/wcm/connect/95eabdb4-db27-4364-9d27-ad1e2fbddc4f/icono_que_es.png?MOD=AJPERES');
+	background-size: 30px;
+}
+.indicador_bloque .tip:before {
+	background: url('/wcm/connect/69815da0-0d8b-4081-b7d3-e12920b04272/icono_tip.png?MOD=AJPERES');
+	background-size: 30px;
+}
+.indicador_bloque {
+	display: inline-block;
+	border: solid 1px #d3d3d3;
+	border-radius: 5px;
+	padding: 20px 0;
+}
+.indicador_bloque h2 {
+	font-weight: 800;
+}
+.indicador_bloque h3 {
+	font-weight: 800;
+	font-size: 22px;
+}
+.indicador_bloque .indicador_content:nth-of-type(1) {
+	border-bottom: solid 1px #d3d3d3;
+}
+
+
+.indicador_bloque .row {
+	height: 100%;
+	display: table-row;
+}
+@media (min-width: 992px) {
+	.indicador_bloque .row .no-float {
+    display: table-cell;
+    float: none;
+	}
+}
+.vertical-middle {
+	vertical-align: middle;
+}

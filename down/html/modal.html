@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <LINK REL=StyleSheet HREF="css/css.css" TYPE="text/css" MEDIA=screen>
+    <title>Document</title>
+</head>
+<style>
+    .modaldocument .documet-modal {
+        z-index: 3;
+        display: none;
+        padding-top: 100px;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background: rgba(44, 42, 41, 0.8);
+        backdrop-filter: blur(3.5px);
+    }
+
+    .modaldocument .documet-modal .document-modal-content {
+        margin: auto;
+        background-color: #fff;
+        position: relative;
+        padding: 0;
+        outline: 0;
+        width: 600px;
+        box-shadow: 0px 10px 16px rgba(44, 42, 41, 0.08);
+        border-radius: 16px;
+    }
+
+    .modaldocument .documet-modal .document-modal-content .document-container {
+        padding: 0.01em 16px;
+    }
+
+    .modaldocument .documet-modal .document-modal-content .document-container .document-display-topright {
+        position: absolute;
+        right: 3%;
+        top: 4%;
+        font-size: 30px;
+        cursor: pointer;
+    }
+
+    .modaldocument .documet-modal .document-modal-content .document-container .iconodescarga {
+        padding-top: 8%;
+        padding-bottom: 5%;
+    }
+
+
+    .modaldocument .documet-modal .document-modal-content .document-container .table-center {
+        margin: 0 auto;
+        width: 80%;
+        padding-top: 3%;
+        padding-bottom: 5%;
+       
+    }
+
+    .modaldocument .documet-modal .document-modal-content .document-container table tr td {
+
+        display: table-cell;
+        padding: 25px 10px;
+      
+
+    }
+    .modaldocument .documet-modal .document-modal-content .document-container table tr:first-child td.bordes {
+
+        border-top: 1px solid #B3B5B8; 
+    }
+    .modaldocument .documet-modal .document-modal-content .document-container table tr td:hover {
+    background-color: #f4f4f4;
+   
+    }
+
+    .modaldocument .documet-modal .document-modal-content .document-container table tr td.bordes {
+        border-bottom: 1px solid #B3B5B8;
+    }
+
+    .modaldocument .documet-modal .document-modal-content .document-container table tr td em.bc-icon.iconTable {
+    color: #2C2A29;
+    cursor: pointer;
+   }
+   
+    @media (max-width: 500px) {
+    .modaldocument .documet-modal .document-modal-content{
+        width: 95% !important;
+    }
+    .modaldocument .documet-modal .document-modal-content .document-container .table-center {
+        margin: 0 auto;
+        width: 100% !important;
+    }
+
+    } 
+</style>
+
+<body>
+
+    <div class="modaldocument">
+        <button onclick="modaldocumento()"
+            class="document-button document-black">Open Modal</button>
+      <div id="content">
+         <!-- <div id="documentos" class="documet-modal">
+          <div  class="document-modal-content">
+                <div class="document-container">
+                    <span onclick="document.getElementById('documentos').style.display='none'"
+                        class="document-button document-display-topright">&times;</span>
+                    <div class="bc-text-center">
+                        <div class="bc-text-center iconodescarga">
+                            <strong>
+                                <em class="bc-icon iconTable">download</em>
+                            </strong>
+                        </div>
+                        <h4 class="tableUser__title">Cambio de país (Origen recursos)</h4>
+                        <p class="tableUser__subTitle">Descarga estos documentos y diligencialos</p>
+                    </div>
+
+                    <table class="table-center" id="tabladocumento">
+                        <tr class="borde">
+                            <td class="bc-text-start text-description bc-table-cell bordes">
+                                <div class="bc-row bc-mx-0">
+                                     <div class="bc-col-md-11 bc-col-10 bc-px-0">
+                                        <p class="bc-m-0">
+                                            <strong>F-1539 Conocimiento del cliente persona natural</strong>
+                                        </p>
+                                    </div>
+                                    <div class="bc-col-md-1 bc-col-2 bc-px-0 bc-text-center">
+                                        <strong>
+                                            <em  class="bc-icon iconTable">download</em>
+                                        </strong>
+                                    </div>
+                                </div>                               
+                            </td>
+                        </tr>
+                        <tr class="borde">
+                            <td class="bc-text-start text-description bc-table-cell bordes">
+                                <div class="bc-row bc-mx-0">
+                                    <div class="bc-col-md-11 bc-col-10 bc-px-0">
+                                        <p class="bc-m-0">
+                                            <strong>F-1539 Conocimiento del cliente persona natural</strong>
+                                        </p>
+                                    </div>
+                                    <div class="bc-col-md-1 bc-col-2 bc-px-0 bc-text-center">
+                                        <strong>
+                                            <em  class="bc-icon iconTable">download</em>
+                                        </strong>
+                                    </div>
+                                </div>
+                               
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>-->
+    </div>
+    </div>
+</body>
+
+<script>
+ var titulo1 = "Cambio de país (Origen recursos)";
+ var titulo2 = "Descarga estos documentos y diligencialos";
+ var objeto =  3;
+ var docnombre = "F-1539 Conocimiento del cliente persona natural";
+ var docurl ="https://trabajarporelmundo.org/wp-content/uploads/2014/06/ingles-elemental.pdf";
+ var datos= ""
+
+document.getElementById("content").innerHTML = "<div id='documentos' class='documet-modal'><div  class='document-modal-content'> <div class='document-container'><span onclick='cerrar()' class='document-button document-display-topright'>&times;</span><div class='bc-text-center'><div class='bc-text-center iconodescarga'><strong><em class='bc-icon iconTable'>download</em></strong></div><h4 class='tableUser__title'>"+ titulo1 +"</h4><p class='tableUser__subTitle'>"+ titulo2 +"</p></div> <table class='table-center' id='tabladocumento'></table></div></div></div>";
+
+function cerrar(){
+    document.getElementById('documentos').style.display='none';
+ 
+}
+
+function modaldocumento(){
+    document.getElementById('documentos').style.display='block';
+    datos="";
+    for (var i = 0; i < objeto; i++) {
+        datos = datos + "<tr class='borde'><td class='bc-text-start text-description bc-table-cell bordes'><div class='bc-row bc-mx-0'><div class='bc-col-md-11 bc-col-10 bc-px-0'><p class='bc-m-0'> <strong>"+ docnombre +" , "+ i +" </strong></p></div><div class='bc-col-md-1 bc-col-2 bc-px-0 bc-text-center'><strong><a href='"+ docurl +"'  download='"+ docnombre +".pdf'> <em  class='bc-icon iconTable'>download</em></a></strong></div></div></td></tr>";
+        document.getElementById("tabladocumento").innerHTML = datos;       
+    }
+
+}
+
+
+    // const text = sessionStorage.getItem("event");
+    // const obj = JSON.parse(text);
+    // const ids = obj.idProceso;
+    // var titulo = "";
+    // var url = "";
+    // var html = "";
+    // fetch('https://www.bancolombia.com/caass?current=true&urile=wcm:path:/BancolombiaPersonas/asCaaS/asRecoleccionDocs/contCaasRecoleccionDocs&mime-type=application/json')
+    //     .then(res => res.json())
+    //     .then(data => {
+    //         const datos = JSON.stringify(data.documentos);
+    //         const objeto = JSON.parse(datos);
+    //         for (var i = 0; i < objeto.length; i++) {
+    //             for (var j = 0; j < objeto[i].idProcess.length; j++) {
+    //                 if (ids == objeto[i].idProcess[j]) {
+    //                     titulo = objeto[i].name
+    //                     url = objeto[i].url
+    //                     j = objeto[i].idProcess.length;
+    //                     function filler(elem, arr) {
+    //                         for (let k = 0; k < arr.length; k++) {
+    //                             const elements = document.createElement("p");
+    //                             elements.textContent = arr[k];
+    //                             elem.appendChild(elements);
+    //                         }
+    //                     }
+    //                     const lst = document.getElementsByClassName('bc-pictog-components')[0];
+    //                     filler(lst, [titulo, url]);
+    //                 }
+    //             }
+    //         }
+    //     });
+
+
+
+</script>
+
+</html>

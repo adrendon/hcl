@@ -1,0 +1,43 @@
+.logos-container {
+    display: inline-block;
+    margin: 88px 0;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+@media (max-width: 992px) {
+    .logos-container{
+        margin: 48px 0;
+    }
+}
+
+.logos .swiper-container {
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.swiper-container-carousel-logos {
+    width: 100%;
+    height: auto;
+    transition: opacity 0.6s ease;
+}
+
+.swiper-container-carousel-logos.loading {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.swiper-container-carousel-logos .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+
+@media (max-width: 1023px) {
+    .swiper-container-carousel-logos {
+        height: auto;
+    }
+}

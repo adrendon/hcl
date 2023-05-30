@@ -1,0 +1,85 @@
+<div>
+    <div class="dropdown-container" [ngClass]="{'no-card-selected': !showCardName}">
+        <!-- <div class="show-card" *ngIf="!cardSelected?.nombre"></div> -->
+        <div class="card-name" id="lista-tarjetas-{{indexCard}}" (click)="openDropdown()"
+            [ngClass]="{'card-title': showCardName}">
+            <div class="name">
+                <!-- {{!!showCardName ? showCardName : 'Selecciona una tarjeta'}}  -->
+                Cambiar
+            </div>
+            <!-- <span class="icon-bco" [ngClass]="{'icon-arrow2-down': !isOpen,'icon-arrow2-right': !isOpen && sizeWindow === 'isMobile', 'icon-arrow2-up': isOpen}"></span>  -->
+            <!-- <span class="icon-bco" [ngClass]="{'icon-arrow2-down': !isOpen,'icon-arrow2-right': !isOpen , 'icon-arrow2-up': isOpen}"></span> -->
+
+        </div>
+        <div class="card-list" [ngClass]="{'showall-franquises': showCardName}" *ngIf="isOpen">
+            <div class="button-styles padding-space"
+                *ngIf="!backToFranquises && !cardSelected?.nombre && indexCard !== 0" (click)="cancel()">
+                Cerrar
+                <span class="icon-bco icon-error"></span>
+            </div>
+            <div class="padding-space button-styles" *ngIf="!backToFranquises && cardSelected?.nombre"
+                (click)="closeDropdown()">
+                Cerrar
+                <span class="icon-bco icon-error"></span>
+            </div>
+            <div class="padding-space button-styles" *ngIf="backToFranquises" (click)="openDropdown()">
+                Todas las tarjetas
+                <span class="icon-bco icon-arrow2-left"></span>
+            </div>
+            <div *ngFor="let card of viewList">
+                <div class="item-list padding-space" (click)="selectFranquise(card)">
+                    <!-- {{!!card.nombre ? card.nombre : card}}  -->
+                    <span *ngIf="!backToFranquises" class="icon-bco icon-arrow2-right"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="mobile-view" *ngIf="isOpen && sizeWindow === 'isMobile'"> -->
+    <div class="mobile-view" *ngIf="isOpen">
+        <div class="header">
+            <span class="logo icon-bco icon-logos-Bancolombia-primario-positivo"></span>
+
+        </div>
+        <div class="cerrar">
+            <span class="icon-bco icon-remove" (click)="closeDropdown()"> <span class="textocerrar">Cerrar</span></span>
+        </div>
+        <div class="contetexto">
+            <div class="imgmano">
+                <img src="./assets/mano.svg" class="replaced-svg">
+            </div>
+            <div class="textop">
+                <h4 class="textoh4">Selecciona una tarjeta de credito</h4>
+                <p class="textp">Aqui podras seleccionar una franquicia y luego la tarjeta.</p>
+            </div>
+        </div>
+        <div class="tarje-logo">
+            <div class="tarje">
+                <div [ngClass]="{'activo': flagamex, '': !flagamex}" class="imgamex padin"  (click)="mostrar('amex')"></div>
+                <div [ngClass]="{'activo': flagvisa, '': !flagvisa}" class="imgvisa padin" (click)="mostrar('visa')"></div>
+                <div [ngClass]="{'activo': flagmaster, '': !flagmaster}" class="imgmaster padin" (click)="mostrar('master')"></div>
+            </div>
+        </div>
+        <!-- <div class="search-input">
+            <input placeholder="Buscar" (keyup)="search($event.target.value)">
+            <span class="icon-bco icon-search"></span>
+        </div> -->
+        <div *ngFor="let franchise of franchiseList" class="item-list padding-space" id="id{{franchise.replace(' ', '')}}">
+            <!-- <div *ngIf="showCards[franchise].length > 0> -->
+                <div *ngIf="mostrarlista && nombrefranquicia ===  franchise.replace(' ', '')"> 
+                    <!-- <p class="franchise-name onclik">{{franchise}}</p> -->
+                    <div class="card-name" *ngFor="let card of showCards[franchise]" (click)="selectFranquise(card)">
+                        <div>
+                            <img appCorrectUrl src="{{card.imagenTarjeta}}">
+                        </div>
+                        <!-- <span>{{card.nombre}}</span> -->
+                        <div class="titulomobile">
+                            <label class="cardtitu">{{card.franquicia}}</label>
+                            <label class="cardti">{{card.nombre.replace(card.franquicia+' ', '')}}</label>
+                        </div>
+                        <!-- <span>{{card.nombre}}</span>  -->
+                    </div>
+               
+            </div>
+        </div>
+        <!-- </div> -->
+    </div>
