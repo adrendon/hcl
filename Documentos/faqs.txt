@@ -1,0 +1,48 @@
+Para el header es un nuevo tema o se va usar el de personas ?
+La palabra que se digite en el buscador se busca en el título o en el contenido de la pregunta 
+En qué página debo buscar de acuerdo a la seccion (persnas, negocios y corporativo)
+items maximos que aparecen al yo poner un termino
+Las preguntas tienen algún campo de las preguntas que digan que es NOVEDAD
+Cómo se manejan las preguntas más buscadas
+Orden de Temas Principales, cómo se va a manejar
+orden en temas de canales
+cómo se mostrarán los videos de Youtube (abrir pagina de youtube, abrir modal, abrir ahi mismo)
+
+
+La aplicación base está actualizada?
+Las apis tienen documentación?
+
+
+
+1) Validar si se tiene que crear un nuevo tema o si se va usar el mismo.
+2) Header, tenemos que crearlo desde cero o vamos a utilizar alguno ya creado.
+3) Buscador.
+Máximo cuantas preguntas relacionadas se van a presentar.
+Una vez seleccionada la pregunta se redirege a la página.
+Que enpoint se va a utilizar.
+
+
+4) Actualizar la versión base de Angular 9. (Discutir y evaluar las mejoras para actualizar)
+5) Validar el proyecto base que tenga para poder contextualizarnos de forma visual el contenido y el paso a paso.
+6) Validar si se requieren permisos al sonar.
+7) De las buenas practicas, de donde exactamente puedo sacar la documentación de los proyectos y como se esta organizando.
+
+8) Validar si las opciones de van y a que link se redireccionaria.
+9) El tema de novedades (Covid-19), se va hacer de manera manual o si se va a crear desde el portal.
+10) Preguntas mas buscadas, de donde se trae estos datos es un enpoint? cual?
+11) Temas principales: Criterio para presentar la información, es el negocio.
+Que criterios para destacar unos en principio, esto se toma desde el administrador.
+Existe algún enpoint para consultar estos datos.
+12) El tema de simuladores redirecciona a la aplicación ya existente, las parapaginas ya estan creadas??
+13) En canales las pesatañas de Personas, Negocios, Corporativo creo que no van?
+14) Noticias de interes, quien alimenta esta información?, como se actualiza?, esto debe redirección?
+15) Las preguntas como se relacionan con las categorias, son las preguntas excluyentes o incluyentes.
+16) Cuantas son las plantillas y que van a ser
+17) Boton raro para anclar que hace o cual es su objetivo.
+18) Los potcap (Audios) como se van a manejar.
+19) Se va tener diferentes idiomas.
+20) Indagar sobre la parte de los videos
+21) Como se haria el paso a paso.
+icono de cada articulo (audio, video, articulos, herramientas)
+
+regresar debe llevar a donde si me mandan la url

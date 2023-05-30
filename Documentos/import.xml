@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<request build="20190928-2258" type="update" version="8.5.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="PortalConfig_8.5.0.xsd">
+    <portal action="locate">
+        <skin action="update" active="true" context-root="/defaultTheme85" default="false" domain="rel" objectid="ZK_00000000000000A0BR2B300670" resourceroot="Hidden" type="default" uniquename="ibm.portal.85Hidden">
+            <localedata locale="en">
+                <title>Portal 8.5 - Hidden</title>
+            </localedata>
+            <localedata locale="es">
+                <title>Portal 8.5 - Oculto</title>
+            </localedata>
+            <parameter name="com.ibm.portal.skin.template.file.name.html" type="string" update="set"><![CDATA[skin.html]]></parameter>
+            <parameter name="com.ibm.portal.skintype" type="string" update="set"><![CDATA[template]]></parameter>
+            <parameter name="com.ibm.portal.skin.template.ref" type="string" update="set"><![CDATA[dav:fs-type1/themes/Portal8.5/skins/Hidden/]]></parameter>
+        </skin>
+        <skin action="update" active="true" context-root="/defaultTheme85" default="false" domain="rel" objectid="ZK_00000000000000A0BR2B300674" resourceroot="HiddenPlus" type="default" uniquename="ibm.portal.85HiddenPlus">
+            <localedata locale="en">
+                <title>Portal 8.5 - Hidden Plus</title>
+            </localedata>
+            <localedata locale="es">
+                <title>Portal 8.5 - Oculto Plus</title>
+            </localedata>
+            <parameter name="com.ibm.portal.skin.template.file.name.html" type="string" update="set"><![CDATA[skin.html]]></parameter>
+            <parameter name="com.ibm.portal.skintype" type="string" update="set"><![CDATA[template]]></parameter>
+            <parameter name="com.ibm.portal.skin.template.ref" type="string" update="set"><![CDATA[dav:fs-type1/themes/Portal8.5/skins/HiddenPlus/]]></parameter>
+        </skin>
+        <skin action="update" active="true" context-root="/defaultTheme85" default="false" domain="rel" objectid="ZK_00000000000000A0BR2B300672" resourceroot="Standard" type="default" uniquename="ibm.portal.85Standard">
+            <localedata locale="en">
+                <title>Portal 8.5 - Standard</title>
+            </localedata>
+            <localedata locale="es">
+                <title>Portal 8.5 - Estándar</title>
+            </localedata>
+            <parameter name="com.ibm.portal.skin.template.file.name.html" type="string" update="set"><![CDATA[skin.html]]></parameter>
+            <parameter name="com.ibm.portal.skintype" type="string" update="set"><![CDATA[template]]></parameter>
+            <parameter name="com.ibm.portal.skin.template.ref" type="string" update="set"><![CDATA[dav:fs-type1/themes/Portal8.5/skins/Standard/]]></parameter>
+        </skin>
+        <skin action="update" active="true" context-root="/defaultTheme85" default="false" domain="rel" objectid="ZK_00000000000000A0BR2B300676" resourceroot="NoSkin" type="default" uniquename="ibm.portal.85NoSkin">
+            <localedata locale="en">
+                <title>Portal 8.5 - No Skin</title>
+            </localedata>
+            <localedata locale="es">
+                <title>Portal 8.5 - Sin Skin</title>
+            </localedata>
+            <parameter name="com.ibm.portal.skin.template.file.name.html" type="string" update="set"><![CDATA[skin.html]]></parameter>
+            <parameter name="com.ibm.portal.skintype" type="string" update="set"><![CDATA[template]]></parameter>
+            <parameter name="com.ibm.portal.skin.template.ref" type="string" update="set"><![CDATA[dav:fs-type1/themes/Portal8.5/skins/NoSkin/]]></parameter>
+        </skin> 
+        <theme action="update" active="true" context-root="/defaultTheme85" default="true" defaultskinref="ZK_00000000000000A0BR2B300672" domain="rel" objectid="ZJ_00000000000000A0BR2B300QC6" resourceroot="dynamicSpots" uniquename="ibm.portal.85Theme">
+            <localedata locale="en">
+                <title>Portal 8.5</title>
+                <description>The default theme that is used by IBM WebSphere Portal incorporates both adaptive and responsive design elements. You can copy this theme to create a custom theme.</description>
+            </localedata>
+            <localedata locale="es">
+                <title>Portal 8.5</title>
+                <description>El tema predeterminado que utiliza IBM WebSphere Portal incorpora los elementos de diseño adaptables y dinámicos. Puede copiar este tema para crear un tema personalizado.</description>
+            </localedata>
+            <allowed-skin skin="ZK_00000000000000A0BR2B300670" update="set"/>
+            <allowed-skin skin="ZK_00000000000000A0BR2B300672" update="set"/>
+            <allowed-skin skin="ZK_00000000000000A0BR2B300674" update="set"/>
+            <allowed-skin skin="ZK_00000000000000A0BR2B300676" update="set"/>
+            <parameter name="com.ibm.portal.theme.aggregationmodes" type="string" update="set"><![CDATA[ssa]]></parameter>
+            <parameter name="com.ibm.portal.isTemplate" type="string" update="set"><![CDATA[true]]></parameter>
+            <parameter name="com.ibm.portal.layout.template.href" type="string" update="set"><![CDATA[dav:fs-type1/themes/Portal8.5/layout-templates/2ColumnEqual/]]></parameter>
+            <parameter name="resourceaggregation.autoLoadPortletCapabilities" type="string" update="set"><![CDATA[true]]></parameter>
+            <parameter name="com.ibm.portal.theme.disallow" type="string" update="set"><![CDATA[export,delete]]></parameter>
+            <parameter name="ibm.portal.shelf.category.json.webcontent" type="string" update="set"><![CDATA[system/WebContentCategory.json,label:shelf_socialCategory]]></parameter>
+            <parameter name="theme.origination.version" type="string" update="set"><![CDATA[MjAxODA5MTItMTMwMA==]]></parameter>
+            <parameter name="com.ibm.portal.theme.hasBaseURL" type="string" update="set"><![CDATA[true]]></parameter>
+            <parameter name="com.ibm.portal.theme.template.ref" type="string" update="set"><![CDATA[dav:fs-type1/themes/Portal8.5/]]></parameter>
+            <parameter name="resourceaggregation.profile" type="string" update="set"><![CDATA[profiles/profile_deferred.json]]></parameter>
+        </theme>
+        <theme action="update" active="true" context-root="/toolbarTheme85" default="false" defaultskinref="ZK_00000000000000A0BR2B300670" domain="rel" objectid="ZJ_00000000000000A0BR2B300MA1" resourceroot="dynamicSpots" uniquename="ibm.portal.85ToolbarTheme">
+            <localedata locale="en">
+                <title>Toolbar Theme 8.5</title>
+                <description>The Toolbar theme which separates the main page and the toolbar into separate windows.</description>
+            </localedata>
+            <localedata locale="es">
+                <title>Tema Barra de herramientas 8.5</title>
+                <description>El tema Barra de herramientas que separa la página principal y la barra de herramientas en ventanas distintas.</description>
+            </localedata>
+            <allowed-skin skin="ZK_00000000000000A0BR2B300670" update="set"/>
+            <parameter name="com.ibm.portal.theme.aggregationmodes" type="string" update="set"><![CDATA[ssa]]></parameter>
+            <parameter name="com.ibm.portal.Hidden" type="string" update="set"><![CDATA[true]]></parameter>
+            <parameter name="com.ibm.portal.theme.template.ref" type="string" update="set"><![CDATA[dav:fs-type1/themes/Toolbar8.5/]]></parameter>
+            <parameter name="com.ibm.portal.layout.template.href" type="string" update="set"><![CDATA[dav:fs-type1/themes/Toolbar8.5/layout-templates/1Column/]]></parameter>
+            <parameter name="com.ibm.portal.theme.dnd.sources" type="string" update="set"><![CDATA[ibmDndColumn:com.ibm.pb.dnd.layout.LayoutColumnSource:vertical,ibmDndRow:com.ibm.pb.dnd.layout.LayoutRowSource:horizontal]]></parameter>
+            <parameter name="resourceaggregation.profile" type="string" update="set"><![CDATA[profiles/profile_full.json]]></parameter>
+        </theme>
+        <theme action="update" active="true" context-root="/toolbarXsltTheme" default="false" domain="rel" objectid="ZJ_00000000000000A0BR2B3006F0" resourceroot="xsltTheme" uniquename="wp.theme.toolbar.xslt">
+            <localedata locale="en">
+                <title>XSLT Theme</title>
+                <description>Optimized theme for XML based toolbar tabs. Only apply this theme if the tab supports the generation of XML markup.</description>
+            </localedata>
+            <localedata locale="es">
+                <title>Tema XSLT</title>
+                <description>Tema optimizado para pestañas de barra de herramientas basada en XML. Sólo aplique este tema si la pestaña da soporte a la generación de marcación XML.</description>
+            </localedata>
+            <parameter name="com.ibm.portal.Hidden" type="string" update="set"><![CDATA[true]]></parameter>
+            <parameter name="resourceaggregation.contributions.folder" type="string" update="set"><![CDATA[contributions/]]></parameter>
+            <parameter name="com.ibm.portal.layout.template.href" type="string" update="set"><![CDATA[layout-templates/2ColumnEqual/]]></parameter>
+            <parameter name="resourceaggregation.autoLoadPortletCapabilities" type="string" update="set"><![CDATA[true]]></parameter>
+            <parameter name="com.ibm.portal.remote-cache-expiry" type="string" update="set"><![CDATA[2627388]]></parameter>
+            <parameter name="com.ibm.portal.theme.hasBaseURL" type="string" update="set"><![CDATA[true]]></parameter>
+            <parameter name="theme.capability.xslt" type="string" update="set"><![CDATA[1.0]]></parameter>
+            <parameter name="com.ibm.portal.theme.template.ref" type="string" update="set"/>
+            <parameter name="theme.capability.oneUI" type="string" update="set"><![CDATA[3.0.0]]></parameter>
+            <parameter name="resourceaggregation.profiles.folder" type="string" update="set"><![CDATA[profiles/]]></parameter>
+            <parameter name="resourceaggregation.profile" type="string" update="set"><![CDATA[profiles/profile_default.json]]></parameter>
+        </theme>
+        <theme action="update" active="true" context-root="/CaaSTheme" default="false" domain="rel" objectid="ZJ_00000000000000AIPRNM2B1000" resourceroot="CaaSTheme" uniquename="wp.theme.caas">
+            <localedata locale="en">
+                <title>CaaS Theme</title>
+                <description>Theme used by the content as a service feature. </description>
+            </localedata>
+            <localedata locale="es">
+                <title>Tema de CaaS</title>
+                <description>Tema utilizado por el contenido como característica de servicio. </description>
+            </localedata>
+            <parameter name="com.ibm.portal.layout.template.ref" type="string" update="set"><![CDATA[none]]></parameter>
+            <parameter name="com.ibm.portal.remote-cache-expiry" type="string" update="set"><![CDATA[2627388]]></parameter>
+            <parameter name="com.ibm.portal.Hidden" type="string" update="set"><![CDATA[true]]></parameter>
+            <parameter name="com.ibm.portal.theme.hasBaseURL" type="string" update="set"><![CDATA[true]]></parameter>
+            <parameter name="resourceaggregation.profiles.folder" type="string" update="set"><![CDATA[profiles/]]></parameter>
+            <parameter name="resourceaggregation.profile" type="string" update="set"><![CDATA[profiles/profile_default.json]]></parameter>
+        </theme>
+    </portal>
+</request>

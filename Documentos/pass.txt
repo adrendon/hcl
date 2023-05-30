@@ -1,0 +1,192 @@
+May.Tata@2023** correo tcs
+Abr.Banco@2023** correo banco
+Tata.May@2023** ultimatix
+
+angular cli 13.3.9
+node 14.15.4
+npm 6.14.8
+tsc -v
+
+Web.9229 equipo
+
+WRwGdc49kZrr@20!9
+
+sp.sh push
+@import"https://library-sdb.apps.bancolombia.com/bds/2.2.6/bds.min.css";
+<html data-scriptportlet-combine-urls="true" lang="en">
+
+arendonc
+4RendonChiC*2020 vpn
+arendon2020T4ta* portal
+
+/opt/IBM/WebSphere/wp_profile/logs/WebSphere_Portal
+
+vi SystemOut.log
+
+tail -1000f SystemOut.log
+
+Web.1120**
+
+arendon2021* sistema operativo
+banco2022*
+Bancolombia2022**
+BancolombiaJulio2022**
+Julioabcd2021*$
+
+FileSystem
+Dev 9.0 - Dev 8.5 - Qa 9.0 - Qa 8.5
+BancolombiaEnero2023**
+Banco202305** ##actual
+
+mobaxterm
+pass master
+Web.9229
+
+dallas
+10.73.29.71:10039
+10.73.29.71:10050
+10.73.29.72:10068
+https://169.62.251.40/wps/portal/
+
+washington
+10.170.187.10:10039
+10.170.187.10:10050
+10.170.187.11:10068
+https://169.45.220.120/wps/portal/
+
+pdn
+wasadmin
+WASpdnIG2016
+
+qa
+gcaldero
+Gcaldero2017.
+
+dev
+wasadmin
+IgWasDllo2017
+
+IJ1dxMCc80.5g++
+
+AW1218001_Sitio_de_contenidos_Grupo_Bancolombia
+AW1218001_Portal_de_Contenidos_
+
+bigbangadm
+B1gb.2019*
+
+bigbangcfg
+BbCfg.2019*
+
+wpsvradmin
+1234567890
+
+user: calde6088@gmail.com
+pass: cursos2019.
+
+potalcontenido
+contchef
+wpsadmins
+
+All Authenticated Portal Users
+
+wasadmin
+IgWasDllo2017
+
+wasadmin
+WASpdnIG2016
+
+3ba3fqst7s3zbnxf5umepk5y3ztmtrne725utv37463iz56taeja azure
+
+mateo usd rol solucionador
+
+daily
+8am - no mas de 15
+acertivos
+que hice ayer, que hare hoy y que dificultades tuve
+
+viernes no hay daily, primer viernes hay alineacion tecnica
+2do viernes del mes, alineacion de empresas
+tercero ?
+ultimo viernes del mes, alineacion estrategica con alejandro pulgarin gerente
+
+sprint cada 15 dias review
+martes
+
+ceremonia se revisa en refinamiento ocurre en la semana previa se hace los miercoles
+
+planeacion trimestral 
+
+entregas de valor
+
+po
+
+historia de usuario
+habilitador
+
+vsts
+
+pmo rediseño
+
+mejoramiento continuo se revisan temas del equipo
+
+retroespectiva alineaciones del equipo
+
+axel, ceballos y garcia equipo de rediseño
+
+mario, marcela, bayona otro proyecto y otras dos de rediseño
+
+otro equipo llamado equipo base, abarcar proyectos de menor duracion
+
+otro equipo de personalizacion de contenidos
+
+equipo de mantener y soportar (dia a dia, incidentes, requerimientos de la super, atencion de vulnerabilidades)
+
+puntos de atencion equipo base
+
+cr para instalar cualquier cosa
+llamar y pedir tickets
+
+bancolombia cluster
+cada datacenter 6 nodos
+
+dev y qa cada uno a 2 nodos
+
+ambiente 8.5 stand alone
+
+---Hacer esto una vez--
+aws configure
+access key: aws-bancolombia.com
+
+ secret-key: 1WsO-2PpL-Hjz0-AmDG
+region : us-east-1
+formato : json
+--------------------------------------------
+Cada vez que me autentique debo actualizar ese contexto según el ambiente
+actualizar contexto del eks por ambiente :
+aws eks update-kubeconfig --name eks-clientes-dev
+aws eks update-kubeconfig --name eks-clientes-qa
+aws eks update-kubeconfig --name eks-clientes-pdn
+----------------------------------------------------------------
+obtener pods:
+kubectl get pods -n portal-contenidos-dev
+kubectl get pods -n portal-contenidos-qa
+---------------------------------------------------------------------
+describir pods :
+kubectl describe pods my-pod -n portal-contenidos-dev
+----------------------------------------------------------------------------
+Eliminar pods:
+kubectl delete pods --force ms-auth-deployment-69c6557887-hfdtf -n portal-contenidos-dev
+------------------------------------------------------------------------------------
+Obtener Logs:
+kubectl logs ms-auth-deployment-5fdd6ddcf7-chf44 -n portal-contenidos-qa
+kubectl logs ms-auth-deployment-5fdd6ddcf7-chf44 -n portal-contenidos-dev
+-------------------------------------------------------------------------------
+Eliminar deployment:
+kubectl delete deployment ms-auth-deployment -n portal-contenidos-dev
+kubectl delete deployment ms-auth-deployment -n portal-contenidos-qa
+
+
+time for family 4.5 gess 4.5 timesheet no facturado
+si es festivo antes o despues enviar correo al lider gisela y maria pinzon cuando no deja cargarlo
+
+
