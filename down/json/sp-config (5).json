@@ -1,0 +1,9 @@
+{
+  "contenthandlerPath": "\/mycontenthandler",
+  "mainHtmlFile": "index.html",
+  "virtualPortalContext": "dev.grupobancolombia.com25230",
+  "wcmContentID": "40f5ca72-f9ae-44df-ad68-46861fde5aed",
+  "wcmContentTitle": "recoleccionDocumentos",
+  "socketTimeout": 60000
+}
+

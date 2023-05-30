@@ -1,0 +1,10 @@
+{
+   "contenthandlerPath": "\/mycontenthandler",
+   "mainHtmlFile": "index.html",
+   "portalUser": "cdorozco",
+   "projectContext": "Recoleccion-docs-v2-13-03-2023",
+   "scriptPortletServer": "http:\/\/dev.grupobancolombia.com:10039",
+   "virtualPortalContext": "dev.grupobancolombia.com25230",
+   "wcmContentID": "40f5ca72-f9ae-44df-ad68-46861fde5aed",
+   "wcmContentTitle": "recoleccionDocumentos"
+}

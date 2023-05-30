@@ -1,0 +1,448 @@
+{
+	"info": {
+		"_postman_id": "6f94a670-19cf-4438-a3d9-c9006476f415",
+		"name": "FUA Migracion QA",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Autorization Code (Credentials)",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic NDAyNmE5YzYtZjcyYy00NjI2LWI2MDQtOGMxNTA4NGVlNTg4OlQwZ1YwZkU1cEw3eUg4c000ZUs4YVM4bEszYVQ0a08ybUExbEswc0Mxb0IxdVc0cFQ1",
+						"type": "text"
+					},
+					{
+						"key": "MessageId",
+						"value": "a82b8ca5-9624-4b11-a592-6c9758dc89",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"data\": [\r\n    {\r\n      \"transactionDate\": \"2021/06/15 14:00:00\",\r\n      \"consumerId\": \"BLM\",\r\n      \"clientId\": \"BLM\",\r\n      \"clientIp\": \"127.0.0.1\",\r\n      \"pinBlock\":\"603B1F7E46C11516EB6EC171D2C50A2F16BDCD172EA09A2E9736511F2DA86CCAB439C1C80405021BB24B8429E15AD21E0C154099F23D7893D96D75E5AB94A8E86665227116886D28554797DCA244467487F83BBF1D766F30ADA6097CC7458447221D90BBFA03CB853EB0D439078172B50545A47544CC7269275FAC25AC018ED9C4A5AA80D325835028E3B0856D1AEB790DB47274727DB285D263271372447902005BD5D4091C4BAC1FD8FE9D1797F9C0F2DE0FEF005A36F906699733D3309AFE1B28D0560E0376A3507AFAE91E55BD663AFE02D3CF510BAF8DD60DBC4F1C956583389B6C5BB0E3BACB9B10F743CE379E91B546A7EC69B98C6558F451B2EE83DC\",\r\n      \"keepSession\": \"Y\",\r\n      \"userAgent\": \"Mozilla Firefox\",\r\n      \"device\": \"PC\",\r\n      \"idNumber\": \"43715468\",\r\n      \"documentType\": \"CC\"\r\n    }\r\n  ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api-aws-qa.apps.ambientesbc.com/int/testing/v2/reference-data/party/customer-profile/security/credentials/authorization-codes",
+					"protocol": "https",
+					"host": [
+						"api-aws-qa",
+						"apps",
+						"ambientesbc",
+						"com"
+					],
+					"path": [
+						"int",
+						"testing",
+						"v2",
+						"reference-data",
+						"party",
+						"customer-profile",
+						"security",
+						"credentials",
+						"authorization-codes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Code validation",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic NDAyNmE5YzYtZjcyYy00NjI2LWI2MDQtOGMxNTA4NGVlNTg4OlQwZ1YwZkU1cEw3eUg4c000ZUs4YVM4bEszYVQ0a08ybUExbEswc0Mxb0IxdVc0cFQ1",
+						"type": "text"
+					},
+					{
+						"key": "MessageId",
+						"value": "a82b8ca5-9624-4b11-a592-6c9758dc89",
+						"type": "text"
+					},
+					{
+						"key": "apim-debug",
+						"value": "true",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"data\": [\r\n    {\r\n      \"grantType\": \"authorization_code\",\r\n      \"clientId\": \"PCB\",\r\n      \"redirectUri\": \"https://qa.grupobancolombia.com/fua/contenido\",\r\n      \"code\": \"POSbJR\",\r\n      \"Authorization\": \"UENCOnBjYjEyMzQ1Ng==\"\r\n    }\r\n  ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api-aws-qa.apps.ambientesbc.com/int/testing/v4/sales-service/cross-channel/authentication/security/authorization-codes/validate-code",
+					"protocol": "https",
+					"host": [
+						"api-aws-qa",
+						"apps",
+						"ambientesbc",
+						"com"
+					],
+					"path": [
+						"int",
+						"testing",
+						"v4",
+						"sales-service",
+						"cross-channel",
+						"authentication",
+						"security",
+						"authorization-codes",
+						"validate-code"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SESSION ID AWS",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-client-Ip4",
+						"type": "text",
+						"value": "127.0.0.1"
+					},
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/x-www-form-urlencoded"
+					},
+					{
+						"key": "Accept",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Basic NTJjYjg3ZTUtMmM3Mi00ZTI0LWE1YTAtYjJmOGFhOWQ4ZjI3OkYybUYyaEExZkcza1MyaU80bko3d0kyZ1MwY080aUEwalg1dkg0eEw4YVM3a1Q3cEQz"
+					},
+					{
+						"key": "x-consumer-id",
+						"type": "text",
+						"value": "AW1128_CPF"
+					},
+					{
+						"key": "x-session-status",
+						"type": "text",
+						"value": "Mantener"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "grant_type",
+							"value": "password",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "CC-1989637100",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "b7f75128-70f7-4a52-8d1b-c23bcd06f39a",
+							"type": "text"
+						},
+						{
+							"key": "scope",
+							"value": "Credit-limit:write:user",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://api-aws-dev.apps.ambientesbc.com/int/development/v2/security/oauth-sessionid/oauth2/token",
+					"protocol": "https",
+					"host": [
+						"api-aws-dev",
+						"apps",
+						"ambientesbc",
+						"com"
+					],
+					"path": [
+						"int",
+						"development",
+						"v2",
+						"security",
+						"oauth-sessionid",
+						"oauth2",
+						"token"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Autorization Code (Token)",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic ODY0ZGUxZWQtYTk2Mi00YTBiLWFlZGItZDY3OGY2NWY1Mzc1Ok04dEYwc001ZUMxZUo1d0M4ckU1a0c2c0EwZ0o0dUI3YU82Y0w0YVIyeUoxcEg4Zkw1",
+						"type": "text"
+					},
+					{
+						"key": "MessageId",
+						"value": "a82b8ca5-9624-4b11-a592-6c9758dc89",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"data\": [\r\n    {\r\n      \"transactionDate\": \"2019-09-30T15:33:09\",\r\n      \"consumerId\": \"VPI\",\r\n      \"accessToken\": \"TOKEN\",\r\n      \"clientIp\": \"172.27.37.205\",\r\n      \"clientId\": \"APP\",\r\n      \"destinationChannel\": \"BLM\",\r\n      \"idNumber\": \"ID\",\r\n      \"documentType\": \"CC\"\r\n    }\r\n  ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api-aws-dev.apps.ambientesbc.com/int/development/v2/reference-data/party/customer-profile/security/tokens/authorization-codes",
+					"protocol": "https",
+					"host": [
+						"api-aws-dev",
+						"apps",
+						"ambientesbc",
+						"com"
+					],
+					"path": [
+						"int",
+						"development",
+						"v2",
+						"reference-data",
+						"party",
+						"customer-profile",
+						"security",
+						"tokens",
+						"authorization-codes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EncryptedKey DEV",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic ODY0ZGUxZWQtYTk2Mi00YTBiLWFlZGItZDY3OGY2NWY1Mzc1Ok04dEYwc001ZUMxZUo1d0M4ckU1a0c2c0EwZ0o0dUI3YU82Y0w0YVIyeUoxcEg4Zkw1",
+						"type": "text"
+					},
+					{
+						"key": "MessageId",
+						"value": "a82b8ca5-9624-4b11-a592-6c9758dc89",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api-aws-dev.apps.ambientesbc.com/int/development/v2/sales-service/cross-channel/authentication/security/keys/BXM",
+					"protocol": "https",
+					"host": [
+						"api-aws-dev",
+						"apps",
+						"ambientesbc",
+						"com"
+					],
+					"path": [
+						"int",
+						"development",
+						"v2",
+						"sales-service",
+						"cross-channel",
+						"authentication",
+						"security",
+						"keys",
+						"BXM"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SCA 2.0 AWS",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic MTA0ZjVlZGEtNWNkNC00ODc0LTkzNjItNTc5NDM0MGFiMzFhOlMwd1k0ckowY1Y4dVg2akUxbFE3YVAwc001cU82eFM4c0Y1bk03dUk0eFI3dE83cVcz",
+						"type": "text"
+					},
+					{
+						"key": "x-channel-id",
+						"value": "VPI",
+						"type": "text"
+					},
+					{
+						"key": "x-client-ip",
+						"value": "127.0.0.23",
+						"type": "text"
+					},
+					{
+						"key": "x-consumer-id",
+						"value": "VPI",
+						"type": "text"
+					},
+					{
+						"key": "x-user-agent",
+						"value": "Mozilla Firefox",
+						"type": "text"
+					},
+					{
+						"key": "x-device",
+						"value": "PC",
+						"type": "text"
+					},
+					{
+						"key": "x-keep-sesion",
+						"value": "Y",
+						"type": "text"
+					},
+					{
+						"key": "x-user",
+						"value": "1989637079",
+						"type": "text"
+					},
+					{
+						"key": "messageid",
+						"value": "235432%26345",
+						"type": "text"
+					},
+					{
+						"key": "x-ibm-client-id",
+						"value": "104f5eda-5cd4-4874-9362-5794340ab31a",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "x-ibm-client-secret",
+						"value": "S0wY4rJ0cV8uX6jE1lQ7aP0sM5qO6xS8sF5nM7uI4xR7tO7qW3",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "apim-debug",
+						"value": "true",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "grant_type",
+							"value": "password",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "CC-1989637079",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "175C9016B7CFD6A285D0374C15393C635E1C89CCFAC0CABC3D9483E747927BE0EF6B5771DF11F95CD15D9C0052F24BB8D407D6B8FB46628A1A280365BEF8929E1720E22CA76673CAE412E6FDC4F3B4F2A73C8169049B141DF79DCC59497AE8B4C6532EABB726840039986CBBFF4AA3AF33B8C85B5364E1E6CF898587A349724D552D03AA65FDEBD4FB2399F5FF67F2C90841084632CF5B476941EB28B5E30F13BC85C3BD007FD3A097EB15BF329638E45570542CBAD25F2A199E343B3F555586670926845E00A8BC206C4D0DBB8648391287C861E79372B976AE7CA545181FA18E6C9DA9E9F404505DFE3162E519C0422816C673824CF00FCC5B8151D283F725",
+							"type": "text"
+						},
+						{
+							"key": "scope",
+							"value": "Customer-basic:read:user",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://api-aws-dev.apps.ambientesbc.com/int/development/v1/security/security-simple-authentication-oauth/oauth2/authorize",
+					"protocol": "https",
+					"host": [
+						"api-aws-dev",
+						"apps",
+						"ambientesbc",
+						"com"
+					],
+					"path": [
+						"int",
+						"development",
+						"v1",
+						"security",
+						"security-simple-authentication-oauth",
+						"oauth2",
+						"authorize"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,1070 @@
+{
+	"info": {
+		"_postman_id": "aab0d2b1-d35d-4604-a6d0-52552a95d1b7",
+		"name": "Security Reuso",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "DEV",
+			"item": [
+				{
+					"name": "PASO 1: Credenciales (Obtener CA)",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"var response = JSON.parse(responseBody);\r",
+									"pm.globals.set(\"CA\", response.data[0].authorizationCode);"
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"pm.globals.set(\"CA\", \"\");"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {}
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/vnd.bancolombia.v1+json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{AB_DEV}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"data\": [\r\n        {\r\n            \"type\": \"transaction\",\r\n            \"idMessage1\": \"676935290\",\r\n            \"transactionDate\": \"2019-05-29T04:02:42\",\r\n            \"consumerId\": \"PCB\",\r\n            \"clientId\": \"PCB\",\r\n            \"clientIp\": \"127.0.0.1\",\r\n            \"typeTransactionDetail\": \"transactionDetail\",\r\n            \"idMessage2\": \"676935290\",\r\n            \"pinBlock\": \"219BC1C0D8CB3EF3D7B5960DBAD1154794C3B951E535CB7218A6138A261F7B1C6BA87EAD375188F81382B9D7A92E22D1BDA720CC078AFE90D97242E2764FBA452E9ADCDB624FEF222055FC42FEC6214F4527E1DC65AAAB303F60AC171A4020296186235CE2DFB1C86F8117A8BB10984BEA2D8E8390EC9AAD30790885607A8BC3896DE801B32FA4BE4C67007E3302433A5C38C131A0BB8E7E4E5B0E77ECDC194EF3F5B04CF580F58D822CE2C6F965E09488DA46002737BD0A2FF45ADCE5C35CC26376A4C67EBD9E7EFC494184C8B470E7780161D966FCAA0B59B9C32DD6EE7BCA5EFA70159870974DA04AC1B807B8A156C1F8EA471A32C6913F2A85D0CEAD6201\",\r\n            \"keepSession\": \"Y\",\r\n            \"userAgent\": \"Mozilla Firefox\",\r\n            \"device\": \"PC\",\r\n            \"typeUser\": \"user\",\r\n            \"idNumber\": \"1989637100\",\r\n            \"documentType\": \"CC\"\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://internal-apigateway-dev.bancolombia.corp/int/development/v1/sales-service/cross-channel/authentication/security/credentials/authorization-codes",
+							"protocol": "https",
+							"host": [
+								"internal-apigateway-dev",
+								"bancolombia",
+								"corp"
+							],
+							"path": [
+								"int",
+								"development",
+								"v1",
+								"sales-service",
+								"cross-channel",
+								"authentication",
+								"security",
+								"credentials",
+								"authorization-codes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PASO 2: Cambiar CA x Token",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"var response = JSON.parse(responseBody);\r",
+									"pm.globals.set(\"TokenAPIC\", response.data[0].sessionToken);"
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"pm.environment.get(\"CA\");"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/vnd.bancolombia.v1+json"
+							},
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "{{AB_DEV}}"
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/vnd.bancolombia.v1+json"
+							},
+							{
+								"key": "clientTrace",
+								"type": "text",
+								"value": "hola",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"data\": [\r\n    {\r\n      \"grantType\": \"authorization_code\",\r\n      \"clientId\": \"{{CANAL}}\",\r\n      \"redirectUri\": \"http://example.com\",\r\n      \"code\": \"{{CA}}\",\r\n      \"Authorization\": \"Q1BGOmNwZjEyMzQ1Ng==\"\r\n    }\r\n  ]\r\n}"
+						},
+						"url": {
+							"raw": "https://internal-apigateway-dev.bancolombia.corp/int/development/v3/sales-service/cross-channel/authentication/security/authorization-codes/validate-code",
+							"protocol": "https",
+							"host": [
+								"internal-apigateway-dev",
+								"bancolombia",
+								"corp"
+							],
+							"path": [
+								"int",
+								"development",
+								"v3",
+								"sales-service",
+								"cross-channel",
+								"authentication",
+								"security",
+								"authorization-codes",
+								"validate-code"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PASO 3: Cambio Token x Token IBM",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"var response = JSON.parse(responseBody);\r",
+									"pm.globals.set(\"TokenAPIC\", response.data[0].sessionToken);"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/vnd.bancolombia.v1+json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{AB_DEV}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"data\": [\r\n        {\r\n            \"typeTransaction\": \"transaction\",\r\n            \"idMessage1\": \"676935290\",\r\n            \"transactionDate\": \"2019-05-29T04:02:42\",\r\n            \"consumerId\": \"{{CANAL}}\",\r\n            \"accessToken\": \"{{TokenAPIC}}\",\r\n            \"clientIp\": \"127.0.0.1\",\r\n            \"clientId\": \"{{CANAL}}\",\r\n            \"typeTransactionDetail\": \"transactionDetail\",\r\n            \"idMessage2\": \"676935290\",\r\n            \"destinationChannel\": \"CLR\",\r\n            \"typeUser\": \"user\",\r\n            \"idNumber\": \"1989637100\",\r\n            \"documentType\": \"CC\"\r\n        }\r\n    ]\r\n}"
+						},
+						"url": {
+							"raw": "https://internal-apigateway-dev.bancolombia.corp/int/development/v1/sales-service/cross-channel/authentication/security/tokens/authorization-codes",
+							"protocol": "https",
+							"host": [
+								"internal-apigateway-dev",
+								"bancolombia",
+								"corp"
+							],
+							"path": [
+								"int",
+								"development",
+								"v1",
+								"sales-service",
+								"cross-channel",
+								"authentication",
+								"security",
+								"tokens",
+								"authorization-codes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PASO 4: Sesion Id LAN OnPremise",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"pm.environment.get(\"TokenAPIC\");"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-client-Ip4",
+								"type": "text",
+								"value": "127.0.0.1"
+							},
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/x-www-form-urlencoded"
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "{{AB_DEV}}"
+							},
+							{
+								"key": "x-consumer-id",
+								"type": "text",
+								"value": "AW1128_{{CANAL}}"
+							},
+							{
+								"key": "x-session-status",
+								"type": "text",
+								"value": "Validar"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "grant_type",
+									"value": "password",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "CC-1989637100",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "{{TokenAPIC}}",
+									"type": "text"
+								},
+								{
+									"key": "scope",
+									"value": "Customer-basic:read:user",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://internal-apigateway-dev.bancolombia.corp/int/development/v2/security/oauth-sessionid/oauth2/token",
+							"protocol": "https",
+							"host": [
+								"internal-apigateway-dev",
+								"bancolombia",
+								"corp"
+							],
+							"path": [
+								"int",
+								"development",
+								"v2",
+								"security",
+								"oauth-sessionid",
+								"oauth2",
+								"token"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PASO 4: Sesion Id DMZ OnPremise",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"pm.environment.get(\"TokenAPIC\");"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-client-Ip4",
+								"type": "text",
+								"value": "127.0.0.1"
+							},
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/x-www-form-urlencoded"
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "{{AB_DEV}}"
+							},
+							{
+								"key": "x-consumer-id",
+								"type": "text",
+								"value": "AW1128_{{CANAL}}"
+							},
+							{
+								"key": "x-session-status",
+								"type": "text",
+								"value": "Validar"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "grant_type",
+									"value": "password",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "CC-1989637100",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "{{TokenAPIC}}",
+									"type": "text"
+								},
+								{
+									"key": "scope",
+									"value": "Customer-basic:read:user",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://api-dev.bancolombia.corp/int/development/v2/security/oauth-sessionid/oauth2/token",
+							"protocol": "https",
+							"host": [
+								"api-dev",
+								"bancolombia",
+								"corp"
+							],
+							"path": [
+								"int",
+								"development",
+								"v2",
+								"security",
+								"oauth-sessionid",
+								"oauth2",
+								"token"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PASO 4: Sesion Id AWS OnPremise",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"pm.environment.get(\"TokenAPIC\");"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-client-Ip4",
+								"value": "127.0.0.1",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{AB_DEV}}",
+								"type": "text"
+							},
+							{
+								"key": "x-consumer-id",
+								"value": "AW1128_{{CANAL}}",
+								"type": "text"
+							},
+							{
+								"key": "x-session-status",
+								"value": "Validar",
+								"type": "text"
+							},
+							{
+								"key": "apim-debug",
+								"value": "true",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "grant_type",
+									"value": "password",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "CC-1989637100",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "{{TokenAPIC}}",
+									"type": "text"
+								},
+								{
+									"key": "scope",
+									"value": "Customer-basic:read:user",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://api-aws-dev.apps.ambientesbc.com/int/development/v2/security/oauth-sessionid/oauth2/token",
+							"protocol": "https",
+							"host": [
+								"api-aws-dev",
+								"apps",
+								"ambientesbc",
+								"com"
+							],
+							"path": [
+								"int",
+								"development",
+								"v2",
+								"security",
+								"oauth-sessionid",
+								"oauth2",
+								"token"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "QA",
+			"item": [
+				{
+					"name": "PASO 1: Credenciales (Obtener CA)",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"var response = JSON.parse(responseBody);\r",
+									"pm.globals.set(\"CA\", response.data[0].authorizationCode);"
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"pm.globals.set(\"CA\", \"\");"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/vnd.bancolombia.v1+json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{AB_QA}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"data\": [\r\n        {\r\n            \"type\": \"transaction\",\r\n            \"idMessage1\": \"676935290\",\r\n            \"transactionDate\": \"2019-05-29T04:02:42\",\r\n            \"consumerId\": \"PCB\",\r\n            \"clientId\": \"PCB\",\r\n            \"clientIp\": \"127.0.0.1\",\r\n            \"typeTransactionDetail\": \"transactionDetail\",\r\n            \"idMessage2\": \"676935290\",\r\n            \"pinBlock\": \"219BC1C0D8CB3EF3D7B5960DBAD1154794C3B951E535CB7218A6138A261F7B1C6BA87EAD375188F81382B9D7A92E22D1BDA720CC078AFE90D97242E2764FBA452E9ADCDB624FEF222055FC42FEC6214F4527E1DC65AAAB303F60AC171A4020296186235CE2DFB1C86F8117A8BB10984BEA2D8E8390EC9AAD30790885607A8BC3896DE801B32FA4BE4C67007E3302433A5C38C131A0BB8E7E4E5B0E77ECDC194EF3F5B04CF580F58D822CE2C6F965E09488DA46002737BD0A2FF45ADCE5C35CC26376A4C67EBD9E7EFC494184C8B470E7780161D966FCAA0B59B9C32DD6EE7BCA5EFA70159870974DA04AC1B807B8A156C1F8EA471A32C6913F2A85D0CEAD6201\",\r\n            \"keepSession\": \"Y\",\r\n            \"userAgent\": \"Mozilla Firefox\",\r\n            \"device\": \"PC\",\r\n            \"typeUser\": \"user\",\r\n            \"idNumber\": \"1989637100\",\r\n            \"documentType\": \"CC\"\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://internal-apigateway-qa.bancolombia.corp/int/testing/v1/sales-service/cross-channel/authentication/security/credentials/authorization-codes",
+							"protocol": "https",
+							"host": [
+								"internal-apigateway-qa",
+								"bancolombia",
+								"corp"
+							],
+							"path": [
+								"int",
+								"testing",
+								"v1",
+								"sales-service",
+								"cross-channel",
+								"authentication",
+								"security",
+								"credentials",
+								"authorization-codes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PASO 2: Cambiar CA x Token",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"pm.environment.get(\"CA\");"
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"var response = JSON.parse(responseBody);\r",
+									"pm.globals.set(\"TokenAPIC\", response.data[0].sessionToken);"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/vnd.bancolombia.v1+json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Basic ZTAzNWNmYmUtNzE3OC00MjE2LWI1NjItNTgzZTgxMjE3OWZlOkw1cFMybUk1akEzbEozcUU0dVg1eEwybUY2eEs3dVUyZVEybFkyZVc4bFc2aFQzZE41",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/vnd.bancolombia.v1+json",
+								"type": "text"
+							},
+							{
+								"key": "clientTrace",
+								"value": "hola",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"data\": [\r\n    {\r\n      \"grantType\": \"authorization_code\",\r\n      \"clientId\": \"PCB\",\r\n      \"redirectUri\": \"https://qa.grupobancolombia.com/fua/contenido\",\r\n      \"code\": \"GF8ibM\",\r\n      \"Authorization\": \"UENCOnBjYjEyMzQ1Ng==\"\r\n    }\r\n  ]\r\n}"
+						},
+						"url": {
+							"raw": "https://internal-apigateway-qa.bancolombia.corp/int/testing/v3/sales-service/cross-channel/authentication/security/authorization-codes/validate-code",
+							"protocol": "https",
+							"host": [
+								"internal-apigateway-qa",
+								"bancolombia",
+								"corp"
+							],
+							"path": [
+								"int",
+								"testing",
+								"v3",
+								"sales-service",
+								"cross-channel",
+								"authentication",
+								"security",
+								"authorization-codes",
+								"validate-code"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PASO 3: Cambio Token x Token IBM",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"pm.environment.get(\"TokenAPIC\");"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/vnd.bancolombia.v1+json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{AB_QA}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"data\": [\r\n        {\r\n            \"typeTransaction\": \"transaction\",\r\n            \"idMessage1\": \"676935290\",\r\n            \"transactionDate\": \"2019-05-29T04:02:42\",\r\n            \"consumerId\": \"{{CANAL}}\",\r\n            \"accessToken\": \"{{TokenAPIC}}\",\r\n            \"clientIp\": \"127.0.0.1\",\r\n            \"clientId\": \"{{CANAL}}\",\r\n            \"typeTransactionDetail\": \"transactionDetail\",\r\n            \"idMessage2\": \"676935290\",\r\n            \"destinationChannel\": \"CLR\",\r\n            \"typeUser\": \"user\",\r\n            \"idNumber\": \"1989637100\",\r\n            \"documentType\": \"CC\"\r\n        }\r\n    ]\r\n}"
+						},
+						"url": {
+							"raw": "https://internal-apigateway-qa.bancolombia.corp/int/testing/v1/sales-service/cross-channel/authentication/security/tokens/authorization-codes",
+							"protocol": "https",
+							"host": [
+								"internal-apigateway-qa",
+								"bancolombia",
+								"corp"
+							],
+							"path": [
+								"int",
+								"testing",
+								"v1",
+								"sales-service",
+								"cross-channel",
+								"authentication",
+								"security",
+								"tokens",
+								"authorization-codes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PASO 4: Sesion Id LAN OnP",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"pm.environment.get(\"TokenAPIC\");"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-client-Ip4",
+								"type": "text",
+								"value": "127.0.0.1"
+							},
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/x-www-form-urlencoded"
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "{{AB_QA}}"
+							},
+							{
+								"key": "x-consumer-id",
+								"type": "text",
+								"value": "AW1128_{{CANAL}}"
+							},
+							{
+								"key": "x-session-status",
+								"type": "text",
+								"value": "Validar"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "grant_type",
+									"value": "password",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "CC-1989637100",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "{{TokenAPIC}}",
+									"type": "text"
+								},
+								{
+									"key": "scope",
+									"value": "Customer-basic:read:user",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://internal-apigateway-qa.bancolombia.corp/int/testing/v2/security/oauth-sessionid/oauth2/token",
+							"protocol": "https",
+							"host": [
+								"internal-apigateway-qa",
+								"bancolombia",
+								"corp"
+							],
+							"path": [
+								"int",
+								"testing",
+								"v2",
+								"security",
+								"oauth-sessionid",
+								"oauth2",
+								"token"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PASO 4: Sesion Id DMZ OnP",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"pm.environment.get(\"TokenAPIC\");"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-client-Ip4",
+								"type": "text",
+								"value": "127.0.0.1"
+							},
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/x-www-form-urlencoded"
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "{{AB_QA}}"
+							},
+							{
+								"key": "x-consumer-id",
+								"type": "text",
+								"value": "AW1128_{{CANAL}}"
+							},
+							{
+								"key": "x-session-status",
+								"type": "text",
+								"value": "Validar"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "grant_type",
+									"value": "password",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "CC-1989637100",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "{{TokenAPIC}}",
+									"type": "text"
+								},
+								{
+									"key": "scope",
+									"value": "Customer-basic:read:user",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://api-qa.bancolombia.corp/int/testing/v2/security/oauth-sessionid/oauth2/token",
+							"protocol": "https",
+							"host": [
+								"api-qa",
+								"bancolombia",
+								"corp"
+							],
+							"path": [
+								"int",
+								"testing",
+								"v2",
+								"security",
+								"oauth-sessionid",
+								"oauth2",
+								"token"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PASO 4: Sesion Id AWS OnP",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"pm.environment.get(\"TokenAPIC\");"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-client-Ip4",
+								"type": "text",
+								"value": "127.0.0.1"
+							},
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/x-www-form-urlencoded"
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "{{AB_QA}}"
+							},
+							{
+								"key": "x-consumer-id",
+								"type": "text",
+								"value": "AW1128_{{CANAL}}"
+							},
+							{
+								"key": "x-session-status",
+								"type": "text",
+								"value": "Validar"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "grant_type",
+									"value": "password",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "CC-1989637100",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "{{TokenAPIC}}",
+									"type": "text"
+								},
+								{
+									"key": "scope",
+									"value": "Customer-basic:read:user",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://api-aws-qa.apps.ambientesbc.com/int/testing/v2/security/oauth-sessionid/oauth2/token",
+							"protocol": "https",
+							"host": [
+								"api-aws-qa",
+								"apps",
+								"ambientesbc",
+								"com"
+							],
+							"path": [
+								"int",
+								"testing",
+								"v2",
+								"security",
+								"oauth-sessionid",
+								"oauth2",
+								"token"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "AB_DEV",
+			"value": "Basic NTJjYjg3ZTUtMmM3Mi00ZTI0LWE1YTAtYjJmOGFhOWQ4ZjI3OkYybUYyaEExZkcza1MyaU80bko3d0kyZ1MwY080aUEwalg1dkg0eEw4YVM3a1Q3cEQz"
+		},
+		{
+			"key": "AB_QA",
+			"value": "Basic ODVjZjQ3MzYtNjNmYi00YTFlLWFlMmUtOWQ2OGE4MGIyMmFlOk02ZlkzbUs3a0s3d1cydFMydE83cVE3alk1eVYyb1U0eEo0blU3aFczaEs3ZEsyakU2"
+		},
+		{
+			"key": "CANAL",
+			"value": "PCB"
+		}
+	]
+}

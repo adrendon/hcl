@@ -1,0 +1,107 @@
+{
+	// The URL of the Portal server on which a Script Application environment has been installed
+	// and where content will be pushed.  The value's required format is "https://<host>:<port>"
+	// or "http://<host>:<port>" where https is recommended for security reasons.
+	// Required for the list and push commands.  If not provided,
+	// then the tool will prompt for the value.
+	//
+	"scriptPortletServer":"http://10.170.129.120:10039",
+
+	// Specifies whether to accept or reject self-signed certificates when using HTTPS to
+	// communicate with the Portal server.  The default value of false rejects self-signed
+	// certificates.
+	//
+	// "laxSSL": <true|false>,
+
+	// Specifies whether the Portal server requires authentication before executing a  command.
+	// The default value of true causes the tool to require a user name and password to be
+	// provided.  If the server does not require authentication, then the user name and password
+	// are ignored if provided.
+	//
+	// "performAuth": <true|false>,
+
+	// The name of the Portal user for authentication if the tool is challenged for credentials
+	// while attempting to execute a command.  Required for all commands when -performAuth is
+	// true.  If not provided, then the tool will prompt for the value.
+	//
+	"portalUser":"bigbangadm",
+
+	// The password of the Portal user for authentication if the tool is challenged for credentials
+	// while attempting to execute a command.  Required for all commands when -performAuth is true.
+	// If not provided, then the tool will prompt for the value.  NOTE: As a security best practice
+	// you should not store passwords in any configuration file.  Passwords should always be given
+	// as a command line option or entered at the prompt.  The password property is presented here
+	// only to provide brief documentation on its proper use
+	//
+	"portalPassword":"",
+	
+	// Specifies the maximum amount of time, in milliseconds, to wait for the tool to connect
+	// to the Portal server.  The default value is 15000 (15 seconds).  An error will be
+	// generated if Portal does not accept the connection within this time.
+	//
+	// "connectTimeout": <value>,
+
+	// Specifies the maximum amount of time, in milliseconds, to wait for Portal to respond to
+	// a command after a successful connection.  The default value is 15000 (15 seconds).  An
+	// error will be generated if Portal does not respond to the command within this time.
+	//
+	"socketTimeout":60000,
+
+	// Specifies the context of the target virtual Portal to execute the action within.
+	// Required when the content resides in a virtual Portal.  Optional if the content resides
+	// in the root virtual Portal or if the Portal server named by the -scriptPortletServer option
+	// contains only the root virtual Portal. This option has no default value.
+	// "virtualPortalContext": "<value>",
+
+	// Path to the main HTML file of the Script Application.  The main HTML file is
+	// the first file rendered by the portlet.  If -contentRoot is specified, then the HTML
+	// file path must be relative to the value of -contentRoot.  When -prebuiltZIP is
+	// specified the HTML file path must be relative to the top-level directory in the ZIP.
+	// Required for the push command.  If not specified, then the tool attempts to locate a
+	// file named either "index.html" or "index.htm" at the path specified by -contentRoot
+	// or in the top-level directory of the ZIP.  If one of these files is found, then it
+	// is used as the value of the main HTML file.  Otherwise the tool will prompt for the
+	// value.
+	//
+	"mainHtmlFile":"index.html",
+	
+	// The WCM site area in which Script Application instances will be created.  Required by
+	// the push command when -wcmContentID and -wcmContentPath are not given.  The default
+	// value is "Script Portlet Library/Script Portlet Applications/" and corresponds to
+	// the default site area created when the Script Application environment was installed
+	// into Portal.
+	//
+	"wcmSiteArea":"Script Portlet Library/Script Portlet Applications/",
+
+	// Use this option to define an alternate path for the portal context root (/wps)
+	// or the content handler servlet (mycontenthandler).
+	// If you do not use this option, it defaults to /wps/mycontenthandler,
+	// which is correct for a default portal installation.
+	// If you modified either the context root or the content handler servlet paths,
+	// users of the Script Application command line tool need to provide an alternate value
+	// for the contenthandlerPath parameter to ensure the connection to the portal server
+	// from the client tool.  
+	// For example, you would likely use just "/mycontenthandler" for an SEO optimized context.
+    "contenthandlerPath":"/mycontenthandler",
+
+	// Files that match the regular expressions below will be excluded from a content push
+	// that is performed using content from a local folder.  These exclusions do not apply
+	// to pre-built ZIP files.  Add and remove regular expressions to customize the set of
+	// files excluded from your push requests.  The regular expressions must conform to the
+	// rules defined in the JavaDoc for java.util.regex.Pattern.  This parameter cannot
+	// be given as a command line option.
+	//
+	"excludes": [
+		"^bin$",
+		"^lib$",
+		"^src$",
+		"^node_modules$",
+		"^\\.classpath$",
+		"^\\.project$",
+		"^\\..*ignore$",
+		"^sp-config.json$",
+		"^sp-cmdln.log$",
+		"^sp.bat$",
+		"^sp.sh$",
+	],	
+}

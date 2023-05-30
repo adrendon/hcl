@@ -1,0 +1,54 @@
+{
+	"moduleIDs": [
+		"wp_theme_portal_85",
+		"wp_dynamicContentSpots_85",
+		"wp_toolbar_host_view",
+		"wp_portlet_css",
+		"wp_dynBancoTransversal",
+		"internasFenix",
+		"tranversalFenix",
+		"css_wcm_custom",
+		"wp_zendesk_mark"
+	],
+	"deferredModuleIDs": [
+		"wp_theme_portal_edit_85",
+		"wp_toolbar_host_edit",
+		"wp_analytics_tags",
+		"wp_contextmenu_live_object",
+		"wp_content_targeting_cam",
+		"wcm_inplaceEdit",
+		"wp_skin_cam",
+		"wp_client_ext",
+		"wp_status_bar",
+		"wp_theme_menus",
+		"wp_theme_skin_region",
+		"wp_high_contrast",
+		"wp_layout_windowstates",
+		"wp_portal",
+		"wp_analytics_aggregator",
+		"wp_oob_sample_styles",
+		"wp_ic4_wai_resources",
+		"wp_worklight_ext",
+		"wp_sametime_proxy"		
+	],
+	"titles": [
+		{
+			"value":"BasicPlink",
+			"lang":"en"
+		},
+		{
+			"value":"BasicPlink",
+			"lang":"es"
+		}
+	],
+	"descriptions": [
+		{
+			"value":"Perfil basico de internas de Plink",
+			"lang":"en"
+		},
+		{
+			"value":"Perfil basico de internas de Plink",
+			"lang":"es"
+		}
+	]
+}

@@ -1,0 +1,244 @@
+{
+	"info": {
+		"_postman_id": "f58880f9-233d-423a-9f60-6bff980d3daf",
+		"name": "Autenticación-Appiconnect-DEV",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "PASO 1: Credenciales (Obtener CA) AppiConnect",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"var response = JSON.parse(responseBody);\r",
+							"pm.globals.set(\"CA\", response.data[0].authorizationCode);"
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"pm.globals.set(\"CA\", \"\");"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/vnd.bancolombia.v1+json",
+						"type": "text"
+					},
+					{
+						"key": "content-type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "consumeracronym",
+						"value": "PCB",
+						"type": "text"
+					},
+					{
+						"key": "x-ibm-client-id",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "x-ibm-client-secret",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic ZGZmODBlOTgtODBiMi00MDZhLThmMTUtOWM2NzI4ZjU0ODE3OkYxZEE1dE42bFM2bVU0a0Y0YVQ0bEI0eVkxbFU2dFYycFUza0c3Ykw4dVQyaEs1b0Ey",
+						"type": "text"
+					},
+					{
+						"key": "messageId",
+						"value": "c4e6bd04-5149-11e7-b114-b2f933d5fe66",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"data\": [\r\n    {\r\n      \"transactionDate\": \"2021/06/15 14:00:00\",\r\n      \"consumerId\": \"PCB\",\r\n      \"clientId\": \"PCB\",\r\n      \"clientIp\": \"127.0.0.1\",\r\n      \"pinBlock\": \"0A27B826C45935CEAD365E3E6CBCDADB0E6E5FD831A2CA4191BB287B6131E500437144C2337225382746F4E1E6EEDEE1355E354693E64FB7E093ACA6C9DF399BDA6147EF3F4C3698FFEEB1F8E1A16AAF4139BCD85D575D97547B44C459BB56EF51E4B910ECFE61229C2179DA18AA692AC7A90D4243A9A3EF353A02DB408C4914FE9A82FEA629FD4EE524E0459CFA2D5413972A96F2573BD1323E7798EDFC2C0F03202D94F76280FE31254E011069854CC23A298C17C350C51BEC91053B3A27B6DCC48BF63CEFB63DDDF79DD45AA5E6D81B1AEF4ED89ABFAFE1783F67BE21FDDDF7FB27B84D3D52CDAF992351CC53EE5CD08C00445D8B38A805F54E8832F93542\",\r\n      \"keepSession\": \"Y\",\r\n      \"userAgent\": \"Mozilla Firefox\",\r\n      \"device\": \"PC\",\r\n      \"idNumber\": \"77728741\",\r\n      \"documentType\": \"CC\"\r\n    }\r\n  ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api-aws-dev.apps.ambientesbc.com/int/development/v2/reference-data/party/customer-profile/security/credentials/authorization-codes",
+					"protocol": "https",
+					"host": [
+						"api-aws-dev",
+						"apps",
+						"ambientesbc",
+						"com"
+					],
+					"path": [
+						"int",
+						"development",
+						"v2",
+						"reference-data",
+						"party",
+						"customer-profile",
+						"security",
+						"credentials",
+						"authorization-codes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PASO 2: Cambiar CA x Token-ApiConnect",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"var response = JSON.parse(responseBody);\r",
+							"pm.globals.set(\"TokenAPIC\", response.data[0].sessionToken);"
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"pm.environment.get(\"CA\");"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/vnd.bancolombia.v1+json"
+					},
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Basic ZGZmODBlOTgtODBiMi00MDZhLThmMTUtOWM2NzI4ZjU0ODE3OkYxZEE1dE42bFM2bVU0a0Y0YVQ0bEI0eVkxbFU2dFYycFUza0c3Ykw4dVQyaEs1b0Ey"
+					},
+					{
+						"key": "Accept",
+						"type": "text",
+						"value": "application/vnd.bancolombia.v1+json"
+					},
+					{
+						"key": "clientTrace",
+						"type": "text",
+						"value": "Autenticacion PCB"
+					},
+					{
+						"key": "messageId",
+						"value": "5419fc7e-2c3e-11ec-8d3d-0242ac130003",
+						"type": "text"
+					},
+					{
+						"key": "apim-debug",
+						"value": "true",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"data\": [\r\n    {\r\n      \"grantType\": \"authorization-code\",\r\n      \"clientId\": \"PCB\",\r\n      \"redirectUri\": \"http://example.com\",\r\n      \"code\": \"c1RtcN\",\r\n      \"Authorization\": \"Q1BGOmNwZjEyMzQ1Ng==\"\r\n    }\r\n  ]\r\n}"
+				},
+				"url": {
+					"raw": "https://api-aws-dev.apps.ambientesbc.com/int/development/v4/sales-service/cross-channel/authentication/security/authorization-codes/validate-code",
+					"protocol": "https",
+					"host": [
+						"api-aws-dev",
+						"apps",
+						"ambientesbc",
+						"com"
+					],
+					"path": [
+						"int",
+						"development",
+						"v4",
+						"sales-service",
+						"cross-channel",
+						"authentication",
+						"security",
+						"authorization-codes",
+						"validate-code"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Autenticación Apigateway DEV OU-Login",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/vnd.bancolombia.v3+json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/vnd.bancolombia.v3+json",
+						"type": "text"
+					},
+					{
+						"key": "IP",
+						"value": "ANONIMO",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJraWQiOiJpZ2hSVzB5MnJEbFlGWTNRekxUMjNBUlRrXC82eVRsd3lZMXY1U3REZXJ2dz0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiIydTE0M283dHA3cWk4MmU0OWpsYnZsaWMwOCIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoicHJvamVjdFwvcG9ydGFsY29udGVuaWRvcyIsImF1dGhfdGltZSI6MTYzNDIxODIwMiwiaXNzIjoiaHR0cHM6XC9cL2NvZ25pdG8taWRwLnVzLWVhc3QtMS5hbWF6b25hd3MuY29tXC91cy1lYXN0LTFfR3ZvTFRjMlIzIiwiZXhwIjoxNjM0MjIxODAyLCJpYXQiOjE2MzQyMTgyMDIsInZlcnNpb24iOjIsImp0aSI6ImRhZjc5MGE5LTMxZDQtNDhkMy1iMmMwLTY5ZmQ2OTE4ZmRkMCIsImNsaWVudF9pZCI6IjJ1MTQzbzd0cDdxaTgyZTQ5amxidmxpYzA4In0.hiHlt9-S0kWU_3z58c3m6xJYII3_79bAIAWyKeUVp62iDSXlFklTpEKNMIeLWlsXq4dawIKP1HDANCG2-dZppkqPSnCgLYz-JSeF2Ylpb8M-0d84Xkpd1v_cd0tcD53H0AvJpPK8NAY2TplRbmN9PjH-5LWJxBu2QCUvfg6U_R3ku9kSgIEkb-A-W1prp8wXK6ccblSQ27vnUa5gE5Pb9K3qQolnzjd-SaOpq7T_vOKmfdQvaOGGM1yoD7uMpcZjyT-rjjPbx_gwcR3cbYAI4Ir9HmSEWCo4L0Br_MAujo9tMdSTnLI1hmhXlehglDL-fR7DDtLm_z1JXPzS405gMg",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"data\": {\r\n        \"caCode\": \"zhp48r\"\r\n    },\r\n    \"meta\": {\r\n        \"application\": \"Autenticacion\",\r\n        \"applicationId\": \"string\",\r\n        \"channel\": \"Portal\",\r\n        \"operation\": \"Token\",\r\n        \"user\": \"Anonimo\"\r\n    }\r\n}"
+				},
+				"url": {
+					"raw": "https://portal-contenidos-gw-dev.apps.ambientesbc.com/portal-contenidos/ms-auth/login",
+					"protocol": "https",
+					"host": [
+						"portal-contenidos-gw-dev",
+						"apps",
+						"ambientesbc",
+						"com"
+					],
+					"path": [
+						"portal-contenidos",
+						"ms-auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

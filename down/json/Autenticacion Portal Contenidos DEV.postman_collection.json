@@ -1,0 +1,115 @@
+{
+	"info": {
+		"_postman_id": "8c276d9d-4ed1-4446-a46d-8176f276bcbc",
+		"name": "Autenticacion Portal Contenidos DEV",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Token Cognito DEV",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true,
+					"accept-encoding": true,
+					"connection": true,
+					"content-type": true
+				}
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic MzRwdDJxZGkyNTZ0OXFvdmNjZ3BlcGVwcDE6MWpuamU2anFyNDRyMm5uNTM3cDA1Y200aXNxYWtkZGFjMGFvdjNhbmhtcXZvdTNncjd2MA==",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "grant_type",
+							"value": "client_credentials",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://portal-contenidos-dev.auth.us-east-1.amazoncognito.com/oauth2/token",
+					"protocol": "https",
+					"host": [
+						"portal-contenidos-dev",
+						"auth",
+						"us-east-1",
+						"amazoncognito",
+						"com"
+					],
+					"path": [
+						"oauth2",
+						"token"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Autenticación Apigateway DEV",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/vnd.bancolombia.v3+json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/vnd.bancolombia.v3+json",
+						"type": "text"
+					},
+					{
+						"key": "IP",
+						"value": "ANONIMO",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJraWQiOiI4SVdLVFhYbVwvNHo2ZGRyQlwvam04czV0M0ZHekhcLzdwaTdZMmFVNDkwTGVFPSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiI0OGJqcnBydnJmb3NmdW9rYmVzYTZkMWt2ZiIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoicHJvamVjdFwvcG9ydGFsY29udGVuaWRvcyIsImF1dGhfdGltZSI6MTYxNTM4NzE4NiwiaXNzIjoiaHR0cHM6XC9cL2NvZ25pdG8taWRwLnVzLWVhc3QtMS5hbWF6b25hd3MuY29tXC91cy1lYXN0LTFfWDBHeW9YYkJGIiwiZXhwIjoxNjE1MzkwNzg2LCJpYXQiOjE2MTUzODcxODYsInZlcnNpb24iOjIsImp0aSI6IjhiOTg3MTY2LThkNGUtNDA5Zi1iMGJhLTMxZDJhZjUxZDJlZiIsImNsaWVudF9pZCI6IjQ4YmpycHJ2cmZvc2Z1b2tiZXNhNmQxa3ZmIn0.MHU5iklre_hcIR9ghzYdycst60AhJA6AnzYdoVL_zurzLyJ_L3YAYipYMmvLRpRtoJvbp3fr-fGKKrfmFdwioEF_XgNaR2O631H8RmLybu6vnMqiGbe_niPygUSnPQ4OOXqE2gDS9aGOQR0hr-UAEV53cAYHLLPY2mh33Yw7WLVIazPi3RQoxXfe61yfHJkNvJmoWmyFESDF05dSDjLDcTQx4d0osUMI39xeLPSm9jDDtKgEeEqLSSDgDB-Q3HEVNLg_I8bUUZLynGJdzjC-LM_IZzpp0MiM_D0jAOlErmgxU-LL3Uk6VmQnenoosS9jVacYy2UjDZrAxPVLBEAoew",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"data\": {\r\n    \"caCode\":\"aCHoSm\"\r\n  },\r\n  \"meta\": {\r\n    \"application\": \"Autenticacion\",\r\n    \"applicationId\": \"string\",\r\n    \"channel\": \"Portal\",\r\n    \"operation\": \"Token\",\r\n    \"user\": \"Anonimo\"\r\n  }\r\n}"
+				},
+				"url": {
+					"raw": "https://clientes-gw-dev.apps.ambientesbc.com/portal-contenidos/ms-auth/login",
+					"protocol": "https",
+					"host": [
+						"clientes-gw-dev",
+						"apps",
+						"ambientesbc",
+						"com"
+					],
+					"path": [
+						"portal-contenidos",
+						"ms-auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

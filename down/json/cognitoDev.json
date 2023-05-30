@@ -1,0 +1,55 @@
+{
+  "version": 6,
+  "entities": [
+    {
+      "entity": {
+        "type": "Project",
+        "id": "bcfc5c2c-bc0a-483d-925c-e047979c1561",
+        "name": "Auth"
+      },
+      "children": [
+        {
+          "entity": {
+            "type": "Request",
+            "method": {
+              "requestBody": true,
+              "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+              "name": "POST"
+            },
+            "body": {
+              "formBody": {
+                "overrideContentType": true,
+                "encoding": "application/x-www-form-urlencoded",
+                "items": []
+              },
+              "bodyType": "Text",
+              "textBody": "{\n  \"data\": {\n    \"caCode\":\"aCHoSm\"\n  },\n  \"meta\": {\n    \"application\": \"Autenticacion\",\n    \"applicationId\": \"string\",\n    \"channel\": \"Portal\",\n    \"operation\": \"Token\",\n    \"user\": \"Anonimo\"\n  }\n}"
+            },
+            "uri": {
+              "query": {
+                "delimiter": "&",
+                "items": []
+              },
+              "scheme": {
+                "secure": true,
+                "name": "https",
+                "version": "V11"
+              },
+              "host": "portal-contenidos-dev-ou.auth.us-east-1.amazoncognito.com",
+              "path": "/oauth2/token"
+            },
+            "id": "1acd8399-fc91-46e9-ac8f-860fc4124c66",
+            "name": "CognitoDev",
+            "headers": [
+              {
+                "enabled": true,
+                "name": "Authorization",
+                "value": "Bearer eyJraWQiOiJTYXdZdmxyR2pRT0JBSENoQzNZSm5XSWFpMTNyQVVFazFYZ2ZpVVRQbWtvPSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiJrbjgzN25obzRtazgwZ241aGM4MjM5cDg4IiwidG9rZW5fdXNlIjoiYWNjZXNzIiwic2NvcGUiOiJwcm9qZWN0XC9wb3J0YWxjb250ZW5pZG9zIiwiYXV0aF90aW1lIjoxNjIyMjM4NjUxLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAudXMtZWFzdC0xLmFtYXpvbmF3cy5jb21cL3VzLWVhc3QtMV9ZNnpaNnpUc2YiLCJleHAiOjE2MjIyNDIyNTEsImlhdCI6MTYyMjIzODY1MSwidmVyc2lvbiI6MiwianRpIjoiNzE1OWNiNDYtOTFmMi00Yjc4LTg3NmUtMWVjZTRlMDM1NmZlIiwiY2xpZW50X2lkIjoia244MzduaG80bWs4MGduNWhjODIzOXA4OCJ9.b6OHrn7W19ZyyVQTFjJSPZAkqeacrHExy9DM7s2zqWRxXLo689Ia7YuifPKlPovZVvFsxvIzh2z3uRqVCgWbqEMZ2SQfZkNYTpjprcftbzAKef7cIWacagIEpJOpjF4E5-JoJVJZhrnn_ftjcgdT4epyAVCS9Yr4BbFyduQ_oJ_8kJeT0LmcVm9Veg9O534t6UoX8N7siifqco-RDOcHMfzhGFkwy9qCVrmHVTsTxeos-PI71QwqNbS0ndIFEPRJApfZ4zW--z3hccrtwB8oNMQ8eUz64_atNLnrIkEaIJurjvN81q7ioqh_5pjwD6qqrFyptw836MZ-s8WTBGn9dQ"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

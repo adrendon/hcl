@@ -1,0 +1,104 @@
+{
+    "data": {
+        "tickets": [
+            {
+                "id": 691010,
+                "product": {
+                    "id": 4,
+                    "name": "HIPOTECARIO"
+                },
+                "stages": {
+                    "current": {
+                        "tasks": {
+                            "current": {
+                                "id": 7,
+                                "name": "Evaluar estado de inmueble",
+                                "description": "Se realiza la evaluación del inmueble para asignar un valor comercial"
+                            },
+                            "total": 1
+                        },
+                        "id": 7,
+                        "position": 2,
+                        "name": "AVALÚO",
+                        "description": "Etapa creada para simular el avalúo de un crédito hipotecario",
+                        "state": "proceeding"
+                    },
+                    "total": 5
+                },
+                "parameters": [
+                    {
+                        "key": "Número de cédula",
+                        "value": "73321401"
+                    },
+                    {
+                        "key": "Nombre del cliente",
+                        "value": "Evelyn Pereira Rúa"
+                    }
+                ]
+            },
+            {
+                "id": 691009,
+                "product": {
+                    "id": 2,
+                    "name": "CONTRACARGOS"
+                },
+                "stages": {
+                    "current": {
+                        "tasks": {
+                            "current": {
+                                "id": 4,
+                                "name": "Cerrar radicado",
+                                "description": "Cierre de radicado a cargo de un analista Bancolombia"
+                            },
+                            "total": 1
+                        },
+                        "id": 4,
+                        "position": 5,
+                        "name": "CERRADO",
+                        "description": "Etapa creada para simular el cierre de un radicado en SAP",
+                        "state": "completed"
+                    },
+                    "total": 5
+                },
+                "parameters": [
+                    {
+                        "key": "Días_estimados_de_solución",
+                        "value": "2"
+                    },
+                    {
+                        "key": "Nombre del cliente",
+                        "value": "Áúrélíó ANDRES MARIN PEREA"
+                    },
+                    {
+                        "key": "Número de radicado",
+                        "value": "A664972376"
+                    },
+                    {
+                        "key": "Fecha de creación",
+                        "value": "06/07/2021"
+                    },
+                    {
+                        "key": "Fecha estimada de solución",
+                        "value": "06/07/2021"
+                    }
+                ]
+            }
+        ],
+        "products": [
+            {
+                "id": 2,
+                "name": "CONTRACARGOS"
+            },
+            {
+                "id": 4,
+                "name": "HIPOTECARIO"
+            }
+        ]
+    },
+    "meta": {
+        "messageId": null,
+        "requestTimeStamp": null,
+        "responseSize": 2,
+        "version": "3.0"
+    }
+}

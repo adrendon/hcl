@@ -1,0 +1,39 @@
+{
+    "moduleIDs": [
+        "wp_theme_portal_85",
+        "wp_dynamicContentSpots_85",
+        "st_jquery",
+        "wp_toolbar_host_view",
+        "wp_portlet_css",
+        "wp_dynBancoTransversal",
+        "bcn_reset_wcm",
+        "bcn_modulos_trasversales",
+        "bcn_modulos_mercables",
+        "bcn_herramientas"
+    ],
+    "deferredModuleIDs": [
+        "wp_worklight_ext",
+        "wp_toolbar_host_edit",
+        "wp_theme_portal_edit_85",
+        "wp_analytics_tags",
+        "wp_contextmenu_live_object",
+        "wp_content_targeting_cam",
+        "wcm_inplaceEdit",
+        "wp_skin_cam",
+        "wp_client_ext",
+        "wp_status_bar",
+        "wp_theme_menus",
+        "wp_theme_skin_region",
+        "wp_high_contrast",
+        "wp_layout_windowstates",
+        "wp_portal",
+        "wp_analytics_aggregator",
+        "wp_oob_sample_styles",
+        "wp_ic4_wai_resources",
+        "wp_sametime_proxy"
+    ],
+    "titles": [{
+        "value": "bcn_herramientas",
+        "lang": "en"
+    }]
+}

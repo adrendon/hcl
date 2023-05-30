@@ -1,0 +1,336 @@
+{
+	"info": {
+		"_postman_id": "65327f03-64a0-4a20-93fd-b23b625769a4",
+		"name": "ms_tracking",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "statusNoveltiesProducts-DEV",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/vnd.bancolombia.v3+json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/vnd.bancolombia.v3+json",
+						"type": "text"
+					},
+					{
+						"key": "IP",
+						"value": "Anonimo",
+						"type": "text"
+					},
+					{
+						"key": "Token",
+						"value": "eyJhbGciOiJIUzI1NiJ9.eyJ2YWx1ZSI6IntcImlkXCI6XCJINUd5aFNcIixcImNhQ29kZVwiOlwiSDVHeWhTXCIsXCJ0b2tlblwiOlwiMTRjODIxZWItMjhjNC00Y2IxLTkyYmItODY5YmY4MGM3YzNmXCIsXCJkb2N1bWVudFR5cGVcIjpcIkNDXCIsXCJkb2N1bWVudE51bWJlclwiOlwiMTk4OTYzNzEwMFwiLFwiZGF0ZVRpbWVcIjpcIjIwMjEtMDQtMjIgMTk6MTM6MzFcIixcImV4cGlyYXRpb25UaW1lXCI6MTYxOTEyMjQxMSxcIm5hbWVcIjpcIkxVSVMgRkVSTkFORE8gTUFSR0FSSVRBIEdPTlpBTEVaXCJ9Iiwic3ViIjoiSDVHeWhTIiwiaWF0IjoxNjE5MTE4ODEzLCJleHAiOjE2MTkxMjI0MTN9.6WnYdr5RjmJgLH2_bKn0ijZ3ZRMysgHRZM802xnr2_s",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"meta\": {\r\n        \"operation\": \"statusnoveltiesproducts\",\r\n        \"applicationId\": \"tracking\",\r\n        \"application\": \"ApiTracking\",\r\n        \"channel\": \"Portal\",    \r\n        \"user\": \"Anonimo\"\r\n    },\r\n    \"data\": {\r\n        \"orderBy\":\"\",\r\n        \"product\":\"\",\r\n        \"page\":\"\",\r\n        \"perPage\":\"\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://clientes-ext-dev.apps.ambientesbc.com/portal-contenidos/tracking/statusNoveltiesProducts",
+					"protocol": "https",
+					"host": [
+						"clientes-ext-dev",
+						"apps",
+						"ambientesbc",
+						"com"
+					],
+					"path": [
+						"portal-contenidos",
+						"tracking",
+						"statusNoveltiesProducts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "statusNoveltiesProducts-QA",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/vnd.bancolombia.v3+json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/vnd.bancolombia.v3+json",
+						"type": "text"
+					},
+					{
+						"key": "IP",
+						"value": "Anonimo",
+						"type": "text"
+					},
+					{
+						"key": "Token",
+						"value": "eyJhbGciOiJIUzI1NiJ9.eyJ2YWx1ZSI6IntcImlkXCI6XCJvUU1RTFNcIixcImNhQ29kZVwiOlwib1FNUUxTXCIsXCJ0b2tlblwiOlwiMTI0MDExYTgtMjA5YS00Y2M2LWI5ODctNDJkMzJmMmUyMGYzXCIsXCJkb2N1bWVudFR5cGVcIjpcIlRJXCIsXCJkb2N1bWVudE51bWJlclwiOlwiMTk4OTY2ODI0NlwiLFwiZGF0ZVRpbWVcIjpcIjIwMjEtMDYtMjkgMTU6MTk6MzVcIixcImV4cGlyYXRpb25UaW1lXCI6MTYyNDk4MzU3NSxcIm5hbWVcIjpcIkZBQklPIFJFU1RSRVBPIEJFQ0VSUkFcIixcImxhc3RFbnRyeURhdGVcIjpcIjIwMjEvMDYvMjlcIixcImxhc3RIb3VyXCI6XCIwODozOTozOFwifSIsInN1YiI6Im9RTVFMUyIsImlhdCI6MTYyNDk3OTk3NiwiZXhwIjoxNjI0OTgzNTc2fQ.e64zfi3RNOG20oJJinnjYFtZXkTvzSOnZC0KXvPfitc",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"meta\": {\r\n        \"operation\": \"statusnoveltiesproducts\",\r\n        \"applicationId\": \"tracking\",\r\n        \"application\": \"ApiTracking\",\r\n        \"channel\": \"Portal\",    \r\n        \"user\": \"Anonimo\"\r\n    },\r\n    \"data\": {\r\n        \"orderBy\":\"\",\r\n        \"product\":\"\",\r\n        \"page\":\"\",\r\n        \"perPage\":\"\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://clientes-ext-qa.apps.ambientesbc.com/portal-contenidos/tracking/statusNoveltiesProducts",
+					"protocol": "https",
+					"host": [
+						"clientes-ext-qa",
+						"apps",
+						"ambientesbc",
+						"com"
+					],
+					"path": [
+						"portal-contenidos",
+						"tracking",
+						"statusNoveltiesProducts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "detailNoveltiesProduct-DEV",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/vnd.bancolombia.v3+json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/vnd.bancolombia.v3+json",
+						"type": "text"
+					},
+					{
+						"key": "IP",
+						"value": "Anonimo",
+						"type": "text"
+					},
+					{
+						"key": "Recaptcha",
+						"value": "6LeIxAcTAAAAAGG-vFI1TnRWxMZNFuojJ4WifJWe",
+						"type": "text"
+					},
+					{
+						"key": "Token",
+						"value": "4546546",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"meta\": {\r\n        \"operation\": \"statusnoveltiesproducts\",\r\n        \"applicationId\": \"tracking\",\r\n        \"application\": \"ApiTracking\",\r\n        \"channel\": \"Portal\",\r\n        \"user\": \"Anonimo\"\r\n    },\r\n    \"data\": {\r\n        \"ticketId\": \"22\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://clientes-ext-dev.apps.ambientesbc.com/portal-contenidos/tracking/detailNoveltiesProduct",
+					"protocol": "https",
+					"host": [
+						"clientes-ext-dev",
+						"apps",
+						"ambientesbc",
+						"com"
+					],
+					"path": [
+						"portal-contenidos",
+						"tracking",
+						"detailNoveltiesProduct"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "detailNoveltiesProduct-QA",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/vnd.bancolombia.v3+json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/vnd.bancolombia.v3+json",
+						"type": "text"
+					},
+					{
+						"key": "IP",
+						"value": "Anonimo",
+						"type": "text"
+					},
+					{
+						"key": "Recaptcha",
+						"value": "6LeIxAcTAAAAAGG-vFI1TnRWxMZNFuojJ4WifJWe",
+						"type": "text"
+					},
+					{
+						"key": "Token",
+						"value": "eyJhbGciOiJIUzI1NiJ9.eyJ2YWx1ZSI6IntcImlkXCI6XCJTaDdZcnFcIixcImNhQ29kZVwiOlwiU2g3WXJxXCIsXCJ0b2tlblwiOlwiMDNjYzc3OGUtYTQxMS00Y2IxLTgwNGUtODFkYjlhMGI2NGJjXCIsXCJkb2N1bWVudFR5cGVcIjpcIlRJXCIsXCJkb2N1bWVudE51bWJlclwiOlwiMTk4OTY2ODI0NlwiLFwiZGF0ZVRpbWVcIjpcIjIwMjEtMDYtMjUgMTQ6NDg6MzdcIixcImV4cGlyYXRpb25UaW1lXCI6MTYyNDYzNjExNyxcIm5hbWVcIjpcIkZBQklPIFJFU1RSRVBPIEJFQ0VSUkFcIixcImxhc3RFbnRyeURhdGVcIjpcIjIwMjEvMDYvMjRcIixcImxhc3RIb3VyXCI6XCIxMTo1ODo0MVwifSIsInN1YiI6IlNoN1lycSIsImlhdCI6MTYyNDYzMjUxOCwiZXhwIjoxNjI0NjM2MTE4fQ.HGHTfSlAumAGk4SkM54PKrr0VdBdmAjMgr5aLeW87rE",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"meta\": {\r\n        \"operation\": \"detailnoveltiesproducts\",\r\n        \"applicationId\": \"tracking\",\r\n        \"application\": \"ApiTracking\",\r\n        \"channel\": \"Portal\",\r\n        \"user\": \"Anonimo\"\r\n    },\r\n    \"data\": {\r\n        \"ticketId\": \"678914\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://clientes-ext-qa.apps.ambientesbc.com/portal-contenidos/tracking/detailNoveltiesProduct",
+					"protocol": "https",
+					"host": [
+						"clientes-ext-qa",
+						"apps",
+						"ambientesbc",
+						"com"
+					],
+					"path": [
+						"portal-contenidos",
+						"tracking",
+						"detailNoveltiesProduct"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteToken-QA",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/vnd.bancolombia.v3+json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/vnd.bancolombia.v3+json",
+						"type": "text"
+					},
+					{
+						"key": "IP",
+						"value": "Anonimo",
+						"type": "text"
+					},
+					{
+						"key": "Token",
+						"value": "eyJhbGciOiJIUzI1NiJ9.eyJ2YWx1ZSI6IntcImlkXCI6XCJvUU1RTFNcIixcImNhQ29kZVwiOlwib1FNUUxTXCIsXCJ0b2tlblwiOlwiMTI0MDExYTgtMjA5YS00Y2M2LWI5ODctNDJkMzJmMmUyMGYzXCIsXCJkb2N1bWVudFR5cGVcIjpcIlRJXCIsXCJkb2N1bWVudE51bWJlclwiOlwiMTk4OTY2ODI0NlwiLFwiZGF0ZVRpbWVcIjpcIjIwMjEtMDYtMjkgMTU6MTk6MzVcIixcImV4cGlyYXRpb25UaW1lXCI6MTYyNDk4MzU3NSxcIm5hbWVcIjpcIkZBQklPIFJFU1RSRVBPIEJFQ0VSUkFcIixcImxhc3RFbnRyeURhdGVcIjpcIjIwMjEvMDYvMjlcIixcImxhc3RIb3VyXCI6XCIwODozOTozOFwifSIsInN1YiI6Im9RTVFMUyIsImlhdCI6MTYyNDk3OTk3NiwiZXhwIjoxNjI0OTgzNTc2fQ.e64zfi3RNOG20oJJinnjYFtZXkTvzSOnZC0KXvPfitc",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"meta\": {\r\n        \"operation\": \"deleteToken\",\r\n        \"applicationId\": \"tracking\",\r\n        \"application\": \"ApiTracking\",\r\n        \"channel\": \"Portal\",    \r\n        \"user\": \"Anonimo\"\r\n    },\r\n    \"data\": {\r\n        \"orderBy\":\"\",\r\n        \"product\":\"\",\r\n        \"page\":\"\",\r\n        \"perPage\":\"\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://clientes-ext-qa.apps.ambientesbc.com/portal-contenidos/tracking/deleteToken",
+					"protocol": "https",
+					"host": [
+						"clientes-ext-qa",
+						"apps",
+						"ambientesbc",
+						"com"
+					],
+					"path": [
+						"portal-contenidos",
+						"tracking",
+						"deleteToken"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Health-Check",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {},
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "HEAD",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/vnd.bancolombia.v3+json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/vnd.bancolombia.v3+json",
+						"type": "text"
+					},
+					{
+						"key": "IP",
+						"value": "ANONIMO",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJraWQiOiJTYXdZdmxyR2pRT0JBSENoQzNZSm5XSWFpMTNyQVVFazFYZ2ZpVVRQbWtvPSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiJrbjgzN25obzRtazgwZ241aGM4MjM5cDg4IiwidG9rZW5fdXNlIjoiYWNjZXNzIiwic2NvcGUiOiJwcm9qZWN0XC9wb3J0YWxjb250ZW5pZG9zIiwiYXV0aF90aW1lIjoxNjIzMTY4NTg5LCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAudXMtZWFzdC0xLmFtYXpvbmF3cy5jb21cL3VzLWVhc3QtMV9ZNnpaNnpUc2YiLCJleHAiOjE2MjMxNzIxODksImlhdCI6MTYyMzE2ODU4OSwidmVyc2lvbiI6MiwianRpIjoiN2ZkNWQ0MmQtN2YzNC00MjEzLTgwNjgtYjU1MWM4NWQwYzgwIiwiY2xpZW50X2lkIjoia244MzduaG80bWs4MGduNWhjODIzOXA4OCJ9.q_NMgTtEPAUbWL1MPqmv0Qtpu0cjBeKupU-IEPYoA-sGJ9RejKarLZvkHQwrnzhXOae84ZfBhXORA3fpqtJxb0GQ18XPh4x6eWO82WQAUn4244maa_V6Z24g67ax4KvQViE3R4V-A7hR0qyEAD96StgoeB9zolnD54Ck0ZHEQYTTrdV_IMdSx4-hLBrdBFJdNcDGDKfSW6XZzoB0XlY_owN7NkzhXy1gHLzdj6SgCavdlBA7dwySO7Btn4c7pYXfvpfb8bRltbMAk4y2qnVbf7qUG2TPL7iw0sZvVJLmIAfh6WvkuAi5P0yg5RBzd-d0Dg6RYaw4Ha9-zPfVSVR5zQ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"data\": {\r\n    \"caCode\":\"9t6Ech\"\r\n  },\r\n  \"meta\": {\r\n    \"application\": \"Autenticacion\",\r\n    \"applicationId\": \"string\",\r\n    \"channel\": \"Portal\",\r\n    \"operation\": \"Token\",\r\n    \"user\": \"Anonimo\"\r\n  }\r\n}"
+				},
+				"url": {
+					"raw": "https://clientes-ext-qa.apps.ambientesbc.com/portal-contenidos/tracking/health",
+					"protocol": "https",
+					"host": [
+						"clientes-ext-qa",
+						"apps",
+						"ambientesbc",
+						"com"
+					],
+					"path": [
+						"portal-contenidos",
+						"tracking",
+						"health"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

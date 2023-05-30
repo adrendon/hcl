@@ -1,0 +1,100 @@
+{
+    "modules": [
+        {
+            "id": "tranversalFenix",
+            "prereqs": [],
+            "contributions": [
+                {
+                    "type": "head",
+                    "sub-contributions": [
+                        {
+                            "type": "css",
+                            "uris": [
+                                {
+                                    "value": "/css/appFenix/objects/header/header.min.css"
+                                },
+                                {
+                                    "value": "/css/appFenix/objects/header/header.css",
+                                    "type": "debug"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "css",
+                            "uris": [
+                                {
+                                    "value": "/css/appFenix/objects/footer/footer.min.css"
+                                },
+                                {
+                                    "value": "/css/appFenix/objects/footer/footer.css",
+                                    "type": "debug"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "css",
+                            "uris": [
+                                {
+                                    "value": "/css/appFenix/libraries/elementor-icons.min.css"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "css",
+                            "uris": [
+                                {
+                                    "value": "/css/appFenix/libraries/solid.min.css"
+                                }
+                            ]
+                        },
+						{
+							"type": "css",
+							"uris": [
+								{ 
+									"value": "/css/appFenix/objects/fenix.min.css"
+								},
+								{
+									"value": "/css/appFenix/objects/fenix.css", 
+									"type": "debug"
+								}
+							]
+						},
+                        {
+                            "type": "css",
+                            "uris": [
+                                {
+                                    "value": "/css/appFenix/libraries/fontawesome.min.css"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "css",
+                            "uris": [
+                                {
+                                    "value": "/css/appFenix/objects/fonts.google.css"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "config",
+                    "sub-contributions": [
+                        {
+                            "type":"js",
+                            "uris": [
+                                {
+									"value":"/js/appFenix/header/header.min.js"
+								},
+								{
+									"value":"/js/appFenix/header/header.js",
+									"type":"debug"
+								}
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
