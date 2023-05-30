@@ -1,0 +1,89 @@
+Diccionario de datos SAP ABAP
+
+Quiz 1:
+
+____ describe los atributos técnicos
+
+Respuesta: Dominio
+
+
+Indique Verdadero o Falso. Una estructura se define como una tabla en el Diccionario ABAP y luego se puede acceder a ella desde los programas ABAP.
+
+Respuesta: Cierto
+
+_______ es el atajo para la ejecución
+
+Respuesta: f8
+
+_____________sincronizar el acceso a los mismos datos por más de un programa
+
+Respuesta: Clase de entrega
+
+Indique Verdadero o Falso. La clase de datos determina en qué espacio de tabla se almacena la tabla cuando se crea en la base de datos
+
+Respuesta: Cierto
+
+El elemento de datos puede apuntar a
+
+Respuesta: un dominios
+
+El diccionario de datos también se llama ______________
+
+Respuesta: DDIC
+
+________ es el atajo para la ayuda de búsqueda
+
+Respuesta: f4
+
+Tipos de datos de SAP
+
+Respuesta: todo lo mencionado
+
+___________ es la ubicación de almacenamiento centralizada para la información sobre los datos que se almacenan en una base de datos
+
+Respuesta: Diccionario de datos
+
+Tipos de ayuda a la búsqueda
+
+Respuesta: Tanto la busqueda elemental como la colectiva ayudan
+
+Diccionario de datos es ______
+
+Respuesta: Sistema Independiente
+
+______ controla el transporte de los datos en la tabla
+
+Respuesta: Clase de datos
+
+tcode utilizado para acceder al diccionario de datos
+
+Respuesta: SE11
+
+Objetos del diccionario de datos
+
+Respuesta: todos los mencionados
+
+Estado Verdadero o Falso. El tipo de datos especifica qué tipo de valores puede contener una columna de tabla
+
+Respuesta: verdadero
+
+_______ es el acceso directo para la vista de ayuda
+
+Respuesta: f4
+
+_______ es la interfaz entre el diccionario ABAP y el sistema de administración de bases de datos subyacente
+
+Respuesta: utilidad de base de datos
+
+Un indice es una copia de una tabla de base de datos que se ha reeducido a determinados campos de forma no ordenada
+
+Respuesta: falso
+
+Estado Verdadero o Falso. Una vista combina los datos distribuidos en varias tablas. Los tipos de vistas son vista Base de datos, Vista de proyección, Vista de mantenimiento, Vista de ayuda.
+
+Respuesta: verdadero
+
+______________ son los contenedores utilizados para almacenar datos en forma de registros
+
+Respuesta: Mesas
+

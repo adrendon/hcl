@@ -1,0 +1,515 @@
+Pasos 1
+1 - 3804601 Desarpovisionar filial Banclombia Cayman
+Categoria : Cambio en Produccion.Bancolombia.Estandar.Administrativo.Portales
+
+Aprobacion Jefe Plataforma -- OC Disponibilidad Servicios Infraestructura Jefes	
+Implementación del Cambio -- OC Disponibilidad Servicios Integrales Contenidos Kyndryl	
+
+Elementos de configuración: Portal de Contenidos Grupo Bancolombia_AW1218001
+
+Resumen: Portal de Contenidos Bancolombia Capital - Desaprovisionar la filial Bancolombia Cayman
+
+Cordial saludo!
+
+Se solicita al área de Sistema operativo desaprovisionar las siguientes ip's antereriormente ultizados en Bancolombia Cayman ya que seran usados para el nuevo dominio de bancolombiacapital.com
+
+- cayman.grupobancolombia.com
+
+WASHINGTON 04
+
+IHS02 -> 10.170.240.45
+IHS03 -> 10.170.240.46
+IP Publica NETSCALER -> 169.45.202.159
+
+DALLAS 13
+
+IHS02 -> 10.73.239.170
+IHS03 -> 10.73.239.171
+IP Publica NETSCALER -> 169.62.185.110
+
+Por favor adicionar esos mismos segmentos en los ihs 5 y 6 de la version 9, 10.170.194.139 10.170.194.140 10.73.73.211 10.73.73.212
+
+
+---------------------------------------------------------------
+Paso 2
+
+oc: 3775200
+Categoria: Cambio en Produccion.Bancolombia.Estandar.Aprovisionamiento.Portales
+
+Resumen: Aprovisionamiento de Virtual Server en PROD -> bancolombiacapital.com
+
+Se requiere creación de Virtual Server en PROD a nivel de Balanceador para bancolombiacapital.com (reuso IP's antigua filial Bancolombia Cayman)
+
+
+WASHINGTON 04
+
+IHS02 -> 10.170.240.45
+IHS03 -> 10.170.240.46
+IP Publica NETSCALER -> 169.45.202.159
+
+DALLAS 13
+
+IHS02 -> 10.73.239.170
+IHS03 -> 10.73.239.171
+IP Publica NETSCALER -> 169.62.185.110
+
+
+Dependencia	Entorno Mercadeo - EVC Ventas Dig y Tecno de Mercadeo - Portal de Contenidos	Dirección - Gerencia - Jefatura del Promotor que registra el Cambio.
+Clasificación	Software	Clasificación del Cambio
+Servicio/Módulo/Aplicación/Canal	Portal de Contenidos Bancolombia Capital	Servicios, Módulos, Aplicaciones y/o Canales afectados.
+Equipo	Portal de Contenidos Bancolombia Capital	Nombre del Equipo en que se implementará el Cambio.
+Origen	Solicitud Usuario	Origen del Cambio.
+
+Workflow
+Aprobacion Jefe Plataforma ---  OC Disponibilidad Servicios Infraestructura Jefes
+Análisis del Cambio  --- 	OC Disponibilidad Servicios Integrales Contenidos Kyndryl
+Gestión Licenciamiento  --  OC Infraestructura Plataformas Centrales Gestion Configuracion y Activos Kyndryl
+Implementación del Cambio -- OC Disponibilidad Servicios Integrales Contenidos Kyndryl	
+
+
+-------------------------------------------------------------
+
+
+Paso 3
+
+oc: 3775215
+categoria: Cambio en Produccion.Bancolombia.Estandar.Aprovisionamiento.Portales
+
+Resumen: Aprovisionamiento de IHS y Portal en PROD -> bancolombiacapital.com
+
+Se requiere aprovisionar nuevos IHS's y Portal en PROD para bancolombiacapital.com (reuso de IP's antigua filial Bancolombia Cayman)
+
+WASHINGTON 04
+
+IHS02 -> 10.170.240.45
+IHS03 -> 10.170.240.46
+IP Publica NETSCALER -> 169.45.202.159
+
+DALLAS 13
+
+IHS02 -> 10.73.239.170
+IHS03 -> 10.73.239.171
+IP Publica NETSCALER -> 169.62.185.110
+
+Elementos de configuración (una vez sea ejecutada la oc para [Desarpovisionar filial banclombia cayman]) se generan los nuevos elementos.
+
+xrbcpihs05d_wompi	Web Server	Software Integracion	 
+xrbcpihs05w_wompi	Web Server	Software Integracion	 
+xrbcpihs06d_wompi	Web Server	Software Integracion	 
+xrbcpihs06w_wompi
+
+
+
+----------------------------------------
+
+Paso 4
+
+oc: 3786221
+categoria: Cambio en Produccion.Bancolombia.Estandar.Administrativo.Portales
+
+Resumen: Portal de Contenidos Bancolombia Capital - Solicitud Generación Request en Ambiente de Producción para Firma del Certificado Digital de bancolombiacapital.com
+
+Se requiere la generación de un nuevo Request para el dominio bancolombiacapital.com,
+
+Se proporcionan los siguientes datos:
+
+Common Name (CN) www.bancolombiacapital.com
+Organizational Unit (OU) VICEPRESIDENCIA DE TECNOLOGIA
+Organization (O) BANCOLOMBIA S.A.
+Locality (L) MEDELLIN
+State (ST) ANTIOQUIA
+Country (C) CO
+
+Key Size 2048 bits
+Key Algorithm RSA
+Sig. Algorithm sha256WithRSAEncryption
+
+SANs: bancolombiacapital.com, www.bancolombiacapital.com
+
+workflow:
+
+Aprobacion Jefe Plataforma -- OC Disponibilidad Servicios Infraestructura Jefes	
+Implementación del Cambio -- OC Disponibilidad Servicios Integrales Contenidos Kyndryl	
+
+
+Gestion de la configuracion: Portal de Contenidos Grupo Bancolombia_AW1218001
+
+Propiedades: 
+
+Dependencia	Entorno Mercadeo - EVC Ventas Dig y Tecno de Mercadeo - Portal de Contenidos	Dirección - Gerencia - Jefatura del Promotor que registra el Cambio.
+Clasificación	Software	Clasificación del cambio.
+Servicio/Módulo/Aplicación/Canal	Portal de Contenidos Bancolombia Capital	Servicios, Módulos, Aplicaciones y/o Canales afectados.
+Equipo	10.170.240.13, 10.170.240.14, 10.73.239.137, 10.73.239.138	Nombre del Equipo en que se implementará el Cambio.
+Origen	Certificado Digital	Origen del Cambio.
+Código del Origen	NA	Registrar el Número del Origen del Cambio.
+Tipo de Novedad	Instalación	Tipo de Novedad a realizar en el Cambio.
+Actividad	Ajuste vulnerabilidades de seguridad	Actividades permitidas para la Plataforma en este Tipo de Cambio.
+SLA	No Aplica	
+Contacto	Edinson Jair Beltran Alvarez	Nombre del Contacto Responsable del Cambio
+
+
+---------------------------------------------------------------------------------------------
+
+Posible paso ¿? : 
+
+oc: 3797604
+ctaegoria: Paso a Ambientes NO Productivos.Bancolombia.Gcia Plataformas Centrales.Administrativo.Portales
+
+Solicitud de permisos para usuarios Softlayer
+
+Se requiere dar permisos a los siguientes usuarios a las direcciones suministradas para el servidor PROD de bancolombiacapital:
+
+Usuarios:
+
+- listado de usuarios -- Comentar a Mauro para solicitar usuarios a chef
+
+Direcciones para asignar permisos
+
+WASHINGTON 04
+
+IHS02 -> 10.170.240.45
+IHS03 -> 10.170.240.46
+IP Publica NETSCALER -> 169.45.202.159
+
+DALLAS 13
+
+IHS02 -> 10.73.239.170
+IHS03 -> 10.73.239.171
+IP Publica NETSCALER -> 169.62.185.110
+
+
+--------------------------------------------------------------------
+
+paso 5
+oc: 3800512
+categoria: Seguridad Corporativa.Gestión de Certificados Digitales
+
+Resumen: Portal de contenidos Bancolombia Capital - Instalacion del certficado digital de bancolombiacapital.com
+
+Cordial saludo!
+
+Se requiere la instalacion del Certificado Digital para bancolombiacapital.com
+
+Ambiente de QA:
+
+Common Name (CN) www.bancolombiacapital.com
+Beneficio: Poder adecuar con los estándares de seguridad requeridos los Ambientes de certificación
+Nota : El Request se encuentra adjunto en la actual OC
+
+Adjunta certificado generado en la oc anterior .cer
+
+Propiedades: 
+Tipo Solicitud ----- 	Nuevo	Seleccionar de la lista el tipo de solicitud del certificado. Recuerde que Re-Emisión solo aplica para certificados Externos.
+Solicitud masiva -----	No	Es una solicitud masiva, si son 10 o mas certificados
+Tipo de Certificado -----	Externo	Seleccione Interno (Corporativo), Externo (Público). (se va a realizar la valicación del tipo de certificado)
+Centro de Costos/PMO ----	C106500024	Centro de Costos/PMO (Preguntar centro de costo a Edison o Mauro de chef)
+Servicio/Módulo/Aplicación/Canal -------	Portal de Contenidos Bancolombia Capital	Relacionar las aplicaciones o módulos que se usarán el certificado.
+SOX -----	No	Es SOX, si el cambio se ejecuta en PKI9 y PKI12
+Entidad Emisora	 ----- DigiCert	Entidad emisora del certificado.
+Categoría Certificado -------	Secure Site	Seleccionar de la lista la categoría del certificado. Seleccione "Otro" para certificados internos.
+Ambiente	----- Certificación	Ambiente
+Nombre del Servidor -----------	bancolombiacapital.com	Nombre del servidor en el cual se implmentará el cambio.
+Dirección IP	-------- bancolombiacapital.com	Dirección IP del Servidor.
+Algoritmo de Firma --------	SHA2	Elija el algoritmo de firma. Si es SHA1 adjuntar la ERO con su respectiva aprobación.
+Keylabel -------	bancolombiacapital.com	Diligencie el Nombre(s) de Usuario(s) de Conexión.
+Nombre del Certificado (Common Name o CN) -----	bancolombiacapital.com	Diligencie el Nombre del Certificado (NombreEquipo o NombreServicio + .Dominio).
+Nombres Alternativos (SANS / DNS) ------ 	bancolombiacapital.com; www.bancolombiacapital.com	(SANs) Debe contener los siguientes atributos: El mismo nombre del Certificado (CN) + Nombre Corto (Nombre del Servicio/Servidor sin Dominio)
+Nombre Keystore	 ------	Nombre del almacén donde se alojará el certificado.
+ID PKI ---	NA	Identificador del request registrado en la PKI.
+Fecha emisión (dd/mm/aaaa)--- se define cuando nos entreguen el certificado---	21/07/2022	Fecha emisión (dd/mm/aaaa).
+Fecha vencimiento (dd/mm/aaaa)--- se define cuando nos lo entreguen	------25/07/2023	Fecha vencimiento (dd/mm/aaaa).
+Ventas digitales y Tecnología de Mercadeo  
+Sin serial
+
+
+workflow
+Aprobacion Jefe	
+Analisis del Cambio --- OC Administrativo Implementacion de Proyectos Ciberseguridad
+Registro Certificado Digital --- OC Administrativo Controles de Ciberseguridad Gestion Certificados Digitales
+
+-------------------------------------------------------------------
+
+paso 6
+
+oc: 3797748
+
+categoria: Paso a Ambientes NO Productivos.Bancolombia.Gcia Plataformas Centrales.Administrativo.Portales
+
+Portal de contenidos Cancolombia Capital - Creación de sindicadores de QA - PROD
+
+Se requiere crear por favor los sindicadores de QA-PROD en el portal de Bancolombia Capital de las siguientes bibliotecas:
+
+CapitalContenido
+CapitalDiseno
+CapitalImagenes
+
+Adicionalmente, asignar permisos de usuario para poder visualizar las bibliotecas en ambientes PROD
+
+WASHINGTON 04
+
+IHS02 -> 10.170.240.45
+IHS03 -> 10.170.240.46
+IP Publica NETSCALER -> 169.45.202.159
+
+DALLAS 13
+
+IHS02 -> 10.73.239.170
+IHS03 -> 10.73.239.171
+IP Publica NETSCALER -> 169.62.185.110
+
+Adicionalmente poblar el ambiente productivo en el siguiente orden
+
+CapitalImagenes (Imagenes)
+CapitalDiseno (Diseño)
+CapitalContenido (Contenido)
+
+
+propiedades: 
+
+Dependencia	Entorno Mercadeo - EVC Ventas Dig y Tecno de Mercadeo - Portal de Contenidos	Jefatura del Promotor del Cambio.
+Clasificación	Software	Clasificación del cambio.
+Equipo	10.170.240.13, 10.170.240.14, 169.45.202.148, 10.73.239.137, 10.73.239.138, 169.62.185.98	Nombre del Equipo en que se implementará el Cambio.
+Plataforma	Portales	Plataforma en la cual se implementará el cambio.
+Origen	EVC	Origen del Cambio.
+Código del Origen	EVC00011	Registrar el Número del Origen del Cambio.
+Componente	WebSphere Portal	Componente que será afectado por el cambio.
+Tipo de Novedad	Creación	Tipo de Novedad a realizar en el Cambio.
+
+
+--------------------------------------------------------------
+
+paso 7.
+
+oc: 3798207
+categoria: Cambio en Produccion.Bancolombia.Programado.Agil.Proveedores
+
+Instalacion de Tema al portal Prod de Bancolombia Capital
+
+Se requiere la instalación del tema .paa al portal PROD de BancolombiaMiami.paa, el cual debe ser descargado desde el ThemeDevelopment debido a que por su tamaño no se puede adjuntar a la OC. Se adjunta un breve manual para su descarga.
+
+URL del portal donde se descarga:
+http://10.170.129.67:10039/
+
+Datos del servidor:
+
+WASHINGTON 04
+
+IHS02 -> 10.170.240.45
+IHS03 -> 10.170.240.46
+IP Publica NETSCALER -> 169.45.202.159
+
+DALLAS 13
+
+IHS02 -> 10.73.239.170
+IHS03 -> 10.73.239.171
+IP Publica NETSCALER -> 169.62.185.110
+
+
+información adicional
+
+Dependencia	Entorno Mercadeo - EVC Ventas Dig y Tecno de Mercadeo - Portal de Contenidos	Dirección - Gerencia - Jefatura del Promotor que registra el Cambio.
+Grupo Aprobadores	OC Entorno Mercadeo Portal de Contenidos Aprobadores Cambios TI	Grupo de Lideres que validará el Cambio.
+Clasificación	Software	Si vas a implementar un Cambio de DATA, recuerda que debes seguir el Proceso de Cambios Directos en BD, definido por Habilitar y Mantener Soluciones.
+Servicio/Módulo/Aplicación/Canal	Portal de Contenidos Bancolombia Capital Servicios, Módulos, Aplicaciones y/o Canales afectados.
+Proveedor	TCS	Proveedor que realizará el Cambio.
+Plataforma	Portales	Plataforma en que se implementará el Cambio.
+Equipo	10.170.240.45, 10.170.240.14, 169.45.202.148, 10.73.239.137, 10.73.239.138, 169.62.185.98	Nombre del equipo en que se implementará el Cambio.
+Origen	Solicitud Usuario	Origen del Cambio.
+Código Origen	NA	Registrar el código del origen del Cambio.
+¿Requiere cambios en el Centro Alterno de Procesamiento de Datos?	No	Si la respuesta es SI, se enviará un email al grupo de correo CAPD.
+
+Gestion configuracion: Portal de Contenidos Grupo Bancolombia_AW1218001
+
+
+Adjuntos: 
+
+-- Plan de montaje 
+-- Manual de instalación del theme
+
+
+
+-----------------------------
+
+paso 8.
+
+oc: 3800702
+categoria: Cambio en Produccion.Bancolombia.Programado.Agil.Proveedores
+
+
+Portal de contenido Wompi - Carga del certificado digital bancolombiacapital.com en balanceadores
+
+Cordial saludo,
+
+Se requiere la carga del certificado digital a nivel de balanceadores de bancolombiacapital.com
+
+Adicionalmente se requier la creacion del registro de www.bancolombiacapital.com en adns ()
+
+WASHINGTON 04
+
+IHS02 -> 10.170.240.45
+IHS03 -> 10.170.240.46
+IP Publica NETSCALER -> 169.45.202.159
+
+DALLAS 13
+
+IHS02 -> 10.73.239.170
+IHS03 -> 10.73.239.171
+IP Publica NETSCALER -> 169.62.185.110
+
+
+propiedades: 
+
+Dependencia	Entorno Mercadeo - EVC Ventas Dig y Tecno de Mercadeo - Portal de Contenidos	Dirección - Gerencia - Jefatura del Promotor que registra el Cambio.
+Grupo Aprobadores	OC Entorno Mercadeo Portal de Contenidos Aprobadores Cambios TI	Grupo de Lideres que validará el Cambio.
+Clasificación	Software	Si vas a implementar un Cambio de DATA, recuerda que debes seguir el Proceso de Cambios Directos en BD, definido por Habilitar y Mantener Soluciones.
+Servicio/Módulo/Aplicación/Canal	Portal de Contenidos Bancolombiba Capital	Servicios, Módulos, Aplicaciones y/o Canales afectados.
+Proveedor	TCS	Proveedor que realizará el Cambio.
+Plataforma	Portales	Plataforma en que se implementará el Cambio.
+Equipo	10.170.240.16, 10.170.240.17, 169.45.202.149, 10.73.239.140, 10.73.239.141, 169.62.185.99	Nombre del equipo en que se implementará el Cambio.
+Origen	Solicitud Usuario	Origen del Cambio.
+Código Origen	NA	Registrar el código del origen del Cambio.
+¿Requiere cambios en el Centro Alterno de Procesamiento de Datos?	No	Si la respuesta es SI, se enviará un email al grupo de correo CAPD.
+
+
+workflow: 
+Aprobacion Cambio -- OC Entorno Mercadeo Portal de Contenidos Aprobadores Cambios TI	
+Implementación Cambio	---- OC Servicios Tecnologia de Informacion Networking Firewall DR Kyndryl	
+
+
+
+
+-----------------------------------------------------------
+
+paso 9.
+oc: 3800703
+categoria: Cambio en Produccion.Bancolombia.Programado.Agil.Proveedores
+
+Resumen: Portal de contenido Wompi - Carga del certificado digital bancolombiacapital.com en IHS
+
+Cordial saludo,
+
+Se requiere la carga del certificado digital a nivel de IHS de bancolombiacapital.com
+
+WASHINGTON 04
+
+IHS02 -> 10.170.240.45
+IHS03 -> 10.170.240.46
+IP Publica NETSCALER -> 169.45.202.159
+
+DALLAS 13
+
+IHS02 -> 10.73.239.170
+IHS03 -> 10.73.239.171
+IP Publica NETSCALER -> 169.62.185.110
+
+propiedades:
+
+Dependencia	Entorno Mercadeo - EVC Ventas Dig y Tecno de Mercadeo - Portal de Contenidos	Dirección - Gerencia - Jefatura del Promotor que registra el Cambio.
+Grupo Aprobadores	OC Entorno Mercadeo Portal de Contenidos Aprobadores Cambios TI	Grupo de Lideres que validará el Cambio.
+Clasificación	Software	Si vas a implementar un Cambio de DATA, recuerda que debes seguir el Proceso de Cambios Directos en BD, definido por Habilitar y Mantener Soluciones.
+Servicio/Módulo/Aplicación/Canal	Portal de Contenidos Bancolombia Capital	Servicios, Módulos, Aplicaciones y/o Canales afectados.
+Proveedor	TCS	Proveedor que realizará el Cambio.
+Plataforma	Portales	Plataforma en que se implementará el Cambio.
+Equipo	10.170.240.16, 10.170.240.17, 169.45.202.149, 10.73.239.140, 10.73.239.141, 169.62.185.99	Nombre del equipo en que se implementará el Cambio.
+Origen	Solicitud Usuario	Origen del Cambio.
+Código Origen	NA	Registrar el código del origen del Cambio.
+¿Requiere cambios en el Centro Alterno de Procesamiento de Datos?	No	Si la respuesta es SI, se enviará un email al grupo de correo CAPD.
+
+workflow: 
+
+Aprobacion Cambio -- OC Entorno Mercadeo Portal de Contenidos Aprobadores Cambios TI	
+Implementación Cambio	---- Disponibilidad Servicios Integrales Contenidos Kyndryl	
+
+
+Adjuntar el .zip con los cert
+
+
+
+-----------------------------
+
+paso 10.
+
+oc: 3807009
+categoria: Cambio en Produccion.Bancolombia.Programado.Agil.General
+
+Resumen: Portal de Contenidos Bancolombia Capital - Paso a producción
+
+Se requiere llevar a la salida a producción del Portal de contenidos de Bancolombia Capital y la correspondiente sindicacion de QA a Prod.
+
+Por favor tambien realizar el redireccionamiento desde los DNS's de Wompi hacia el Portal de Contenidos de Bancolombia Capital.
+
+
+propiedades:
+
+Dependencia	Entorno Mercadeo - EVC Ventas Dig y Tecno de Mercadeo - Portal de Contenidos	Dirección - Gerencia - Jefatura del Promotor que registra el Cambio.
+Grupo Aprobadores	OC Entorno Mercadeo Portal de Contenidos Aprobadores Cambios TI	Grupo de Lideres que validará el Cambio.
+Clasificación	Software	Si vas a implementar un Cambio de DATA, recuerda que debes seguir el Proceso de Cambios Directos en BD, definido por Habilitar y Mantener Soluciones.
+Servicio/Módulo/Aplicación/Canal	Portal de Contenidos Bancolombia Capital	Servicios, Módulos, Aplicaciones y/o Canales afectados.
+Plataforma	Portales	Plataforma en que se implementará el Cambio.
+Equipo	10.170.240.16, 10.170.240.17, 169.45.202.149, 10.73.239.140, 10.73.239.141, 169.62.185.99	Nombre del equipo en que se implementará el Cambio.
+Origen	Solicitud Usuario	Origen del Cambio.
+Código Origen	NA	Registrar el código del origen del Cambio.
+Código Definición de Terminado	3081859	NO APLICA para: Mantenimientos de HW/BD y Reinicios de componentes HW/SW registrados x cualquier Dirección; Cambios de Certificados Digitales y Cambios registrados x Promotores de Disponibilidad o de Vicepresidencias diferentes a la VSTI.
+¿Requiere cambios en el Centro Alterno de Procesamiento de Datos?	No	Si la respuesta es SI, se enviará un email al grupo de correo CAPD.
+
+
+DOD es necesario
+
+
+workflow: 
+Aprobacion Cambio	-- OC Entorno Mercadeo Portal de Contenidos Aprobadores Cambios TI	
+Implementación Cambio	 --- Disponibilidad Servicios Integrales Contenidos Kyndryl	
+
+
+---------------------------------------------------------
+
+Paso 11.
+
+oc: 3793916
+categoria: Cambio en Produccion.Bancolombia.Programado.Agil.Proveedores	
+
+Resumen: Portal de contenidos Bancolombia Capital - Configuración sitemap, robots y htaccess
+
+Se requiere adecuar el archivo de configuración de los IHS's correspondientes a las filiales, para que carguen el archivo htacccess Robots.txt y Sitemap.xml de forma correcta.
+
+www.bancolombiacapital.com
+
+
+Actividades:
+
+1. Crear los directorios que contengan los archivos adjuntos
+2. Comprobar que tengan la siguiente configuración apuntando el directorio.
+
+RewriteEngine on
+
+RewriteRule ^/sitemap.xml$ - [E=SKIPWAS:1]
+RewriteRule ^/robots.txt$ - [E=SKIPWAS:1]
+
+
+Dependencia -- 	Entorno Mercadeo - EVC Ventas Dig y Tecno de Mercadeo - Portal de Contenidos	Dirección - Gerencia - Jefatura del Promotor que registra el Cambio.
+Grupo Aprobadores ---	OC Entorno Mercadeo Portal de Contenidos Aprobadores Cambios TI	Grupo de Lideres que validará el Cambio.
+Clasificación	Software	Si vas a implementar un Cambio de DATA, recuerda que debes seguir el Proceso de Cambios Directos en BD, definido por Habilitar y Mantener Soluciones.
+Servicio/Módulo/Aplicación/Canal	Portal de Contenidos Bancolombia Capital	Servicios, Módulos, Aplicaciones y/o Canales afectados.
+Proveedor --	TCS	Proveedor que realizará el Cambio.
+Plataforma	Portales	Plataforma en que se implementará el Cambio.
+Equipo	Portal de Contenidos Bancolombia Capital	Nombre del equipo en que se implementará el Cambio.
+Origen	EVC	Origen del Cambio.
+Código Origen	EVC00011	Registrar el código del origen del Cambio.
+¿Requiere cambios en el Centro Alterno de Procesamiento de Datos?	No	Si la respuesta es SI, se enviará un email al grupo de correo CAPD.
+
+
+workflow:
+
+Aprobacion Cambio	-- OC Entorno Mercadeo Portal de Contenidos Aprobadores Cambios TI	
+Implementación Cambio	 -- OC Disponibilidad Servicios Integrales Contenidos Kyndryl	
+
+
+gestión conf: Portal de Contenidos Grupo Bancolombia_AW1218001
+
+
+Adjuntar: 
+
+- Plan de montaje
+- Robot
+- Sitemap
+- .Htaccess

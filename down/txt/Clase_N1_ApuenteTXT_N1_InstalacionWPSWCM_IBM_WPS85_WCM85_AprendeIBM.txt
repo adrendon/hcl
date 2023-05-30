@@ -1,0 +1,52 @@
+----------------------
+IP: 192.168.190.131
+user: root
+pass: redhat
+----------------------
+
+Aquí vamos a mostrar los pasos para iniciar una máquina virtual VMware en el cual tenemos una instalación de IBM WebSphere Portal 8.5, IBM WCM 8.5, IBM WAS 8.5 y DB2 9, a continuación los pasos:
+
+_0. Acceder al servidor
+
+username: root
+password: redhat
+_1. Revisar la IP asignada con el comando <ifconfig>
+
+_2. Editar el archivo host y cambiar el valor de la IP
+
+_3. Iniciar DB2
+
+su db2inst1
+db2start
+exit
+
+_4. Iniciar Portal 8.5
+
+cd /opt/IBM/WebSphere/wp_profile/bin
+./startServer.sh WebSphere_Portal
+
+_5. Trabajar
+
+PORTAL WEB
+
+http://192.168.190.131:10039/wps/portal/
+username: wpsadmin
+password: wpsadmin
+
+CONSOLA WAS
+
+https://192.168.190.131:10041/ibm/console/
+username: wpsadmin
+password: wpsadmin
+
+_6. Detener Portal 8.5
+
+cd /opt/IBM/WebSphere/wp_profile/bin
+./stopServer.sh WebSphere_Portal -user wpsadmin -password wpsadmin
+
+_7. Detener DB2
+
+su db2inst1
+db2stop
+exit
+

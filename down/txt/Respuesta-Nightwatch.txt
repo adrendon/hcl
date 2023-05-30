@@ -1,0 +1,158 @@
+- Node is written in ___________.
+JavaScript
+
+- Which of the following is client side scripting?
+1. HTML
+2. JavaScript
+3. NodeJs
+4. CSS
+5. Ruby on Rails
+
+**2,3,4,5
+1,2,4
+
+- pug is ______________ for node.js.
+middleman and template engine
+
+- ___________ is the command to create node express-generator.
+npm install express-generator
+
+- -g in the command for installation is used for __________.
+global installation
+
+- For chrome, we need to define chrome driver location at ___________.
+**test_settings
+cli_args
+
+- Nightwatch script directly reaches to Selenium server for execution.
+False
+
+- Default browsers for the execution is always __________.
+need to define the default browser
+
+-this in defining function stands for ____________.
+function
+
+- Where is run command defined in package.json?
+scripts
+
+- Module in module.export is __________.
+**variable and object
+** function
+
+- What is command to run the script?
+npm run nightwatch
+
+- Complete path is also know as ____________.
+absolute xpath
+
+- Which of these syntax is correct for multi type xpath?
+//*[@attribute='value'][@attribute1='value1']
+
+- Which of these syntax is correct for absolute xpath?
+/html/body/div/input
+
+- Which of these syntax is correct for starts-with xpath “valueX123e234”?
+//*[starts-with(@attribute, ‘value’)]
+
+- It is used for selecting all the nodes or attributes that come ___________ the current node or attributes.
+before
+
+- Which of these syntax is correct for Parent xpath?
+**//*[@attribute='value']//parent::attribute
+//*[@attribute='value']//parent::value
+
+- Which of these syntax is correct for ancestor xpath?
+//*[@attribute='value']//ancestor::value
+
+- In CSS selector // is removed by ___________.
+whitespace
+
+- In CSS selector / is removed by ___________.
+>
+
+- In CSS selector id value is called as ___________.
+#id
+
+- In CSS selector class is called as ___________.
+**//class
+
+- How to called the element is main script?
+@elementName
+
+- Page object script should be defined in ___________.
+All these options are true.
+
+- How to switch from xpath to css selector?
+.useCss
+
+- How to read the data from JSON file?
+**None of these
+
+- How to call the json file in script?
+Using require
+
+- How to define inline variable?
+both the options are correct
+
+- ___________ scrolls to a specific element.
+.getLocationInView()
+
+- ___________ command captures the screenshot.
+.saveScreenshot()
+
+- ___________ command pauses the execution till the text or value is not visible.
+**.waitForElementPresent()
+.pause
+
+---------FINAL-----
+___________ command verifies the specific value.
+.containsValue()
+
+- Which of these syntax is correct for relative xpath?
+//input[@value='text']
+
+- Test folder detail will be defined in ___________.
+cli_args
+
+- Complete path is also known as ___________.
+absolute xpath
+
+- $= in css used for ___________.
+end with
+
+- How to switch from css selector to xpath?
+None of these
+.useXpath
+
+- ___________ command verifies the value of the attribute.
+.attributeContains()
+
+- n CSS, selector class is called as __________.
+.class
+
+- Which of the syntax is correct for defining JSON?
+{
+   "value1" : "text",
+   "value2" : "text2"
+}
+
+- export in module.export is __________.
+an object
+
+- All the drivers are stored in _______ folder.
+By default it should be in bin
+
+- How to switch from xpath to css selector?
+.useCss
+
+- Which of these syntax is correct for contains xpath?
+//[contains(@attribute,'value')]
+
+- Our run command is defined in package.json under ____________.
+scripts
+
+-In CSS, selector class is called as ________.
+.class
+
+- 

@@ -1,0 +1,62 @@
+------------------------------------------------------------
+#LABEL
+Title: Laboratorio1
+Unique Name: mexico.laboratorio1
+Friendly URL name: laboratorio1
+(http://192.168.190.131:10039/wps/portal/laboratorio1)
+
+    #PAGE
+    Title: Example1
+    Unique Name: mexico.laboratorio1.example1
+    Friendly URL name: example1
+    (http://192.168.190.131:10039/wps/portal/laboratorio1/example1)
+
+    #PAGE
+    Title: Example2
+    Unique Name: mexico.laboratorio1.example2
+    Friendly URL name: example2
+    (http://192.168.190.131:10039/wps/portal/laboratorio1/example2)
+
+------------------------------------------------------------
+#LABEL
+Title: Laboratorio2
+Unique Name: mexico.laboratorio2
+Friendly URL name: laboratorio2
+(http://192.168.190.131:10039/wps/portal/laboratorio2)
+
+    #PAGE
+    Title: Example1
+    Unique Name: mexico.laboratorio2.example1
+    Friendly URL name: example1
+    (http://192.168.190.131:10039/wps/portal/laboratorio2/example1)
+
+    #PAGE
+    Title: Example2
+    Unique Name: mexico.laboratorio2.example2
+    Friendly URL name: example2
+    (http://192.168.190.131:10039/wps/portal/laboratorio2/example2)
+
+
+------------------------------------------------------------
+#LABEL
+Title: Laboratorio3
+Unique Name: mexico.laboratorio3
+Friendly URL name: laboratorio3
+(http://192.168.190.131:10039/wps/portal/laboratorio3)
+
+    #PAGE
+    Title: Example1
+    Unique Name: mexico.laboratorio1.example1
+    Friendly URL name: example1
+    (http://192.168.190.131:10039/wps/portal/laboratorio1/example1)
+
+    #PAGE
+    Title: Example2
+    Unique Name: mexico.laboratorio1.example2
+    Friendly URL name: example2
+    (http://192.168.190.131:10039/wps/portal/laboratorio1/example2)
+
+------------------------------------------------------------
+
+
+

@@ -1,0 +1,70 @@
+Cordial saludo!
+Se solicta desde el área de Negocio -> SEO - Mercadeo Digital actualizar redirecciones orígen - destino de URL's en el Portal de Contenidos, con el fin de optimizar estrategias de posicionamiento SEO en motores de búsqueda como Google; dicha actividad se hace sobre los archivos de configuración HTACCESS dentro de los IHS's de los Ambientes de Producción Viejo (8.5) y de los ambientes de produccion nuevo (9) de IBM Portal .
+# -------------------------------#
+| Máquinas Produccion Bancolombia|
+# -------------------------------#
+# -------------------------------#
+| Máquinas Produccion Version 8.5|
+# -------------------------------#
+
+-Bancolombia
+
+WDC04:
+Xrbcpihs01h.bancolombia.com - 10.170.194.131
+Xrbcpihs02h.bancolombia.com - 10.170.194.132
+Xrbcpihs03h.bancolombia.com - 10.170.194.133
+Xrbcpihs04h.bancolombia.com - 10.170.194.134
+DAL13:
+xrbcpihs01d.bancolombia.com - 10.73.73.201
+Xrbcpihs02d.bancolombia.com - 10.73.73.202
+Xrbcpihs03d.bancolombia.com - 10.73.73.203
+Xrbcpihs04d.bancolombia.com - 10.73.73.204
+
+
+- En éste Ambiente de Producción se debe actualizar los siguientes archivos:
+
+
+**Bancolombia.htaccess ( HTPROD8.5Bancolombia.htaccess )
+**sitemap.xml ( Banco sitemap.xml )
+
+
+
+- Se debe reiniciar el IHS luego de la actualización del archivo
+
+# -----------------------------#
+| Máquinas Produccion version 9|
+# -----------------------------#
+
+-Bancolombia
+
+DAL13:
+Xrbcpihs05d.bancolombia.com 10.73.73.211
+Xrbcpihs06d.bancolombia.com 10.73.73.212
+Xrbcpihs07d.bancolombia.com 10.73.73.213
+Xrbcpihs08d.bancolombia.com 10.73.73.214
+
+WDC04:
+Xrbcpihs05w.bancolombia.com 10.170.194.139
+Xrbcpihs06w.bancolombia.com 10.170.194.140
+Xrbcpihs07w.bancolombia.com 10.170.194.142
+Xrbcpihs08w.bancolombia.com 10.170.194.141
+
+- En éste Ambiente de Producción se debe actualizar los siguientes archivos:
+
+Bancolombia
+
+**Bancolombia.htaccess ( ht9PRODBancolombia.htaccess )
+
+
+- Se debe reiniciar el IHS luego de la actualización.
+• Problema o Situación Actual: Se requiere la actualización del contexto de las URL's en cuestión.
+# -----------------------#
+| Solución funcional |
+# -----------------------#
+- Se deben ejecutar las actualizaciones de los archivos adjuntos.
+# --------------------#
+| Solución técnica |
+# --------------------#
+- Implementar regla de redirección tipo 301 (redirección de tipo permanente) en el archivo .HTACCESS de Producción Viejo (Versión 8.5) y de Produccion nuevo (Version 9).
+• Beneficio: Validar en Ambientes de Producción que la actualización de los archivos HTACCESS cumplan con la reglas de redirección de forma correcta.
+• Impacto: Bajo, no se genera indisponibilidad del aplicativo en Producción. Se aplica el reinicio por instancia de IHS.

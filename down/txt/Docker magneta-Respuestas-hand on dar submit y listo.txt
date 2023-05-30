@@ -1,0 +1,259 @@
+Docker magneta
+
+- Container networking model explains the ________ architecture.
+Networking
+
+- The default Inet address for Docker is _________.
+172.17.42.1
+
+- The virtual bridge that the Docker establishes is called ________.
+docker0
+
+- Docker network inspect command will list the containers running in the network.
+True
+
+- On installing Docker, the three networks that are automatically created are ________.
+bridge, host, none
+
+- What is the Docker command syntax to inspect a Docker bridge?
+docker network inspect bridge
+
+- Configuration changes should be done in _________file to modify the storage driver used.
+daemon.json
+
+- Which of the following are storage drivers supported by Docker for Ubuntu systems?
+All
+
+- Storage drivers cannot be modified and configured in docker.
+False
+
+-Which of the following is a valid docker command to add a data volume?
+docker run -d -P --name web -v /webapp training/webapp
+
+- Container storage layer is read-only.
+False
+
+- Storage driver and data volumes are independent of each other.
+True
+
+- Which of the following is a valid docker inspect command to display logpath?
+docker inspect <container_name>
+
+- Using docker compose, we cannot bring up more than one service.
+False
+
+- Docker inspect...
+low level
+
+- Which is the Docker command to show the version information of the docker components?
+docker version
+
+- What is the command to stop a container?
+docker stop <Container>
+
+- Which is the Docker command to build a docker image using docker file in the current directory?
+docker build .
+
+- Which of the following command will start a container based on Ubuntu 14.04 base image?
+docker run ubuntu:14.04
+
+- Which Dockerfile instruction can be used to install packages to our new image?
+RUN
+
+- What happens when you execute the command? docker run debian /bin/sh
+A container is created and exited immediately
+
+- Virtual machines are a form of ____________ type of virtualization.
+XXvlan
+
+- Which of the following is true?
+docker ps shows all running containers by default.
+
+- Three events that are captured in docker diff command are _______.
+A – Add, D – Delete, C -Change
+
+- _________ is a tool for defining and running multi-container Docker applications.
+docker compose
+
+- Docker images have a different state and change with time.
+False
+
+- Which of the following is another term to describe container virtualization?
+XXHypervisor vitualization
+OS level virtualization
+
+- By default, what mode do docker containers run in?
+foreground mode
+
+- Which of the following command will install Docker engine(Community edition) in a Centos server?
+yum install docker -ce
+
+- Which of the following is the correct way to name a docker file?
+Dockerfile
+
+- When a container is started, Docker establishes a bridge between __________.
+host machine and container
+
+- Which Docker command is used to know the current storage driver configured?
+XXdocker storage
+docker info
+
+-Which one of the following is correct?
+Multiple container layers can be built on top of an image layer
+
+-Docker volumes can be backed up/restored/migrated.
+True
+
+- Which of the following is the docker command to remove unused volumes?
+docker volume prune
+
+- Which of the following is a valid docker inspect command to display logpath?
+None
+
+- Which is the docker syntax to locate a volume which is mounted to a container?
+docker inspect <container_name>
+
+- Docker inspect command is used to ________.
+low level information on docker objects
+
+- Which option can we pass to the docker daemon to assign docker bridge to specific IP range?
+XX--ip--range
+XX--network
+
+- _________is a text document that contains all the commands a user could run on the command line to assemble an image
+Dockerfile
+
+- What happens when you press Cntrl + P + Q inside of container?
+Detaches the Docker host terminal from the container
+
+- What is the syntax to mount a /project/data directory from docker host into a directory /data in container?
+docker run -v /project/data:/data
+
+- Virtual machines are a form of ____________ type of virtualization
+XXVLAN
+
+- Which among the following network can be created by users?
+Bridge and Overlay network
+
+- What is the Docker command to disconnect a container from the bridge network?
+docker network disconnect bridge <container>
+
+-Which docker command is used to attach to a running container
+docker attach <container>
+
+
+-Storage driver manages the contents of 
+Images and container layer
+
+
+-Which of the following is a valid docker inspect command to display the log path
+docker inspect --format='{{.LogPath}}' tomcatContainer
+
+
+-Which option can we pass to the Docker daemon to assign a docker bridge to a specific IP range
+REspuetas MALAS: --network y --ip--range
+--bip
+
+
+
+
+-Virtual machines are a form of ____________ type of virtualization
+XX MALAS --VLAN y Container
+Hypervisor
+
+-What happens when you execute the following command? docker run debian /bin/sh
+MALA-- A prompt from the shell of the created container will be thrown
+MALA -- A container is created and executed in the detached mode
+
+-Which is the Docker command to build a docker image using a docker
+docker build .
+
+
+- Which of the following commands will install the Docker engine (Community edition) in a Centos server
+MALA-- yum install docker
+
+
+- What happens when you press Cntrl+P+Q inside the container
+Detaches the Docker host terminal from the container
+
+
+
+
+ Docker network inspect command will list the containers running in the network. -----> True -----> Correct2. Container networking model explains the ________ architecture. -----> All theoptions -----> Wrong3. The virtual bridge that the Docker establishes is called ________. -----> docker0 -----> Correct4. The default Inet address for Docker is _________. -----> 172.17.42.1 -----> Correct5. What is the Docker command to disconnect a container from the bridge network?-----> docker network disconnect bridge <container> -----> Correct6. Which among the following network can be created by users? -----> Bridge and Overlay network -----> Correct1. Docker volumes can be backed up/restored/migrated. -----> True -----> Correct2. Storage driver manages the contents of ____________. -----> Images and container layer -----> Correct3. Storage drivers cannot be modified and configured in Docker. -----> False -----> Correct4. Which Docker command is used to know the current storage driver configured? -----> docker storage -----> Wrong5. Storage driver and data volumes are independent of each other. -----> True -----> Correct6. Which of the following are storage drivers supported by Docker for Ubuntu systems? -----> All the options -----> Correct
+
+
+
+By default, what happens to a Docker Container when the process it is running exits?
+The Container exits. (Ans)
+
+
+Which of the following commands will install the Docker engine on a CentOS server?
+yum install docker (Ans) MALA
+
+
+In a default installation, how does the Docker daemon natively access features like kernel namespaces and cgroups?
+via libcontainer (Ans)
+
+
+How are comments added to a Dockerfile?
+Any line starting with a # (Ans)
+
+
+Which Dockerfile Instruction must be the first Instruction in a Dockerfile?
+FROM (Ans)
+
+Which transient image layer exists below the rootfs while a container starts?
+Bootfs (Ans)
+
+Which Dockerfile instruction defines the base image to build from?
+FROM (Ans)
+
+
+At the time of recording the course, what is the default storage driver used by CentOS for Docker containers?
+devicemapper (Ans)
+
+Which of the following is the correct way to name a Dockerfile?
+Dockerfile (Ans)
+
+
+Which of the following is true about RUN Instructions in a Dockerfile?
+Each new RUN line creates a new image layer (Ans)
+
+
+From a Docker Host, which command can we use to stop a container?
+docker stop (Ans)
+
+
+Which of the following is another term to describe container virtualization?
+OS level virtualization (Ans)
+
+
+What is a dangling volume?
+A volume that’s not associated with a container (Ans)
+
+What image type is blessed by both Docker and the people behind the software it contains?
+Official (Ans)
+
+
+What does docker history do?
+Shows image history (Ans)
+
+
+Why does Docker for Windows need Hyper-V?
+To run linux containers inside a linux VM and Hyper-V windows containers (Ans)
+
+In the past we had to install software before we could run it. What is the equivalent step with Docker to be able to run software?
+Create a container (Ans)
+
+
+What docker command executes software?
+docker run (Ans)
+
+When executing the command “docker pull microsoft/aspnet:4.6.2” what does “microsoft/aspnet:4.6.2” refer to?
+Repository
+Image (Ans)
+
+When using docker-compose, by default, what network are linux containers connected to?
+user defined network (Ans)
+
+

@@ -1,0 +1,51 @@
+2022-10-25 09:12:58 -- Versión del programa de utilidad de línea de mandatos de Script Application: 8.5
+
+2022-10-25 09:12:58 -- Número de compilación de programa de utilidad de línea de mandatos de Script Application: 20220319-135809
+
+2022-10-25 09:12:58 -- Carpeta de inicio: C:\sp_cmdln
+
+2022-10-25 09:12:58 -- Entorno de Java: 
+
+	java.home = C:\Program Files\Java\jdk-11.0.16.1
+	java.vendor = Oracle Corporation
+	java.version = 11.0.16.1
+
+2022-10-25 09:12:58 -- Propiedades de configuración efectivas: 
+
+	contenthandlerPath = /mycontenthandler
+	excludes = [^bin$, ^lib$, ^src$, ^node_modules$, ^\.classpath$, ^\.project$, ^\..*ignore$, ^sp-config.json$, ^sp-cmdln.log$, ^sp.bat$, ^sp.sh$]
+	mainHtmlFile = index.html
+	portalPassword = ********
+	portalUser = bigbangadm
+	scriptPortletServer = http://10.170.129.120:10039
+	socketTimeout = 60000
+	virtualPortalContext = dev.grupobancolombia.com25230
+	wcmContentName = SSOPrueba
+	wcmSiteArea = Script Portlet Library/Script Portlet Applications/
+
+2022-10-25 09:12:58 -- Empezar envío por push de contenido a Portal.
+
+2022-10-25 09:12:59 -- Accept-Language: es-CO,es,en
+
+2022-10-25 09:12:59 -- URL de envío: POST http://10.170.129.120:10039/mycontenthandler/dev.grupobancolombia.com25230?uri=scriptportlet%3Anull HTTP/1.1
+
+2022-10-25 09:12:59 -- Contexto de portal virtual: dev.grupobancolombia.com25230
+
+2022-10-25 09:12:59 -- Contexto de proyecto: null
+
+2022-10-25 09:12:59 -- ID de contenido de WCM: null
+
+2022-10-25 09:12:59 -- Vía de acceso de contenido de WCM: Script Portlet Library/Script Portlet Applications/SSOPrueba
+
+2022-10-25 09:12:59 -- Título de contenido de WCM: null
+
+2022-10-25 09:12:59 -- Archivo HTML principal: index.html
+
+2022-10-25 09:12:59 -- Archivo de archivado: 
+
+	C:\Users\user\AppData\Local\Temp\sp-content-4152671411485269220.zip
+	(1.787 bytes en 2 archivos) 
+
+	index.html
+	js/main.7eed11411b989ede433c.bundle.js
+
