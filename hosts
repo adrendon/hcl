@@ -1,0 +1,231 @@
+##############IHS - NEW DEV ###################
+#10.170.129.66 dev.grupobancolombia.com
+#10.170.129.67 devassetmanagement.grupobancolombia.com
+10.170.129.68 devbancainversion.grupobancolombia.com
+#10.170.129.69 devcayman.grupobancolombia.com
+#10.170.129.70 devcomerciointernacional.grupobancolombia.com
+10.170.129.71 devfactoring.grupobancolombia.com
+10.170.129.72 devfiduciaria.grupobancolombia.com
+###10.170.129.73 devfiduperu.grupobancolombia.com
+10.170.129.74 devleasing.grupobancolombia.com
+10.170.129.75 devcorporativo.grupobancolombia.com.co
+10.170.129.76 devpanama.grupobancolombia.com
+10.170.129.77 devpuertorico.grupobancolombia.com
+#10.170.129.78 devrenting.grupobancolombia.com
+###10.170.129.79 devrentingperu.grupobancolombia.com
+10.170.129.80 devsucursalpanama.grupobancolombia.com
+10.170.129.81 devsufi.grupobancolombia.com
+10.170.129.82 devplink.grupobancolombia.com
+10.170.129.83 devvalores.grupobancolombia.com
+10.170.129.84 devvaloresbanistmo.grupobancolombia.com
+#10.170.129.90 dev.wompi.co
+10.170.129.69 dev.bancolombiacapital.com
+
+10.170.129.120 dev.grupobancolombia.com dev.wompi.co devcorporativo.grupobancolombia.com.co ##IHS 10039
+#10.170.129.121 dev.grupobancolombia.com ##IHS 10059
+#10.170.129.123 dev.grupobancolombia.com ##IHS 10039
+
+############## IHS - NEW QA #####################
+
+#169.45.220.123  www.bancolombia.com
+
+#10.170.8.197 qasufi.grupobancolombia.com #xrbcqpor02  ##Base
+#10.170.8.198 qa.grupobancolombia.com #Base 10059
+
+######### Banco ####
+
+#169.62.243.131 qa.grupobancolombia.com
+
+#10.170.8.197 qa.grupobancolombia.com qapanama.grupobancolombia.com
+#10.170.8.198 qa.grupobancolombia.com
+#10.170.199.66 qa.grupobancolombia.com ihs
+#10.170.199.90 qa.grupobancolombia.com
+#### Filiales Qa
+#10.170.8.197 qasufi.grupobancolombia.com
+#10.170.199.81 qasufi.grupobancolombia.com
+#10.170.199.90 qasufi.grupobancolombia.com
+#10.170.255.138 qasufi.grupobancolombia.com
+
+#10.170.199.76 qapanama.grupobancolombia.com
+#10.170.199.80 qasucursalpanama.grupobancolombia.com
+#10.170.199.77 qapuertorico.grupobancolombia.com
+#10.170.199.68 qabancainversion.grupobancolombia.com
+#10.170.199.83 qavalores.grupobancolombia.com
+
+#10.170.199.67 qaassetmanagement.grupobancolombia.com
+#10.170.199.68 qabancainversion.grupobancolombia.com
+#10.170.199.69 qacayman.grupobancolombia.com
+#10.170.199.70 qacomerciointernacional.grupobancolombia.com
+#10.170.199.71 qafactoring.grupobancolombia.com
+#10.170.199.72 qafiduciaria.grupobancolombia.com
+#10.170.199.73 qafiduperu.grupobancolombia.com
+#10.170.199.74 qaleasing.grupobancolombia.com
+#10.170.199.75 qacorporativo.grupobancolombia.com.co
+#10.170.199.76 qapanama.grupobancolombia.com
+#10.170.199.77 qapuertorico.grupobancolombia.com
+#10.170.199.78 qarenting.grupobancolombia.com
+#10.170.199.79 qarentingperu.grupobancolombia.com
+#10.170.199.80 qasucursalpanama.grupobancolombia.com
+#10.170.199.81 qasufi.grupobancolombia.com
+#10.170.199.82 qavaloresbanistmo.grupobancolombia.com
+#10.170.199.83 qavalores.grupobancolombia.com
+#10.170.199.84 qaplink.grupobancolombia.com
+
+############## IHS PRD New #######################
+############## WAHS ##############################
+###Balanceador###
+#10.170.68.56 www.bancolombia.com
+#169.42.202.153 www.bancolombia.com ##Publico
+
+#169.45.217.203 www.bancolombia.com
+
+#169.45.202.153 www.bancolombia.com
+###IHS####
+#10.170.176.21 www.bancolombia.com #con esta configuracion va por el 1443
+#10.170.176.22 www.bancolombia.com #con esta configuracion va por el 1443
+#10.170.176.23 www.bancolombia.com #con esta configuracion va por el 1443
+
+
+###NODO###
+#10.170.187.29 www.bancolombia.com wompi.co panama.grupobancolombia.com puertorico.grupobancolombia.com #Base 10039
+#10.170.187.30 www.bancolombia.com wompi.co panama.grupobancolombia.com puertorico.grupobancolombia.com #Base 10059
+#10.170.187.31 www.bancolombia.com wompi.co panama.grupobancolombia.com puertorico.grupobancolombia.com #Base 10059
+
+
+#10.170.187.30 bancolombia.com
+#10.170.176.21 bancolombia.com
+#10.170.187.29 sufi.grupobancolombia.com #10039
+#10.170.187.30 sufi.grupobancolombia.com #10059
+#10.170.187.31 sufi.grupobancolombia.com #10059
+#10.170.187.29 plink.grupobancolombia.com #Base 10039
+#10.170.187.30 plink.grupobancolombia.com #Base 10059
+#10.170.187.31 plink.grupobancolombia.com #Base 10059
+
+#10.170.187.29 www.bancolombia.com #Base 10039
+
+##########Siwch Prd ###########
+#10.170.187.29 www.bancolombia.com #Base 10039 Wash
+#10.73.29.101 www.bancolombia.com #Base 10039  Dall
+##################################################
+############## DAll ##############################
+#10.73.29.101 #Base
+###Balanceador###
+#169.62.251.40 www.bancolombia.com
+#169.62.185.103 www.bancolombia.com  ###publico
+###IHS####
+#10.209.5.212 www.grupobancolombia.com #con esta configuracion va por el 1443
+#10.209.5.213 www.grupobancolombia.com #con esta configuracion va por el 1443
+#10.209.5.214 www.grupobancolombia.com #con esta configuracion va por el 1443
+
+
+###NODO###
+#10.73.29.101 www.bancolombia.com wompi.co panama.grupobancolombia.com puertorico.grupobancolombia.com #con esta configuracion va por el 10039
+#10.73.29.102 www.bancolombia.com wompi.co panama.grupobancolombia.com puertorico.grupobancolombia.com #con esta configuracion va por el 10059
+#10.73.29.103 www.bancolombia.com wompi.co panama.grupobancolombia.com puertorico.grupobancolombia.com #con esta configuracion va por el 10059
+
+
+#169.62.251.33 sufi.grupobancolombia.com ##IP PUBLICA
+#10.209.5.223 sufi.grupobancolombia.com #IHS01 SUFI
+#10.209.5.224 sufi.grupobancolombia.com #IHS03 SUFI
+#10.73.29.101 sufi.grupobancolombia.com #http://10.73.29.101:10039/
+#10.73.29.102 sufi.grupobancolombia.com #http://10.73.29.102:10059/
+#10.73.29.103 sufi.grupobancolombia.com #http://10.73.29.103:10059/
+#10.73.29.101 www.bancolombia.com #Base 10039
+
+#IHS
+#10.73.239.181 plink.grupobancolombia.com #10039
+#10.73.29.101 plink.grupobancolombia.com #10039
+#10.73.29.102 plink.grupobancolombia.com #10059
+#10.73.29.103 plink.grupobancolombia.com #10059
+# Added by Docker Desktop
+192.168.1.2 host.docker.internal
+192.168.1.2 gateway.docker.internal
+# To allow the same kube context to work on the host and the container:
+127.0.0.1 kubernetes.docker.internal
+# End of section
+
+###IHS Bancolombia v8.5###### Dallas
+#10.209.12.70 www.bancolombia.com #con esta configuracion va por el 1443 - 01
+#10.209.12.71 www.bancolombia.com #con esta configuracion va por el 1443 - 02
+#10.209.12.72 www.bancolombia.com #con esta configuracion va por el 1443 - 03
+#10.209.12.73 www.bancolombia.com #con esta configuracion va por el 1443 - 04
+
+###IHS Bancolombia v9.0###### Dallas
+#10.73.239.150 www.bancolombia.com #con esta configuracion va por el 1443 - 01
+#10.73.239.151 www.bancolombia.com #con esta configuracion va por el 1443 - 02
+#10.73.239.152 www.bancolombia.com #con esta configuracion va por el 1443 - 03
+#10.73.239.189 www.bancolombia.com #con esta configuracion va por el 1443 - 04
+
+###IHS GrupoBancolombia v9.0###### Dallas
+#10.209.5.212 www.grupobancolombia.com #con esta configuracion va por el 1443 - 01
+#10.209.5.214 www.grupobancolombia.com #con esta configuracion va por el 1443 - 02
+
+###IHS Bancolombia v8.5###### WDC
+#10.170.176.30 www.bancolombia.com #con esta configuracion va por el 1443 - 01
+#10.170.176.31 www.bancolombia.com #con esta configuracion va por el 1443 - 02
+#10.170.176.32 www.bancolombia.com #con esta configuracion va por el 1443 - 03
+#10.170.176.33 www.bancolombia.com #con esta configuracion va por el 1443 - 04
+
+###IHS Bancolombia v9.0###### WDC
+#10.170.240.26 www.bancolombia.com #con esta configuracion va por el 1443 - 01
+#10.170.240.27 www.bancolombia.com #con esta configuracion va por el 1443 - 02
+#10.170.240.28 www.bancolombia.com #con esta configuracion va por el 1443 - 03
+#10.170.240.56 www.bancolombia.com #con esta configuracion va por el 1443 - 04
+
+###IHS GrupoBancolombia v9.0###### WDC
+#10.170.176.21 www.grupobancolombia.com #con esta configuracion va por el 1443 - 01
+#10.170.176.23 www.grupobancolombia.com #con esta configuracion va por el 1443 - 02
+
+###IHS###### DALLAS
+#10.73.239.168
+#10.73.239.169
+
+###IHS###### WDC
+#10.170.240.44 www.bancolombia.com #con esta configuracion va por el 1443 - 01
+#10.170.240.43 www.bancolombia.com #con esta configuracion va por el 1443 - 01
+
+#balanceadores WDC
+#52.117.60.202 www.bancolombiacapital.com
+
+#balanceadores DLL
+150.239.98.68 www.bancolombiacapital.com
+
+###IHS Fiduciaria v8.5###### WDC
+#10.170.240.23 fiduciaria.grupobancolombia.com #con esta configuracion va por el 1443 - 01
+#10.170.240.24 fiduciaria.grupobancolombia.com #con esta configuracion va por el 1443 - 02
+#10.170.240.25 fiduciaria.grupobancolombia.com #con esta configuracion va por el 1443 - 03
+
+###IHS Fiduciaria v8.5###### DAL
+#10.73.239.147 fiduciaria.grupobancolombia.com #con esta configuracion va por el 1443 - 01
+#10.73.239.148 fiduciaria.grupobancolombia.com #con esta configuracion va por el 1443 - 02
+#10.73.239.149 fiduciaria.grupobancolombia.com #con esta configuracion va por el 1443 - 03
+
+###IHS Panama v9-0###### WDC
+#10.170.176.40 panama.grupobancolombia.com
+#10.170.176.41 panama.grupobancolombia.com
+#10.170.176.42 panama.grupobancolombia.com
+
+###IHS Sucursal Panama v9-0###### WDC
+#10.170.176.43 sucursalpanama.grupobancolombia.com
+#10.170.176.44 sucursalpanama.grupobancolombia.com
+#10.170.176.45 sucursalpanama.grupobancolombia.com
+
+###IHS Panama v9-0###### DAL
+#10.209.12.81 panama.grupobancolombia.com
+#10.209.12.82 panama.grupobancolombia.com
+#10.209.12.83 panama.grupobancolombia.com
+
+###IHS Sucursal Panama v9-0###### DAL
+#10.209.12.78 sucursalpanama.grupobancolombia.com
+#10.209.12.79 sucursalpanama.grupobancolombia.com
+#10.209.12.80 sucursalpanama.grupobancolombia.com
+
+##IHS Puerto Rico v9-0###### WDC
+#10.170.176.46 puertorico.grupobancolombia.com
+#10.170.176.47 puertorico.grupobancolombia.com
+#10.170.176.48 puertorico.grupobancolombia.com
+
+###IHS Puerto Rico v9-0###### DAL
+#10.209.12.84 puertorico.grupobancolombia.com
+#10.209.12.85 puertorico.grupobancolombia.com
+#10.209.12.86 puertorico.grupobancolombia.com
