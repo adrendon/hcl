@@ -1,0 +1,12 @@
+#############################################
+## Secrets Manager
+#############################################
+
+# DEV
+aws --endpoint-url=http://localhost:4584 secretsmanager create-secret --name portal-contenidos-portalSecret  --description "Portal contenidos secrets manager" --secret-string file://"C:\repos\aws\SecretsManager\PortalContenidosSecretsManager.json"
+
+# Delete Secret
+aws --endpoint-url=http://localhost:4584 secretsmanager delete-secret --secret-id portal-contenidos-portalSecret --force-delete-without-recovery
+
+# Restore
+aws --endpoint-url=http://localhost:4584 secretsmanager restore-secret --secret-id portal-contenidos-portalSecret

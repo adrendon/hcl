@@ -1,0 +1,13 @@
+{
+	"TableName" : "portalcontenidos-audit",
+	"KeySchema": [
+		{ "AttributeName": "id", "KeyType": "HASH"}
+	],
+	"AttributeDefinitions": [
+		{ "AttributeName": "id", "AttributeType": "S" }
+	],
+	"ProvisionedThroughput": {
+		"ReadCapacityUnits": 100,
+		"WriteCapacityUnits": 100
+	}
+}
