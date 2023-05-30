@@ -1,0 +1,107 @@
+<table id="tblData" class="table table-bordered table-hover">
+                    <thead>
+                      <tr>
+                        <th>SL No</th>
+                        <!-- ngRepeat: parameter in viewBulkFieldArray[0].bulkList --><th ng-repeat="parameter in viewBulkFieldArray[0].bulkList" class="ng-scope"><!-- ngIf: !searchMode --><strong ng-if="!searchMode" class="ng-binding ng-scope">Do you want to access through internet browser or Application</strong><!-- end ngIf: !searchMode -->
+                        <!-- <span ng-if="searchMode"><input type="text" style="color:black" ng-model="b.searchLabel"></span>
+				<div id="custom-search-input">
+		                <button style="background: url(./appResources/images/search-icon.png);" ng-click="searchMode=true">
+		                	<span class=" glyphicon glyphicon-search" style="font-size: 0px"></span>
+		                </button>
+				</div> -->
+                	</th><!-- end ngRepeat: parameter in viewBulkFieldArray[0].bulkList --><th ng-repeat="parameter in viewBulkFieldArray[0].bulkList" class="ng-scope"><!-- ngIf: !searchMode --><strong ng-if="!searchMode" class="ng-binding ng-scope">Machine /Server IP (share static baselan IP of machine in case of Linux/MAC/Mobile devices or access is required for applications)</strong><!-- end ngIf: !searchMode -->
+                        <!-- <span ng-if="searchMode"><input type="text" style="color:black" ng-model="b.searchLabel"></span>
+				<div id="custom-search-input">
+		                <button style="background: url(./appResources/images/search-icon.png);" ng-click="searchMode=true">
+		                	<span class=" glyphicon glyphicon-search" style="font-size: 0px"></span>
+		                </button>
+				</div> -->
+                	</th><!-- end ngRepeat: parameter in viewBulkFieldArray[0].bulkList --><th ng-repeat="parameter in viewBulkFieldArray[0].bulkList" class="ng-scope"><!-- ngIf: !searchMode --><strong ng-if="!searchMode" class="ng-binding ng-scope">Acess Required TCS Network/Outside TCS Network (Applicable in case of Laptop User)</strong><!-- end ngIf: !searchMode -->
+                        <!-- <span ng-if="searchMode"><input type="text" style="color:black" ng-model="b.searchLabel"></span>
+				<div id="custom-search-input">
+		                <button style="background: url(./appResources/images/search-icon.png);" ng-click="searchMode=true">
+		                	<span class=" glyphicon glyphicon-search" style="font-size: 0px"></span>
+		                </button>
+				</div> -->
+                	</th><!-- end ngRepeat: parameter in viewBulkFieldArray[0].bulkList --><th ng-repeat="parameter in viewBulkFieldArray[0].bulkList" class="ng-scope"><!-- ngIf: !searchMode --><strong ng-if="!searchMode" class="ng-binding ng-scope">TCS base LAN Natted IP (Applicable if user belong to ODC network and Access require IP address  base)(Access 888.com and get Client Details ip)</strong><!-- end ngIf: !searchMode -->
+                        <!-- <span ng-if="searchMode"><input type="text" style="color:black" ng-model="b.searchLabel"></span>
+				<div id="custom-search-input">
+		                <button style="background: url(./appResources/images/search-icon.png);" ng-click="searchMode=true">
+		                	<span class=" glyphicon glyphicon-search" style="font-size: 0px"></span>
+		                </button>
+				</div> -->
+                	</th><!-- end ngRepeat: parameter in viewBulkFieldArray[0].bulkList --><th ng-repeat="parameter in viewBulkFieldArray[0].bulkList" class="ng-scope"><!-- ngIf: !searchMode --><strong ng-if="!searchMode" class="ng-binding ng-scope">Employee Number</strong><!-- end ngIf: !searchMode -->
+                        <!-- <span ng-if="searchMode"><input type="text" style="color:black" ng-model="b.searchLabel"></span>
+				<div id="custom-search-input">
+		                <button style="background: url(./appResources/images/search-icon.png);" ng-click="searchMode=true">
+		                	<span class=" glyphicon glyphicon-search" style="font-size: 0px"></span>
+		                </button>
+				</div> -->
+                	</th><!-- end ngRepeat: parameter in viewBulkFieldArray[0].bulkList --><th ng-repeat="parameter in viewBulkFieldArray[0].bulkList" class="ng-scope"><!-- ngIf: !searchMode --><strong ng-if="!searchMode" class="ng-binding ng-scope">Type of Machine</strong><!-- end ngIf: !searchMode -->
+                        <!-- <span ng-if="searchMode"><input type="text" style="color:black" ng-model="b.searchLabel"></span>
+				<div id="custom-search-input">
+		                <button style="background: url(./appResources/images/search-icon.png);" ng-click="searchMode=true">
+		                	<span class=" glyphicon glyphicon-search" style="font-size: 0px"></span>
+		                </button>
+				</div> -->
+                	</th><!-- end ngRepeat: parameter in viewBulkFieldArray[0].bulkList --><th ng-repeat="parameter in viewBulkFieldArray[0].bulkList" class="ng-scope"><!-- ngIf: !searchMode --><strong ng-if="!searchMode" class="ng-binding ng-scope">URL or Application</strong><!-- end ngIf: !searchMode -->
+                        <!-- <span ng-if="searchMode"><input type="text" style="color:black" ng-model="b.searchLabel"></span>
+				<div id="custom-search-input">
+		                <button style="background: url(./appResources/images/search-icon.png);" ng-click="searchMode=true">
+		                	<span class=" glyphicon glyphicon-search" style="font-size: 0px"></span>
+		                </button>
+				</div> -->
+                	</th><!-- end ngRepeat: parameter in viewBulkFieldArray[0].bulkList --><th ng-repeat="parameter in viewBulkFieldArray[0].bulkList" class="ng-scope"><!-- ngIf: !searchMode --><strong ng-if="!searchMode" class="ng-binding ng-scope">Proxy Server IP (Ping proxy.tcs.com from command prompt)</strong><!-- end ngIf: !searchMode -->
+                        <!-- <span ng-if="searchMode"><input type="text" style="color:black" ng-model="b.searchLabel"></span>
+				<div id="custom-search-input">
+		                <button style="background: url(./appResources/images/search-icon.png);" ng-click="searchMode=true">
+		                	<span class=" glyphicon glyphicon-search" style="font-size: 0px"></span>
+		                </button>
+				</div> -->
+                	</th><!-- end ngRepeat: parameter in viewBulkFieldArray[0].bulkList --><th ng-repeat="parameter in viewBulkFieldArray[0].bulkList" class="ng-scope"><!-- ngIf: !searchMode --><strong ng-if="!searchMode" class="ng-binding ng-scope">Risk Assessment comments</strong><!-- end ngIf: !searchMode -->
+                        <!-- <span ng-if="searchMode"><input type="text" style="color:black" ng-model="b.searchLabel"></span>
+				<div id="custom-search-input">
+		                <button style="background: url(./appResources/images/search-icon.png);" ng-click="searchMode=true">
+		                	<span class=" glyphicon glyphicon-search" style="font-size: 0px"></span>
+		                </button>
+				</div> -->
+                	</th><!-- end ngRepeat: parameter in viewBulkFieldArray[0].bulkList -->
+                	<th>Remarks</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <!-- ngRepeat: row in viewBulkFieldArray track by $index --><tr ng-repeat="row in viewBulkFieldArray track by $index" ng-class="{'disable_class':row.deleteFlag==1}" class="ng-scope">
+                        <td class="ng-binding">1</td>
+                        <!-- <td ng-repeat="param in row.bulkList">{{param.parameterValue}}</td> -->
+                        <!-- ngRepeat: param in row.bulkList --><td ng-repeat="param in row.bulkList" class="ng-scope">
+                        	<!-- ngIf: param.pii==true -->
+							<!-- ngIf: param.pii==false --><span ng-if="param.pii==false" class="ng-binding ng-scope">Chrome browser</span><!-- end ngIf: param.pii==false -->
+                        </td><!-- end ngRepeat: param in row.bulkList --><td ng-repeat="param in row.bulkList" class="ng-scope">
+                        	<!-- ngIf: param.pii==true -->
+							<!-- ngIf: param.pii==false --><span ng-if="param.pii==false" class="ng-binding ng-scope">172.26.64.1</span><!-- end ngIf: param.pii==false -->
+                        </td><!-- end ngRepeat: param in row.bulkList --><td ng-repeat="param in row.bulkList" class="ng-scope">
+                        	<!-- ngIf: param.pii==true -->
+							<!-- ngIf: param.pii==false --><span ng-if="param.pii==false" class="ng-binding ng-scope">No</span><!-- end ngIf: param.pii==false -->
+                        </td><!-- end ngRepeat: param in row.bulkList --><td ng-repeat="param in row.bulkList" class="ng-scope">
+                        	<!-- ngIf: param.pii==true -->
+							<!-- ngIf: param.pii==false --><span ng-if="param.pii==false" class="ng-binding ng-scope">Yes</span><!-- end ngIf: param.pii==false -->
+                        </td><!-- end ngRepeat: param in row.bulkList --><td ng-repeat="param in row.bulkList" class="ng-scope">
+                        	<!-- ngIf: param.pii==true -->
+							<!-- ngIf: param.pii==false --><span ng-if="param.pii==false" class="ng-binding ng-scope">1889589</span><!-- end ngIf: param.pii==false -->
+                        </td><!-- end ngRepeat: param in row.bulkList --><td ng-repeat="param in row.bulkList" class="ng-scope">
+                        	<!-- ngIf: param.pii==true -->
+							<!-- ngIf: param.pii==false --><span ng-if="param.pii==false" class="ng-binding ng-scope">Laptop</span><!-- end ngIf: param.pii==false -->
+                        </td><!-- end ngRepeat: param in row.bulkList --><td ng-repeat="param in row.bulkList" class="ng-scope">
+                        	<!-- ngIf: param.pii==true -->
+							<!-- ngIf: param.pii==false --><span ng-if="param.pii==false" class="ng-binding ng-scope">api.ipify.org</span><!-- end ngIf: param.pii==false -->
+                        </td><!-- end ngRepeat: param in row.bulkList --><td ng-repeat="param in row.bulkList" class="ng-scope">
+                        	<!-- ngIf: param.pii==true -->
+							<!-- ngIf: param.pii==false --><span ng-if="param.pii==false" class="ng-binding ng-scope">working from home</span><!-- end ngIf: param.pii==false -->
+                        </td><!-- end ngRepeat: param in row.bulkList --><td ng-repeat="param in row.bulkList" class="ng-scope">
+                        	<!-- ngIf: param.pii==true -->
+							<!-- ngIf: param.pii==false --><span ng-if="param.pii==false" class="ng-binding ng-scope">N/A</span><!-- end ngIf: param.pii==false -->
+                        </td><!-- end ngRepeat: param in row.bulkList -->
+                        <td class="ng-binding"></td>
+                      </tr><!-- end ngRepeat: row in viewBulkFieldArray track by $index -->
+                    </tbody>
+                  </table>
