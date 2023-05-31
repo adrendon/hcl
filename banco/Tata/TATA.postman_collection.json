@@ -1,0 +1,210 @@
+{
+	"info": {
+		"_postman_id": "81eea426-ee60-454a-8d57-1276b147df77",
+		"name": "TATA",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "339317"
+	},
+	"item": [
+		{
+			"name": "Modulo 03",
+			"item": [
+				{
+					"name": "get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9098/api/msaccount/hello?name=ALEXIS",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9098",
+							"path": [
+								"api",
+								"msaccount",
+								"hello"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "ALEXIS"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:9098/api/msaccount/getById?type=CA&number=20305099",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9098/api/msaccount/getById?type=CA&number=20305099",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9098",
+							"path": [
+								"api",
+								"msaccount",
+								"getById"
+							],
+							"query": [
+								{
+									"key": "type",
+									"value": "CA"
+								},
+								{
+									"key": "number",
+									"value": "20305099"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Obtener listado",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true,
+				"strictSSL": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8085/producto/listar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"producto",
+						"listar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Agregar producto",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nombreProducto\": \"KitKat\",\n    \"precio\": 1000,\n    \"existencia\": 200\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8085/producto/agregar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"producto",
+						"agregar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Vender productos",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": 1,\n    \"nombreProducto\": \"KitKat\",\n    \"precio\": 1000,\n    \"existencia\": 199\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8085/producto/vender",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"producto",
+						"vender"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar producto",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": 1\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8085/producto/borrar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"producto",
+						"borrar"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

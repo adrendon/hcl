@@ -1,0 +1,484 @@
+{
+    "entry": {
+        "id": "wcmrest:4fd815c6-f098-40bc-bbb6-edb0611654ae",
+        "title": {
+            "lang": "en",
+            "value": "¿Cómo los buenos líderes trabajan bajo la realidad?"
+        },
+        "summary": {
+            "lang": "en",
+            "value": "La realidad mundial está cambiando y tiene altibajos que los líderes deben afrontar. Ingrese aquí y conozca cómo es este nuevo trabajo"
+        },
+        "name": "Art 271 - Los buenos lideres saben que no pueden combatir la realidad",
+        "type": "Content",
+        "updated": "Fri, 24 Dec 2021 03:57:44.910Z",
+        "published": "Tue, 04 Aug 2020 13:26:29.566Z",
+        "created": "Fri, 24 Dec 2021 03:14:59.393Z",
+        "author": [
+            {
+                "distinguishedName": "uid=arendonc,cn=users,DC=BANCOLOMBIA,DC=COM",
+                "uri": "/wps/mycontenthandler/!ut/p/digest!FaWBuuqsq_OeIjyhy4fwDw/um/users/profiles/Z9eAeLHCI3O07IPO0JM8C5JDIJM46GPC8JM07JHP8JMOCN9OEJR8CL1C8JRK6I1",
+                "name": "Alexis David Rendon Chica"
+            }
+        ],
+        "owner": [
+            {
+                "distinguishedName": "uid=arendonc,cn=users,DC=BANCOLOMBIA,DC=COM",
+                "uri": "/wps/mycontenthandler/!ut/p/digest!FaWBuuqsq_OeIjyhy4fwDw/um/users/profiles/Z9eAeLHCI3O07IPO0JM8C5JDIJM46GPC8JM07JHP8JMOCN9OEJR8CL1C8JRK6I1",
+                "name": "Alexis David Rendon Chica"
+            }
+        ],
+        "lastModifier": {
+            "distinguishedName": "uid=jcpalacios,cn=users,DC=BANCOLOMBIA,DC=COM",
+            "uri": "/wps/mycontenthandler/!ut/p/digest!FaWBuuqsq_OeIjyhy4fwDw/um/users/profiles/Z9eAeLHO6MQ07J1D0JMO6J9E4JM46GPC8JM47I1EIJM074BO26Q4CMPCI3J16H1",
+            "name": "Juan Camilo Palacio"
+        },
+        "creator": {
+            "distinguishedName": "uid=jdortiz,cn=users,DC=BANCOLOMBIA,DC=COM",
+            "uri": "/wps/mycontenthandler/!ut/p/digest!FaWBuuqsq_OeIjyhy4fwDw/um/users/profiles/Z9eAe1RO8MQ8CN1D0JMCCK9P4MM46GPC8JM0713DEJMKC1BE6JPCCK1E6MOO613",
+            "name": "Juan David Ortiz Zapata"
+        },
+        "profile": {
+            "keyword": [
+                "."
+            ]
+        },
+        "workflow": {
+            "publishDate": "Thu, 23 Dec 2021 14:00:00.000Z"
+        },
+        "link": [
+            {
+                "rel": "self",
+                "href": "/wps/mycontenthandler/!ut/p/digest!FaWBuuqsq_OeIjyhy4fwDw/wcmrest/Content/4fd815c6-f098-40bc-bbb6-edb0611654ae",
+                "lang": "en",
+                "label": "Read"
+            },
+            {
+                "rel": "edit",
+                "href": "/wps/mycontenthandler/!ut/p/digest!FaWBuuqsq_OeIjyhy4fwDw/wcmrest/Content/4fd815c6-f098-40bc-bbb6-edb0611654ae",
+                "lang": "en",
+                "label": "Edit"
+            },
+            {
+                "rel": "delete",
+                "href": "/wps/mycontenthandler/!ut/p/digest!FaWBuuqsq_OeIjyhy4fwDw/wcmrest/Content/4fd815c6-f098-40bc-bbb6-edb0611654ae",
+                "lang": "en",
+                "label": "Delete"
+            },
+            {
+                "rel": "workflow-stage",
+                "href": "/wps/mycontenthandler/!ut/p/digest!FaWBuuqsq_OeIjyhy4fwDw/wcmrest/WorkflowStage/e6b06fbc-8023-4309-a745-2f9b7fe03590",
+                "lang": "en",
+                "label": "Workflow Stage"
+            },
+            {
+                "rel": "workflow",
+                "href": "/wps/mycontenthandler/!ut/p/digest!FaWBuuqsq_OeIjyhy4fwDw/wcmrest/Workflow/421f0605-0632-4244-9c73-cb63ba60791d",
+                "lang": "en",
+                "label": "Workflow"
+            },
+            {
+                "rel": "expire",
+                "href": "/wps/mycontenthandler/!ut/p/digest!FaWBuuqsq_OeIjyhy4fwDw/wcmrest/item/4fd815c6-f098-40bc-bbb6-edb0611654ae/next-stage",
+                "lang": "en",
+                "label": "Expire"
+            },
+            {
+                "rel": "next-stage",
+                "href": "/wps/mycontenthandler/!ut/p/digest!FaWBuuqsq_OeIjyhy4fwDw/wcmrest/item/4fd815c6-f098-40bc-bbb6-edb0611654ae/next-stage",
+                "lang": "en",
+                "label": "Next Stage"
+            },
+            {
+                "rel": "access-control",
+                "href": "/wps/mycontenthandler/!ut/p/digest!FaWBuuqsq_OeIjyhy4fwDw/ac/access:oid:Z6QReDeKHP86S46LPOCJMOCG9EGJMG6GHO6MM8C2JOCJMKC4JO03R46HHDA3Q4C53",
+                "lang": "en",
+                "label": "Access Control"
+            },
+            {
+                "rel": "library",
+                "href": "/wps/mycontenthandler/!ut/p/digest!FaWBuuqsq_OeIjyhy4fwDw/wcmrest/Library/9e81e3f0-3564-413b-bee8-24353a7482a9",
+                "lang": "en",
+                "label": "Library"
+            },
+            {
+                "rel": "parent",
+                "href": "/wps/mycontenthandler/!ut/p/digest!FaWBuuqsq_OeIjyhy4fwDw/wcmrest/SiteArea/3ef37432-a720-427f-a9c8-19e668d268cd",
+                "lang": "en",
+                "label": "Parent"
+            },
+            {
+                "rel": "versions",
+                "href": "/wps/mycontenthandler/!ut/p/digest!FaWBuuqsq_OeIjyhy4fwDw/wcmrest/item/4fd815c6-f098-40bc-bbb6-edb0611654ae/versions",
+                "lang": "en",
+                "label": "Versions"
+            },
+            {
+                "rel": "preview",
+                "href": "/wps/poc/!ut/p/digest!FaWBuuqsq_OeIjyhy4fwDw/wcm/oid:4fd815c6-f098-40bc-bbb6-edb0611654ae",
+                "lang": "en",
+                "label": "Preview"
+            },
+            {
+                "rel": "edit-media",
+                "href": "/wps/mycontenthandler/!ut/p/digest!FaWBuuqsq_OeIjyhy4fwDw/wcmrest/Content/4fd815c6-f098-40bc-bbb6-edb0611654ae",
+                "type": "application/vnd.ibm.wcm+xml",
+                "lang": "en",
+                "label": "Edit Media"
+            },
+            {
+                "rel": "content-template",
+                "href": "/wps/mycontenthandler/!ut/p/digest!FaWBuuqsq_OeIjyhy4fwDw/wcmrest/ContentTemplate/79f1d35c-b9d5-4dea-8d7a-230460f6f872",
+                "lang": "en",
+                "label": "Content Template"
+            },
+            {
+                "rel": "elements",
+                "href": "/wps/mycontenthandler/!ut/p/digest!FaWBuuqsq_OeIjyhy4fwDw/wcmrest/Content/4fd815c6-f098-40bc-bbb6-edb0611654ae/elements",
+                "lang": "en",
+                "label": "Elements"
+            }
+        ],
+        "category": [
+            {
+                "scheme": "wcmrest:workflowState",
+                "term": "PUBLISHED",
+                "label": "Published",
+                "lang": "en"
+            },
+            {
+                "scheme": "wcmrest:favorite",
+                "term": "false",
+                "lang": "en"
+            }
+        ],
+        "content": {
+            "type": "application/vnd.ibm.wcm+xml",
+            "content": {
+                "elements": {
+                    "element": [
+                        {
+                            "name": "Titulo",
+                            "title": {
+                                "lang": "en",
+                                "value": "Titulo"
+                            },
+                            "type": "ShortTextComponent",
+                            "data": {
+                                "type": "text/plain",
+                                "value": "Los buenos líderes saben que no pueden combatir la realidad"
+                            }
+                        },
+                        {
+                            "name": "Class Categoria",
+                            "title": {
+                                "lang": "en",
+                                "value": "Class Categoria"
+                            },
+                            "type": "OptionSelectionComponent",
+                            "data": {
+                                "type": "application/vnd.ibm.wcm+xml",
+                                "optionselection": {
+                                    "displaytype": "Listbox",
+                                    "selection": "UserDefined",
+                                    "options": {
+                                        "mode": "Singleselect",
+                                        "option": [
+                                            {
+                                                "selected": true,
+                                                "id": "tit-dark-blue",
+                                                "value": "tit-dark-blue"
+                                            },
+                                            {
+                                                "selected": false,
+                                                "id": "tit-green",
+                                                "value": "tit-green"
+                                            },
+                                            {
+                                                "selected": false,
+                                                "id": "tit-orange",
+                                                "value": "tit-orange"
+                                            },
+                                            {
+                                                "selected": false,
+                                                "id": "tit-aqua",
+                                                "value": "tit-aqua"
+                                            },
+                                            {
+                                                "selected": false,
+                                                "id": "tit-blue",
+                                                "value": "tit-blue"
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "name": "Fecha Publicacion",
+                            "title": {
+                                "lang": "en",
+                                "value": "Fecha Publicacion"
+                            },
+                            "type": "ShortTextComponent",
+                            "data": {
+                                "type": "text/plain",
+                                "value": "23-12-2021"
+                            }
+                        },
+                        {
+                            "name": "Descipcion Corta",
+                            "title": {
+                                "lang": "en",
+                                "value": "Descipcion Corta"
+                            },
+                            "type": "TextComponent",
+                            "data": {
+                                "type": "text/plain",
+                                "value": "Aceptar la realidad es una de las habilidades más importantes para liderar, y si se aplica de manera correcta puede impulsar el cambio y permite lograr mejores resultados. Sin embargo, muchos líderes no aceptan las circunstancias tal y como son, generando así resistencia en ellos y sus equipos. Aquí te contamos lo que Scott Edinger de Edinger Consulting aconseja al respecto."
+                            }
+                        },
+                        {
+                            "name": "Autor",
+                            "title": {
+                                "lang": "en",
+                                "value": "Autor"
+                            },
+                            "type": "HTMLComponent",
+                            "data": {
+                                "type": "text/html",
+                                "value": "<div class=\"row\">\n\t<div class=\"col-xs-12 col-sm-12\">\n\t\t<p>\n\n<!-- Tiempo de lectura -->\n\n            <span class=\"cargo\" id=\"CIT-lectura\" style=\"border-bottom: 1px solid #e1e1e1;\"><strong>Tiempo de lectura:</strong> 3 minutos\n            </span><br><br>\n\n\n<!-- Autor -->\n\t\t\t<span class=\"por\">Por</span> \n            <strong class=\"autor\">Scott Edinger<br></strong>\n       \n\n\n\t\t</p>\n\t</div>\n</div>"
+                            }
+                        },
+                        {
+                            "name": "Categoria",
+                            "title": {
+                                "lang": "en",
+                                "value": "Categoria"
+                            },
+                            "type": "OptionSelectionComponent",
+                            "data": {
+                                "type": "application/vnd.ibm.wcm+xml",
+                                "optionselection": {
+                                    "displaytype": "PopupSelectionWithDescendents",
+                                    "selection": "RestrictedCategory",
+                                    "options": {
+                                        "mode": "Singleselect",
+                                        "option": [
+                                            {
+                                                "selected": false,
+                                                "category": "/wps/mycontenthandler/!ut/p/digest!FaWBuuqsq_OeIjyhy4fwDw/wcmrest/Taxonomy/ac430b22-c61a-45d6-883f-eccb8138f3c8",
+                                                "value": "/Bancolombia/Categoria Capital Inteligente"
+                                            },
+                                            {
+                                                "selected": true,
+                                                "category": "/wps/mycontenthandler/!ut/p/digest!FaWBuuqsq_OeIjyhy4fwDw/wcmrest/Category/4a6c82f4-236e-45b0-a46a-5705b3420266",
+                                                "value": "/Bancolombia/Categoria Capital Inteligente/Harvard Business School Publishing Corp."
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "name": "Sub Categoria",
+                            "title": {
+                                "lang": "en",
+                                "value": "Sub Categoria"
+                            },
+                            "type": "OptionSelectionComponent",
+                            "data": {
+                                "type": "application/vnd.ibm.wcm+xml",
+                                "optionselection": {
+                                    "displaytype": "PopupSelectionWithDescendents",
+                                    "selection": "RestrictedCategory",
+                                    "options": {
+                                        "mode": "Singleselect",
+                                        "option": [
+                                            {
+                                                "selected": false,
+                                                "category": "/wps/mycontenthandler/!ut/p/digest!FaWBuuqsq_OeIjyhy4fwDw/wcmrest/Taxonomy/8fe28570-06f6-4e1e-b7b3-53c2cff15bc4",
+                                                "value": "/Bancolombia/Sub Categoria Capital Inteligente"
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "name": "Tendencias",
+                            "title": {
+                                "lang": "en",
+                                "value": "Tendencias"
+                            },
+                            "type": "OptionSelectionComponent",
+                            "data": {
+                                "type": "application/vnd.ibm.wcm+xml",
+                                "optionselection": {
+                                    "displaytype": "PopupSelectionWithDescendents",
+                                    "selection": "RestrictedCategory",
+                                    "options": {
+                                        "mode": "Multiselect",
+                                        "option": [
+                                            {
+                                                "selected": false,
+                                                "category": "/wps/mycontenthandler/!ut/p/digest!FaWBuuqsq_OeIjyhy4fwDw/wcmrest/Taxonomy/48445bbc-7102-4dd2-aac9-03ff4d423f38",
+                                                "value": "/Bancolombia/Tendencias Capital Inteligente"
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "name": "Imagen Contenido",
+                            "title": {
+                                "lang": "en",
+                                "value": "Imagen Contenido"
+                            },
+                            "type": "ReferenceComponent",
+                            "data": {
+                                "type": "application/vnd.ibm.wcm+xml",
+                                "reference": "/wps/mycontenthandler/!ut/p/digest!FaWBuuqsq_OeIjyhy4fwDw/wcmrest/LibraryFileComponent/d74b6c97-2a16-460d-b52e-dc5f0284ac7f"
+                            }
+                        },
+                        {
+                            "name": "Url Articulo",
+                            "title": {
+                                "lang": "en",
+                                "value": "Url Articulo"
+                            },
+                            "type": "ShortTextComponent",
+                            "data": {
+                                "type": "text/plain",
+                                "value": "/wps/portal/empresas/capital-inteligente/especiales/the-new-york-times/lideres-basados-realidad"
+                            }
+                        },
+                        {
+                            "name": "robots",
+                            "title": {
+                                "lang": "en",
+                                "value": "robots"
+                            },
+                            "type": "ShortTextComponent",
+                            "data": {
+                                "type": "text/plain",
+                                "value": "index,follow"
+                            }
+                        },
+                        {
+                            "name": "Destacado",
+                            "title": {
+                                "lang": "en",
+                                "value": "Destacado"
+                            },
+                            "type": "NumericComponent",
+                            "data": {
+                                "type": "application/vnd.ibm.wcm+xml",
+                                "integer": null
+                            }
+                        },
+                        {
+                            "name": "Entrada Parrafo",
+                            "title": {
+                                "lang": "en",
+                                "value": "Entrada Parrafo"
+                            },
+                            "type": "HTMLComponent",
+                            "data": {
+                                "type": "text/html",
+                                "value": "<div class=\"content-media\">\n<img src=\"/wps/wcm/myconnect/bbfc6de1-f13d-4d7c-8801-fd3927d3b6dd/no-podemos-debatir-la-realidad-.jpg?MOD=AJPERES&amp;CVID=nTGwfPf\" alt=\"&iquest;Cómo los buenos líderes trabajan bajo la realidad?\" title=\"&iquest;Cómo los buenos líderes trabajan bajo la realidad?\" class=\"center-block img-responsive\" />\n</div>\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
+                            }
+                        },
+                        {
+                            "name": "Descripcion Total",
+                            "title": {
+                                "lang": "en",
+                                "value": "Descripcion Total"
+                            },
+                            "type": "RichTextComponent",
+                            "data": {
+                                "type": "text/html",
+                                "value": "<style type=\"text/css\">.tit-dark-blue, .tit-dark-blue a {\n    color: #298c67;\n}\n\n\n.deautor {\n    width: 140px;\n    height: 100%;\n    background-color: #ffd302;\n    font-size: 18px;\n    padding: 13px;\n    display: block;\n    margin-bottom: 10px;\n    margin-top: 10px;\n}\n\n\n\n.fraseimgcomillas {\n    width: 100%;\n    height: 100%;\n    font-weight: 700;\n    padding-left: 60px;\n    padding-right: 60px;\n}\n\n\n.tipogragris {\n    font-family: 'Nunito', sans-serif;\n    color: #585858;\n    font-weight: 800;\n    font-size: 22px;\n    line-height: 25px;\n}\n\n\n.tipogramarilla-2 {\n    font-family: 'Nunito', sans-serif;\n    color: #A49F8E;\n    font-weight: 400;\n    font-size: 20px;\n    line-height: 25px;\n    font-style: italic;\n}\n\n\n\n.form-caja-cate-4 {\n    width: 100%;\n    padding: 20px;\n    background-color: #F0F0F0;\n    margin-bottom: 10px;\n}\n\n.btn_down_doc {\n    width: 55%;\n    padding-right: 10px;\n    background-image: url(/wps/wcm/connect/7b91469f-fe00-4196-aa6f-25b22039b7ea/descargar-flecha-v2.png?MOD=AJPERES);\n}\n\n.btn-blue {\n    color: white;\n    background-color: #00448c;\n}\n\n\n.aupodcast {\n\twidth: 100%;\n}\n\n\n.quotation::after {\n    content: close-quote;\n    display: inline;\n    height: 0;\n    line-height: 0;\n    left: 10px;\n    position: relative;\n    top: 35px;\n    color: \n    #ccc;\n    font-size: 5em;\n}\n\n.blockquote {\n    padding: 11px 22px;\n    margin: 0 0 22px;\n    font-size: 17.5px;\n    border-left: 5px solid \n    #eee;\n}\n\n.cajaflote {\n        width: 300px;\n        height: 100%;\n        display: inline-block;\n        float: right;\n        margin-left: 15px;\n    }\n\n    .listaabc {\n        list-style-type: lower-alpha;\n        margin-left: 40px;\n    }\n\n    .form-caja-cate {\n        width: 600px;\n        padding: 20px;\n        background-color: #F0F0F0;\n        margin-bottom: 10px;\n\n\n    }\n\n    .cajaflote {\n        width: 300px;\n        height: 100%;\n        display: inline-block;\n        float: right;\n    }\n\n\n\n    .table-responsive tr:nth-child(2n) {\n        background:\n            #ffffff;\n    }\n\n\n\n    .form-caja-img {\n        width: 230px;\n        height: 100%;\n        display: inline-block;\n        margin-right: 20px;\n        -webkit-box-shadow: 10px 7px 15px -7px rgba(0, 0, 0, 0.37);\n        -moz-box-shadow: 10px 7px 15px -7px rgba(0, 0, 0, 0.37);\n        box-shadow: 10px 7px 15px -7px rgba(0, 0, 0, 0.37);\n        vertical-align: top;\n\n\n    }\n\n\n    .formimg {\n        width: 230px;\n    }\n\n\n    .form-caja-txt {\n        width: 100%;\n        display: inline-block;\n        vertical-align: top;\n\n\n    }\n\n    .font-format-titu {\n        font-family: 'Nunito', sans-serif;\n        font-weight: 800;\n        font-size: 16px;\n        margin-top: 2px;\n        margin-bottom: 5px;\n    }\n\n    .font-format {\n        font-family: 'Nunito', sans-serif;\n        font-weight: 600;\n        transition: all 0.5s;\n        cursor: pointer;\n        color: #acacac;\n        margin-left: 9px;\n    }\n\n\n    .font-format span {\n        cursor: pointer;\n        display: inline-block;\n        position: relative;\n        transition: 0.5s;\n        font-size: 17px;\n    }\n\n\n    .font-format span:after {\n        content: '\\00bb';\n        position: absolute;\n        opacity: 0;\n        top: 0;\n        right: -36px;\n        transition: 0.55s;\n    }\n\n\n    .font-format:hover span {\n        padding-right: 10px;\n        color: #112c60;\n    }\n\n    .font-format:hover span:after {\n        opacity: 1;\n        right: 0;\n    }\n\n\n\n\n    .separa {\n        margin-top: 10px;\n        margin-bottom: 10px;\n        margin-left: 8px;\n        border-top: 1px solid #112c60;\n    }\n\n\n    .quotation {\n        font-size: 15px;\n\n\n    }\n\n    .quotation:before {\n        content: open-quote;\n        display: inline;\n        height: 0;\n        line-height: 0;\n        left: -10px;\n        position: relative;\n        top: 30px;\n        color: #ccc;\n        font-size: 5em;\n    }\n\n    .quotation::after {\n        content: close-quote;\n        display: inline;\n        height: 0;\n        line-height: 0;\n        left: 10px;\n        position: relative;\n        top: 35px;\n        color: #ccc;\n        font-size: 5em;\n    }\n\n    .form-caja-relacionados {\n        width: 250px;\n        height: 100%;\n        display: inline-block;\n        margin-right: 28px;\n        -webkit-box-shadow: 10px 7px 15px -7px rgba(0, 0, 0, 0.37);\n        -moz-box-shadow: 10px 7px 15px -7px rgba(0, 0, 0, 0.37);\n        box-shadow: 10px 7px 15px -7px rgba(0, 0, 0, 0.37);\n        vertical-align: top;\n\n    }\n\n    @media screen and (max-width: 767px) {\n\n        .form-caja-cate {\n            width: 315px;\n            height: 100%;\n\n\n\n        }\n\n\n        .form-caja-img {\n            width: 250px;\n            height: 100%;\n            margin-left: 5px;\n            margin-bottom: 20px;\n\n\n\n\n        }\n\n        .formimg {\n            width: 250px;\n            height: 100%;\n        }\n\n\n        .form-caja-txt {\n            width: 315px;\n\n        }\n\n        .form-caja-relacionados {\n            padding-bottom: 30px;\n\n        }\n\n        blockquote {\n\n            width: 294px;\n\n        }\n    }\n</style>\n<div class=\"col-md-12 resumen-content\" dir=\"ltr\" style=\"background-color: #e6e7e9; padding: 32px; margin-bottom: 20px; font-size: 18px;\">\n<blockquote>\n<p><strong>Scott Edinger</strong> es el fundador de<strong> Edinger Consulting.</strong></p>\n</blockquote>\n</div>\n\n<p dir=\"ltr\">La capacidad de aceptar la realidad es una de las habilidades más útiles <strong>(e incomprendidas) </strong>para un líder. Es un concepto que ha existido durante siglos en la <a href=\"https://www.thephilosophyofeverything.com/blog/the-philosophy-of-acceptance\" target=\"_blank\" title=\"\">filosofía</a>, y más recientemente en la <a href=\"https://www.psychologytoday.com/us/blog/pieces-mind/201207/radical-acceptance\" target=\"_blank\" title=\"\">psicología</a>, y aplicado adecuadamente puede ayudar a impulsar el cambio. Sin embargo, no veo que la aceptación sea la suficientemente por los líderes de hoy como una herramienta valiosa para lograr mejores resultados.<br />\n<br />\nLa mayor parte del mal comportamiento que he observado en los líderes tiene sus raíces en la incapacidad de aceptar y trabajar dentro de los límites de lo que está sucediendo, o de las circunstancias tal y como son. Hace falta valor para aceptar la realidad tal y como es, y sólo entonces usted y su equipo comenzarán a hacer cambios.<br />\n<br />\nHe aquí hay dos tipos de aceptación en los que los líderes deberían centrarse:</p>\n\n<ol dir=\"ltr\">\n\t<li><strong>ACEPTAR LAS CIRCUNSTANCIAS: </strong>Quizá usted incumplió un punto de referencia en un proyecto importante, la variante delta desbarató su calendario de vuelta a la oficina o está por encima del presupuesto y necesita hacer sacrificios importantes. Como líderes, a menudo nos enfrentamos a circunstancias que están fuera de nuestro control. Los líderes necesitan encontrar la fuerza emocional para renunciar al control en los casos donde solo creyeron contar con este, pero nunca lo tuvieron realmente. Una vez más, esto no significa que deba estar contento o aprobar una situación. En cambio, la aceptación le da el poder de avanzar de la manera más efectiva posible.<br />\n\t&nbsp;</li>\n\t<li><strong>ACEPTAR SUS FALLOS Y LOS DE LOS DEMÁS: </strong>Ningún empleado o colega es perfecto. Y la buena noticia es que todos somos capaces de hacer cambios y mejoras. Aunque los esfuerzos de <a href=\"https://hbr.org/2021/08/encourage-your-employees-to-give-you-critical-feedback\" target=\"_blank\" title=\"\">retroalimentación y desarrollo</a> pueden construir fortalezas y abordar fallas fatales, el precursor crítico para el cambio de cualquier líder es la aceptación de que necesita cambiar. También debemos aceptar a los demás tal y como son y tomar decisiones basadas en la persona real, no en quien deseamos que se convierta. Si tiene a alguien en su equipo que sigue sin cumplir las expectativas tras un esfuerzo razonable de formación, entrenamiento y desarrollo, usted deberá decidir sobre el futuro de este empleado. Puede aceptar que tiene valor para su empresa tal y como es, o puede dejarlo ir.</li>\n</ol>\n\n<p dir=\"ltr\"><br />\nA menudo se malinterpreta la aceptación como aprobación o desaprobación del cambio. Más bien, la aceptación consiste en reconocer los hechos y dejar de lado el tiempo, el esfuerzo y la energía desperdiciados en la lucha contra la realidad. Sea cual sea el reto que enfrente, no podrá emplear sus mejores habilidades para afrontarlo hasta que deje de luchar contra la realidad y acepte las circunstancias, con una actitud dispuesta a cambiar las cosas a mejor.</p>\n\n<p dir=\"ltr\">&nbsp;</p>\n\n<h4 dir=\"ltr\"><em style=\"color: #919191;\">c.2020 Harvard Business School Publishing Corp. Distribuido por The New York Times Licensing Group</em></h4>\n\n<p dir=\"ltr\">&nbsp;</p>\n<script type=\"\"application/ld+json\">\n{\n  \"@context\": \"https://schema.org/\",\n  \"@type\": \"Article\",\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://grupobancolombia.com/wps/portal/empresas/capital-inteligente/especiales/the-new-york-times/lideres-basados-realidad\"\n  },\n  \"headline\":\"¿Cómo los buenos líderes trabajan bajo la realidad?\",\n  \"description\":\"La realidad mundial está cambiando y tiene altibajos que los líderes deben afrontar. Ingrese aquí y conozca cómo es este nuevo trabajo\",\n  \"image\": {\n    \"@type\": \"ImageObject\",\n    \"url\": \"https://www.grupobancolombia.com/wps/wcm/connect/89e3fb7a-d5fe-4af2-b85c-b5aa097a277c/ci-tnytimes.jpg?MOD=AJPERES\",\n    \"width\": \"700\",\n    \"height\": \"300\"\n  },\n  \"author\": {\n    \"@type\": \"Organization\",\n    \"name\": \"The New York Times\",\n    \"URL\": \"\"https://www.nytimes.com\"\n  },\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"Grupo Bancolombia\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://www.grupobancolombia.com/wps/wcm/connect/5c702e93-9c31-4459-a1cc-dc8322e7c748/como-promover-la-seguridad-psicologica-en-las-reuniones-virtuales.jpg?MOD=AJPERES&CACHEID=ROOTWORKSPACE-5c702e93-9c31-4459-a1cc-dc8322e7c748-niYzehs\",\n      \"width\": \"189\",\n      \"height\": \"46\"\n    }\n  },\n  \"datePublished\": \"2021-12-23\"\n}\n</script>"
+                            }
+                        },
+                        {
+                            "name": "Menu Continue Leyendo",
+                            "title": {
+                                "lang": "en",
+                                "value": "Menu Continue Leyendo"
+                            },
+                            "type": "ReferenceComponent",
+                            "data": {
+                                "type": "application/vnd.ibm.wcm+xml",
+                                "reference": "/wps/mycontenthandler/!ut/p/digest!FaWBuuqsq_OeIjyhy4fwDw/wcmrest/LibraryMenuComponent/3f1b29d9-198b-4e59-a950-2f760902592f"
+                            }
+                        },
+                        {
+                            "name": "idYoutube",
+                            "title": {
+                                "lang": "en",
+                                "value": "idYoutube"
+                            },
+                            "type": "ShortTextComponent",
+                            "data": {
+                                "type": "text/plain",
+                                "value": ""
+                            }
+                        },
+                        {
+                            "name": "modal",
+                            "title": {
+                                "lang": "en",
+                                "value": "modal"
+                            },
+                            "type": "OptionSelectionComponent",
+                            "data": {
+                                "type": "application/vnd.ibm.wcm+xml",
+                                "optionselection": {
+                                    "displaytype": "Listbox",
+                                    "selection": "UserDefined",
+                                    "options": {
+                                        "mode": "Singleselect",
+                                        "option": [
+                                            {
+                                                "selected": true,
+                                                "id": "modalOff",
+                                                "value": "modalOff"
+                                            },
+                                            {
+                                                "selected": false,
+                                                "id": "modalOn",
+                                                "value": "modalOn"
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "name": "imagenVideo",
+                            "title": {
+                                "lang": "en",
+                                "value": "imagenVideo"
+                            },
+                            "type": "ImageComponent",
+                            "data": {
+                                "type": "application/vnd.ibm.wcm+xml",
+                                "image": {
+                                    "dimension": {
+                                        "height": "",
+                                        "width": "",
+                                        "border": "0"
+                                    },
+                                    "altText": "",
+                                    "tagName": ""
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}

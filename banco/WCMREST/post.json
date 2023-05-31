@@ -1,0 +1,461 @@
+{
+    "entry": {
+        "id": "wcmrest:6ac70d66-535a-477e-824e-dd5e4ea29164",
+        "title": {
+            "lang": "en",
+            "value": "PRUEBA"
+        },
+        "summary": {
+            "lang": "en"
+        },
+        "name": "PRUEBA 02",
+        "type": "Content",
+        "link": [
+            {
+                "rel": "self",
+                "href": "/mycontenthandler/!ut/p/digest!9bwJlOIbqWFLwsZ7hPqMbw/wcmrest/Content/6ac70d66-535a-477e-824e-dd5e4ea29164",
+                "lang": "en",
+                "label": "Read"
+            },
+            {
+                "rel": "edit",
+                "href": "/mycontenthandler/!ut/p/digest!9bwJlOIbqWFLwsZ7hPqMbw/wcmrest/Content/6ac70d66-535a-477e-824e-dd5e4ea29164",
+                "lang": "en",
+                "label": "Edit"
+            },
+            {
+                "rel": "delete",
+                "href": "/mycontenthandler/!ut/p/digest!9bwJlOIbqWFLwsZ7hPqMbw/wcmrest/Content/6ac70d66-535a-477e-824e-dd5e4ea29164",
+                "lang": "en",
+                "label": "Delete"
+            },
+            {
+                "rel": "workflow",
+                "href": "/mycontenthandler/!ut/p/digest!9bwJlOIbqWFLwsZ7hPqMbw/wcmrest/Workflow/421f0605-0632-4244-9c73-cb63ba60791d",
+                "lang": "en",
+                "label": "Workflow"
+            },
+            {
+                "rel": "create-draft",
+                "href": "/mycontenthandler/!ut/p/digest!9bwJlOIbqWFLwsZ7hPqMbw/wcmrest/item/6ac70d66-535a-477e-824e-dd5e4ea29164/create-draft",
+                "lang": "en",
+                "label": "Create Draft"
+            },
+            {
+                "rel": "expire",
+                "href": "/mycontenthandler/!ut/p/digest!9bwJlOIbqWFLwsZ7hPqMbw/wcmrest/item/6ac70d66-535a-477e-824e-dd5e4ea29164/next-stage",
+                "lang": "en",
+                "label": "Expire"
+            },
+            {
+                "rel": "next-stage",
+                "href": "/mycontenthandler/!ut/p/digest!9bwJlOIbqWFLwsZ7hPqMbw/wcmrest/item/6ac70d66-535a-477e-824e-dd5e4ea29164/next-stage",
+                "lang": "en",
+                "label": "Next Stage"
+            },
+            {
+                "rel": "workflow-stage",
+                "href": "/mycontenthandler/!ut/p/digest!9bwJlOIbqWFLwsZ7hPqMbw/wcmrest/WorkflowStage/e6b06fbc-8023-4309-a745-2f9b7fe03590",
+                "lang": "en",
+                "label": "Workflow Stage"
+            },
+            {
+                "rel": "restart",
+                "href": "/mycontenthandler/!ut/p/digest!9bwJlOIbqWFLwsZ7hPqMbw/wcmrest/item/6ac70d66-535a-477e-824e-dd5e4ea29164/restart",
+                "lang": "en",
+                "label": "Restart"
+            },
+            {
+                "rel": "previous-stage",
+                "href": "/mycontenthandler/!ut/p/digest!9bwJlOIbqWFLwsZ7hPqMbw/wcmrest/item/6ac70d66-535a-477e-824e-dd5e4ea29164/previous-stage",
+                "lang": "en",
+                "label": "Previous Stage"
+            },
+            {
+                "rel": "access-control",
+                "href": "/mycontenthandler/!ut/p/digest!9bwJlOIbqWFLwsZ7hPqMbw/ac/access:oid:Z6QReDeM9O6MR064JDCJMK6J9D2MMG6NPDAMM07I1DAMMGC4BDA6QKC1JCIJOO6KHEK2T873HEA3",
+                "lang": "en",
+                "label": "Access Control"
+            },
+            {
+                "rel": "library",
+                "href": "/mycontenthandler/!ut/p/digest!9bwJlOIbqWFLwsZ7hPqMbw/wcmrest/Library/cf1f60a3-4ea4-4b8f-900f-74aff2d09872",
+                "lang": "en",
+                "label": "Library"
+            },
+            {
+                "rel": "parent",
+                "href": "/mycontenthandler/!ut/p/digest!9bwJlOIbqWFLwsZ7hPqMbw/wcmrest/SiteArea/5bd88cfe-582a-406c-9bc4-e76dd6a31f37",
+                "lang": "en",
+                "label": "Parent"
+            },
+            {
+                "rel": "versions",
+                "href": "/mycontenthandler/!ut/p/digest!9bwJlOIbqWFLwsZ7hPqMbw/wcmrest/item/6ac70d66-535a-477e-824e-dd5e4ea29164/versions",
+                "lang": "en",
+                "label": "Versions"
+            },
+            {
+                "rel": "preview",
+                "href": "/poc/!ut/p/digest!9bwJlOIbqWFLwsZ7hPqMbw/wcm/oid:6ac70d66-535a-477e-824e-dd5e4ea29164",
+                "lang": "en",
+                "label": "Preview"
+            },
+            {
+                "rel": "edit-media",
+                "href": "/mycontenthandler/!ut/p/digest!9bwJlOIbqWFLwsZ7hPqMbw/wcmrest/Content/6ac70d66-535a-477e-824e-dd5e4ea29164",
+                "type": "application/vnd.ibm.wcm+xml",
+                "lang": "en",
+                "label": "Edit Media"
+            },
+            {
+                "rel": "content-template",
+                "href": "/mycontenthandler/!ut/p/digest!9bwJlOIbqWFLwsZ7hPqMbw/wcmrest/ContentTemplate/79f1d35c-b9d5-4dea-8d7a-230460f6f872",
+                "lang": "en",
+                "label": "Content Template"
+            },
+            {
+                "rel": "elements",
+                "href": "/mycontenthandler/!ut/p/digest!9bwJlOIbqWFLwsZ7hPqMbw/wcmrest/Content/6ac70d66-535a-477e-824e-dd5e4ea29164/elements",
+                "lang": "en",
+                "label": "Elements"
+            }
+        ],
+        "category": [
+            {
+                "scheme": "wcmrest:workflowState",
+                "term": "PUBLISHED",
+                "label": "Published",
+                "lang": "en"
+            },
+            {
+                "scheme": "wcmrest:favorite",
+                "term": "false",
+                "lang": "en"
+            }
+        ],
+        "content": {
+            "type": "application/vnd.ibm.wcm+xml",
+            "content": {
+                "elements": {
+                    "element": [
+                        {
+                            "name": "Titulo",
+                            "title": {
+                                "lang": "en",
+                                "value": "Titulo"
+                            },
+                            "type": "ShortTextComponent",
+                            "data": {
+                                "type": "text/plain",
+                                "value": ""
+                            }
+                        },
+                        {
+                            "name": "Class Categoria",
+                            "title": {
+                                "lang": "en",
+                                "value": "Class Categoria"
+                            },
+                            "type": "OptionSelectionComponent",
+                            "data": {
+                                "type": "application/vnd.ibm.wcm+xml",
+                                "optionselection": {
+                                    "displaytype": "Listbox",
+                                    "selection": "UserDefined",
+                                    "options": {
+                                        "mode": "Singleselect",
+                                        "option": [
+                                            {
+                                                "selected": true,
+                                                "id": "tit-dark-blue",
+                                                "value": "tit-dark-blue"
+                                            },
+                                            {
+                                                "selected": false,
+                                                "id": "tit-green",
+                                                "value": "tit-green"
+                                            },
+                                            {
+                                                "selected": false,
+                                                "id": "tit-orange",
+                                                "value": "tit-orange"
+                                            },
+                                            {
+                                                "selected": false,
+                                                "id": "tit-aqua",
+                                                "value": "tit-aqua"
+                                            },
+                                            {
+                                                "selected": false,
+                                                "id": "tit-blue",
+                                                "value": "tit-blue"
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "name": "Fecha Publicacion",
+                            "title": {
+                                "lang": "en",
+                                "value": "Fecha Publicacion"
+                            },
+                            "type": "ShortTextComponent",
+                            "data": {
+                                "type": "text/plain",
+                                "value": "28-12-2021"
+                            }
+                        },
+                        {
+                            "name": "Descipcion Corta",
+                            "title": {
+                                "lang": "en",
+                                "value": "Descipcion Corta"
+                            },
+                            "type": "TextComponent",
+                            "data": {
+                                "type": "text/plain",
+                                "value": ""
+                            }
+                        },
+                        {
+                            "name": "Autor",
+                            "title": {
+                                "lang": "en",
+                                "value": "Autor"
+                            },
+                            "type": "HTMLComponent",
+                            "data": {
+                                "type": "text/html",
+                                "value": "<div class=\"row\">\n\t<div class=\"col-xs-12 col-sm-12\">\n\t\t<p><strong class=\"autor\">María Cristina Cifuentes Suárez</strong><br>\n\t\t<span class=\"cargo\">Analista de Estrategia Segmento Inmobiliario y Constructor / Grupo Bancolombia</span></p>\n\t</div>\n</div>"
+                            }
+                        },
+                        {
+                            "name": "Categoria",
+                            "title": {
+                                "lang": "en",
+                                "value": "Categoria"
+                            },
+                            "type": "OptionSelectionComponent",
+                            "data": {
+                                "type": "application/vnd.ibm.wcm+xml",
+                                "optionselection": {
+                                    "displaytype": "PopupSelectionWithDescendents",
+                                    "selection": "RestrictedCategory",
+                                    "options": {
+                                        "mode": "Singleselect",
+                                        "option": [
+                                            {
+                                                "selected": false,
+                                                "category": "/mycontenthandler/!ut/p/digest!9bwJlOIbqWFLwsZ7hPqMbw/wcmrest/Taxonomy/ac430b22-c61a-45d6-883f-eccb8138f3c8",
+                                                "value": "/Bancolombia/Categoria Capital Inteligente"
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "name": "Sub Categoria",
+                            "title": {
+                                "lang": "en",
+                                "value": "Sub Categoria"
+                            },
+                            "type": "OptionSelectionComponent",
+                            "data": {
+                                "type": "application/vnd.ibm.wcm+xml",
+                                "optionselection": {
+                                    "displaytype": "PopupSelectionWithDescendents",
+                                    "selection": "RestrictedCategory",
+                                    "options": {
+                                        "mode": "Singleselect",
+                                        "option": [
+                                            {
+                                                "selected": false,
+                                                "category": "/mycontenthandler/!ut/p/digest!9bwJlOIbqWFLwsZ7hPqMbw/wcmrest/Taxonomy/8fe28570-06f6-4e1e-b7b3-53c2cff15bc4",
+                                                "value": "/Bancolombia/Sub Categoria Capital Inteligente"
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "name": "Tendencias",
+                            "title": {
+                                "lang": "en",
+                                "value": "Tendencias"
+                            },
+                            "type": "OptionSelectionComponent",
+                            "data": {
+                                "type": "application/vnd.ibm.wcm+xml",
+                                "optionselection": {
+                                    "displaytype": "PopupSelectionWithDescendents",
+                                    "selection": "RestrictedCategory",
+                                    "options": {
+                                        "mode": "Multiselect",
+                                        "option": [
+                                            {
+                                                "selected": false,
+                                                "category": "/mycontenthandler/!ut/p/digest!9bwJlOIbqWFLwsZ7hPqMbw/wcmrest/Taxonomy/48445bbc-7102-4dd2-aac9-03ff4d423f38",
+                                                "value": "/Bancolombia/Tendencias Capital Inteligente"
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "name": "Imagen Contenido",
+                            "title": {
+                                "lang": "en",
+                                "value": "Imagen Contenido"
+                            },
+                            "type": "ReferenceComponent",
+                            "data": {
+                                "type": "application/vnd.ibm.wcm+xml",
+                                "reference": ""
+                            }
+                        },
+                        {
+                            "name": "Url Articulo",
+                            "title": {
+                                "lang": "en",
+                                "value": "Url Articulo"
+                            },
+                            "type": "ShortTextComponent",
+                            "data": {
+                                "type": "text/plain",
+                                "value": ""
+                            }
+                        },
+                        {
+                            "name": "robots",
+                            "title": {
+                                "lang": "en",
+                                "value": "robots"
+                            },
+                            "type": "ShortTextComponent",
+                            "data": {
+                                "type": "text/plain",
+                                "value": ""
+                            }
+                        },
+                        {
+                            "name": "Destacado",
+                            "title": {
+                                "lang": "en",
+                                "value": "Destacado"
+                            },
+                            "type": "NumericComponent",
+                            "data": {
+                                "type": "application/vnd.ibm.wcm+xml",
+                                "integer": null
+                            }
+                        },
+                        {
+                            "name": "Entrada Parrafo",
+                            "title": {
+                                "lang": "en",
+                                "value": "Entrada Parrafo"
+                            },
+                            "type": "HTMLComponent",
+                            "data": {
+                                "type": "text/html",
+                                "value": "<div class=\"content-media\">\n<img src=\"/wcm/myconnect/dev.grupobancolombia.com25230/b1b20caf-fd0e-416b-b4c2-5ff9c8722d9a/zonas-francas_564.jpg?MOD=AJPERES&amp;CVID=loIF8sp\" alt=\"Bonos verdes: una excelente forma de inversión que cuida el medioambiente\" class=\"center-block\" title=\"Bonos verdes: una excelente forma de inversión que cuida el medioambiente\" />\n</div>"
+                            }
+                        },
+                        {
+                            "name": "Descripcion Total",
+                            "title": {
+                                "lang": "en",
+                                "value": "Descripcion Total"
+                            },
+                            "type": "RichTextComponent",
+                            "data": {
+                                "type": "text/html",
+                                "value": ""
+                            }
+                        },
+                        {
+                            "name": "Menu Continue Leyendo",
+                            "title": {
+                                "lang": "en",
+                                "value": "Menu Continue Leyendo"
+                            },
+                            "type": "ReferenceComponent",
+                            "data": {
+                                "type": "application/vnd.ibm.wcm+xml",
+                                "reference": ""
+                            }
+                        },
+                        {
+                            "name": "idYoutube",
+                            "title": {
+                                "lang": "en",
+                                "value": "idYoutube"
+                            },
+                            "type": "ShortTextComponent",
+                            "data": {
+                                "type": "text/plain",
+                                "value": ""
+                            }
+                        },
+                        {
+                            "name": "modal",
+                            "title": {
+                                "lang": "en",
+                                "value": "modal"
+                            },
+                            "type": "OptionSelectionComponent",
+                            "data": {
+                                "type": "application/vnd.ibm.wcm+xml",
+                                "optionselection": {
+                                    "displaytype": "Listbox",
+                                    "selection": "UserDefined",
+                                    "options": {
+                                        "mode": "Singleselect",
+                                        "option": [
+                                            {
+                                                "selected": true,
+                                                "id": "modalOff",
+                                                "value": "modalOff"
+                                            },
+                                            {
+                                                "selected": false,
+                                                "id": "modalOn",
+                                                "value": "modalOn"
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "name": "imagenVideo",
+                            "title": {
+                                "lang": "en",
+                                "value": "imagenVideo"
+                            },
+                            "type": "ImageComponent",
+                            "data": {
+                                "type": "application/vnd.ibm.wcm+xml",
+                                "image": {
+                                    "dimension": {
+                                        "height": "",
+                                        "width": "",
+                                        "border": "0"
+                                    },
+                                    "altText": "",
+                                    "tagName": ""
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}
