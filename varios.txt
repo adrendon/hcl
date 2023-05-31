@@ -1,0 +1,2422 @@
+bigbangadm
+B1gb.2019*
+
+giihcjjh6dsxmoqbqihp7pzapnvgpmty7se47ucauwhw3l3gus5q
+
+cd /opt/IBM/WebSphere/wp_profile/logs/WebSphere_Portal
+
+C:\Users\1889589\Downloads\hcl-dx-openshift-v95-20190929-1242
+
+docker load -i hcl-dx-cloud-operator-image-v95_20190929-0714.tar.gz
+
+docker load < hcl-dx-core-image-v95_20190928-2258.tar.gz
+
+docker run -p 10038:10038 -p 10039:10039 -p 10041:10041 -p 10042:10042 -p 10200:10200 -p 10202:10202 -v C:\HCL\dx-store\wp_profile:/opt/HCL/wp_profile --name WebSphere_Portal hcl/dx/core:v95_20190928-2258
+
+docker cp C:/Users/1889589/Desktop/CURBancolombia.jar a7a105f7eacb:/opt/HCL/AppServer/lib/ext
+
+cd /opt/HCL/wp_profile/bin
+
+./stopServer.sh WebSphere_Portal -user wpsadmin -password wpsadmin
+
+./startServer.sh WebSphere_Portal
+
+docker cp C:/Users/1889589/Desktop/SessionFilterPortalBancolombia.jar a7a105f7eacb:/opt/HCL/PortalServer/shared/app
+
+
+\arendon
+%agil
+Portales_xrbcppor
+encuesta primeros 5 no 6 y 7 si
+
+iniciar docker
+
+docker run localstack
+
+cd C:\repos\aws
+
+sh crear_infra.sh
+
+iniciar vpn citrix
+
+
+https://crossbrowsertesting.com/
+https://www.multibrowser.com/
+https://saucelabs.com/
+https://www.pcloudy.com/
+https://browshot.com/
+https://testingbot.com/
+https://retest.app/
+https://blisk.io/
+https://www.lambdatest.com/
+https://kobiton.com/
+https://www.browserstack.com/
+https://www.browserling.com/
+https://testingbot.com/
+https://applitools.com/
+https://digital.ai/
+https://www.functionize.com/
+https://www.ranorex.com/
+https://sizzy.co/
+https://comparium.app/
+https://uilicious.com/
+
+gradle test --tests com.tcs.Runners.LoguinPagina.RegisterPage_Runner aggregate
+
+
+AW1218001_Sitio_de_contenidos_Grupo_Bancolombia
+AW1218001_Portal_de_Contenidos_
+
+
+##############IHS - NEW DEV ###################
+#10.170.129.67 dev.grupobancolombia.com ##Base 10039
+#10.170.129.90 dev.grupobancolombia.com ##Base 10059
+10.170.129.66 dev.grupobancolombia.com
+#10.170.68.52 devsufi.grupobancolombia.com
+10.170.129.81 devsufi.grupobancolombia.com
+#10.170.129.67 devassetmanagement.grupobancolombia.com
+#10.170.129.68 devbancainversion.grupobancolombia.com
+#10.170.129.69 devcayman.grupobancolombia.com
+#10.170.129.70 devcomerciointernacional.grupobancolombia.com
+#10.170.129.71 devfactoring.grupobancolombia.com
+#10.170.129.72 devfiduciaria.grupobancolombia.com
+#10.170.129.74 devleasing.grupobancolombia.com
+10.170.129.75 devcorporativo.grupobancolombia.com.co
+#10.170.129.76 devpanama.grupobancolombia.com
+#10.170.129.77 devpuertorico.grupobancolombia.com
+#10.170.129.78 devrenting.grupobancolombia.com
+#10.170.129.80 devsucursalpanama.grupobancolombia.com
+#10.170.129.81 devsufi.grupobancolombia.com
+#10.170.129.83 devvalores.grupobancolombia.com
+10.170.129.82 devplink.grupobancolombia.com
+#10.170.129.106 devplink.grupobancolombia.com5
+10.170.129.73 devtu360.grupobancolombia.com
+#10.170.129.97 devtu360.grupobancolombia.com
+
+
+############## IHS - NEW QA #####################
+#10.170.8.197 qasufi.grupobancolombia.com #xrbcqpor02  ##Base
+#10.170.8.198 qa.grupobancolombia.com #Base 10059
+
+######### Banco ####
+#10.170.8.197 qa.grupobancolombia.com
+#10.170.8.198 qa.grupobancolombia.com
+#10.170.199.66 qa.grupobancolombia.com
+#10.170.199.90 qa.grupobancolombia.com
+10.170.8.197 qacorporativo.grupobancolombia.com.co
+#### Filiales Qa  
+#10.170.8.197 qasufi.grupobancolombia.com
+#10.170.199.81 qasufi.grupobancolombia.com
+#10.170.199.90 qasufi.grupobancolombia.com
+#10.170.255.138 qasufi.grupobancolombia.com
+#10.170.199.67 qaassetmanagement.grupobancolombia.com
+#10.170.199.68 qabancainversion.grupobancolombia.com
+#10.170.199.69 qacayman.grupobancolombia.com
+#10.170.199.70 qacomerciointernacional.grupobancolombia.com
+#10.170.199.71 qafactoring.grupobancolombia.com
+#10.170.199.72 qafiduciaria.grupobancolombia.com
+#10.170.199.74 qaleasing.grupobancolombia.com
+#10.170.199.76 qapanama.grupobancolombia.com
+#10.170.199.77 qapuertorico.grupobancolombia.com
+#10.170.199.78 qarenting.grupobancolombia.com
+#10.170.199.80 qasucursalpanama.grupobancolombia.com
+#10.170.199.83 qavalores.grupobancolombia.com
+#10.170.199.82 qaplink.grupobancolombia.com
+#10.170.199.106 qaplink.grupobancolombia.com
+#10.170.8.197 qaplink.grupobancolombia.com
+10.73.71.106 qa.banistmo.com
+10.170.199.73 qatu360.grupobancolombia.com
+#10.170.199.97 qatu360.grupobancolombia.com
+############## IHS PRD New #######################
+############## WAHS ##############################
+###Balanceador###
+#10.170.68.56 www.grupobancolombia.com
+#169.45.220.120 www.grupobancolombia.com ##Publica
+###IHS####
+#10.170.176.21 www.grupobancolombia.com #con esta configuracion va por el 1443
+#10.170.176.22 www.grupobancolombia.com #con esta configuracion va por el 1443
+#10.170.176.23 www.grupobancolombia.com #con esta configuracion va por el 1443
+###NODO###
+#10.170.187.29 www.grupobancolombia.com #Base 10039
+#10.170.187.30 www.grupobancolombia.com #Base 10059
+#10.170.187.31 www.grupobancolombia.com #Base 10059
+#10.170.187.30 grupobancolombia.com
+#10.170.176.21 grupobancolombia.com
+#10.170.187.29 sufi.grupobancolombia.com #10039
+#10.170.187.30 sufi.grupobancolombia.com #10059
+#10.170.187.31 sufi.grupobancolombia.com #10059
+#10.170.187.29 plink.grupobancolombia.com #Base 10039
+#10.170.187.30 plink.grupobancolombia.com #Base 10059
+#10.170.187.31 plink.grupobancolombia.com #Base 10059
+
+10.170.187.29 www.bancolombia.com #Base 10039
+
+##########Siwch Prd ###########
+#10.170.187.29 www.bancolombia.com #Base 10039 Wash
+#10.73.29.101 www.bancolombia.com #Base 10039  Dall
+##################################################
+############## DAll ##############################
+#10.73.29.101 #Base
+###Balanceador###
+#169.62.251.40 www.grupobancolombia.com
+###IHS####
+#10.209.5.212 www.grupobancolombia.com #con esta configuracion va por el 1443
+#10.209.5.213 www.grupobancolombia.com #con esta configuracion va por el 1443
+#10.209.5.214 www.grupobancolombia.com #con esta configuracion va por el 1443
+###NODO###
+#10.73.29.101 www.grupobancolombia.com #con esta configuracion va por el 10039
+#10.73.29.102 www.grupobancolombia.com #con esta configuracion va por el 10059
+#10.73.29.103 www.grupobancolombia.com #con esta configuracion va por el 10059
+#169.62.251.33 sufi.grupobancolombia.com ##IP PUBLICA
+#10.209.5.223 sufi.grupobancolombia.com #IHS01 SUFI
+#10.209.5.224 sufi.grupobancolombia.com #IHS03 SUFI
+#10.73.29.101 sufi.grupobancolombia.com #http://10.73.29.101:10039/
+#10.73.29.102 sufi.grupobancolombia.com #http://10.73.29.102:10059/
+#10.73.29.103 sufi.grupobancolombia.com #http://10.73.29.103:10059/
+#10.73.29.101 www.bancolombia.com #Base 10039
+
+#IHS
+#10.73.239.181 plink.grupobancolombia.com #10039
+#10.73.29.101 plink.grupobancolombia.com #10039
+#10.73.29.102 plink.grupobancolombia.com #10059
+#10.73.29.103 plink.grupobancolombia.com #10059
+
+Debes enviarme una carta donde hagas la solicitud de las cesantías, allí debes mencionar el motivo de retiro y el periodo en que se causaron las cesantías, en este caso sería desde enero de 2021 hasta el 30 de noviembre o diciembre de 2021, el mes ya debe estar cerrado, ejemplo la solicitud la haces con fecha corte al 30 de noviembre, te las pagan en diciembre y si haces con fecha corte al 30 de didiembre te las pagan en enero de 2022
+	Certificado de libertad y tradición del inmueble no mayor a 30 días
+	Copia de la promesa compraventa o encargo fiduciario donde podamos validar el plan de pagos que tiene estipulado
+
+    https://qaplink.grupobancolombia.com/$project/HomeFenix2021/plink
+
+    https://qaplink.grupobancolombia.com/$project/PlanesFenix2021/plink/planes
+    
+    https://qaplink.grupobancolombia.com/$project/CategoriasFenix2021/plink/categorias
+    
+    https://qaplink.grupobancolombia.com/$project/CategoriaBellezaFenix2021/plink/categorias/belleza
+    
+    https://qaplink.grupobancolombia.com/$project/CategoriaComidaFenix2021/plink/categorias/comida
+    
+    https://qaplink.grupobancolombia.com/$project/ComoUsarFenix2021/plink/como-usar-plink
+    
+    https://qaplink.grupobancolombia.com/$project/QueEsPlinkFenix2021/plink/que-es-plink
+
+    was dev
+https://10.170.129.66:9043/ibm/console/logon.jsp
+
+articulo base ext
+inf base int
+
+falta
+http://dev.grupobancolombia.com:10039/educacion-financiera/finanzas-personales/que-es-historial-crediticio
+http://dev.grupobancolombia.com:10039/educacion-financiera/finanzas-personales/leasing-vs-credito
+
+#layoutContainers .row.no-gutters .col-md-8 .component-control  .wpthemeNoSkin .wpthemeOverflowAuto {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+
+
+cd /opt/IBM/WebSphere/wp_profile/logs/WebSphere_Portal/
+tail -f | grep actionbar
+
+tail -1000f SystemOut.log
+
+/etc/hosts
+/AppServer/profiles/dmgr01/config/cells/dmgrCell01
+
+{
+    "num": [Placeholder tag="listnum"],
+    "path" : "[Placeholder tag="sitepath"]",
+    "id" : "[Placeholder tag="idnum"]",
+    "nombre" : "[Placeholder tag="name"]"
+}
+
+[Plugin:ifNotEmpty value="[Element key="Menu Continue Leyendo" type="content" context="current"]"]
+    {
+        "NUM" : "[Placeholder tag="listnum"]",
+        "ID" : "[Property field="id" type="content" context="autofill" ifempty="-9999"]"
+    },
+[/Plugin:ifNotEmpty]
+
+[Plugin:ifNotEmpty value="[Element key="Menu Continue Leyendo" type="content" context="autofill" format="id"]"]
+    {
+        "num": [Placeholder tag="listnum"],
+        "id" : "[Element key="Menu Continue Leyendo" type="content" context="autofill" format="id"]","id_cont" : "[Property field="id" type="content" context="autofill"]"
+    },
+[/Plugin:ifNotEmpty]
+
+
+cp -avr /opt/IBM/WebSphere/PortalServer/theme/wp.theme.themes/default85/installedApps/DefaultTheme85.ear /tmp
+
+cp -avr /opt/IBM/WebSphere/PortalServer/toolbar/wp.toolbar.themes/toolbar85/installedApps/ToolbarTheme85.ear /tmp
+
+cp -avr /opt/IBM/WebSphere/wp_profile/PortalServer/bin/result.xml /tmp
+
+/.xmlaccess.sh -user gcaldero -password Gcaldero2017. -url 10.170.129.66:10039/config -in input.xml -out registerTheme.xml
+
+
+/opt/IBM/WebSphere/logs/WebSphere_Portal/SystemOut.log
+/opt/IBM/WebSphere/logs/servicios/capitalInteligente.log
+/opt/IBM/WebSphere/AppServer/profiles/cw_profile/logs/server1/SystemOut.log
+/opt/IBM/WebSphere/profiles/dmgr01/logs/dmgr_20082020/SystemOut.log
+
+tail -1000f capitalInteligente.log
+
+{
+
+    "token": "d4ShdgFVtQUjLAXMczsMdAWyjfH5Ww4pwS5ESZC5",
+
+    "data": {
+
+        "nit": "1234568",
+
+        "name": "Prueba SQUADRA Hoy",
+
+        "email": "contacto@empresa1.com",
+
+        "ciudad": {
+
+            "depto": "Antioquia",
+
+            "ciudad": "Medellin"
+
+        },
+
+        "suscripcion": [
+
+            1,
+
+            2,
+
+            3,
+
+            4,
+
+            5
+
+        ]
+
+    }
+
+}
+
+
+<div id="content1"></div>
+<section id="entidades">
+        <div class="container">
+            <h2>
+                Entidades
+            </h2>
+            <ul id="tabsAccordion">
+                <li class="itemTab active">
+                    <div class="headItem">
+                        <p>
+                            Bancolombia S.A.
+                        </p>
+                        <svg width="18" height="10" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M17.092 0.293007L9.607 7.77801C9.216 8.16801 8.583 8.16801 8.193 7.77801L0.707 0.293007L0 1.00001L7.486 8.48501C8.265 9.26501 9.534 9.26501 10.314 8.48501L17.799 1.00001L17.092 0.293007Z"
+                                fill="#2C2A29" />
+                        </svg>
+                    </div>
+                    <div class="bodyItem">
+                        <div class="content">
+                            <p>
+                                Solicita aquí tu tarjeta de crédito<br>
+                                Realiza tus compras en tiendas físicas y online. Conoce todas las alternativas y
+                                encuentra
+                                la adecuada para ti.
+                            </p>
+                            <a href="https://www.grupobancolombia.com/personas/solicitud-de-productos/" title="" target="_blank">
+                                https://www.grupobancolombia.com/personas/solicitud-de-productos/
+                            </a>
+                        </div>
+                        <div class="content">
+                            <p>
+                                Abre ya tu cuenta en línea ¿Sabes cuál necesitas?<br>
+                                Escoge entre Cuenta de Ahorros, Nómina, Pensión o Bancolombia a la mano.
+                            </p>
+                            <a href="https://www.grupobancolombia.com/personas/solicitud-de-productos/cuentas/" title="" target="_blank">
+                                https://www.grupobancolombia.com/personas/solicitud-de-productos/cuentas/
+                            </a>
+                        </div>
+<div class="content">
+                         <p dir="ltr">Hazlo en línea Solicita tú crédito<br />
+Escoge la modalidad que más se adapte a tus necesidades y objetivos.</p>
+
+<a href="https://www.grupobancolombia.com/personas/solicitud-de-productos/creditos/" target="_blank" title="">https://www.grupobancolombia.com/personas/solicitud-de-productos/creditos/ </a>
+                        </div>
+<div class="content">
+                         <p dir="ltr">Educación financiera<br />
+Aprende a manejar tus finanzas para que logres tus objetivos.</p>
+
+<a href="https://www.grupobancolombia.com/educacion-financiera" target="_blank" title="">https://www.grupobancolombia.com/educacion-financiera </a>
+                        </div>
+<div class="content">
+                         <p dir="ltr">Canales<br />
+Conoce los canales transaccionales y de servicio al cliente que Bancolombia pone a tu disposición.</p>
+
+<a href="https://www.grupobancolombia.com/centro-de-ayuda/canales" target="_blank" title="">https://www.grupobancolombia.com/centro-de-ayuda/canales </a>
+                        </div>
+                    </div>
+                </li>
+     <!------------------------------------------------------------------------------------------------------------------>
+             
+                <li class="itemTab">
+                    <div class="headItem">
+                        <p>
+                            Fiduciaria Bancolombia S.A.
+                        </p>
+                        <svg width="18" height="10" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M17.092 0.293007L9.607 7.77801C9.216 8.16801 8.583 8.16801 8.193 7.77801L0.707 0.293007L0 1.00001L7.486 8.48501C8.265 9.26501 9.534 9.26501 10.314 8.48501L17.799 1.00001L17.092 0.293007Z"
+                                fill="#2C2A29" />
+                        </svg>
+                    </div>
+                    <div class="bodyItem">
+                        <div class="content">
+                            <p>
+                               Acerca de Fiduciaria Bancolombia <br> 
+
+En Fiduciaria Bancolombia queremos que conozcas más sobre nosotros. Por eso, ponemos a tu disposición información detallada sobre nuestro negocio. 
+                            </p>
+                            <a href="https://fiduciaria.grupobancolombia.com/wps/portal/fiduciaria/acerca-de/sobre-nosotros" title="" target="_blank">
+https://fiduciaria.grupobancolombia.com/wps/portal/fiduciaria/acerca-de/sobre-nosotros                             </a>
+                        </div>
+                        <div class="content">
+                            <p>
+Productos y Servicios                             </p>
+                            <p>Fondos de Inversión Colectiva:</p>
+                            <a href="https://fiduciaria.grupobancolombia.com/wps/portal/fiduciaria/productos-servicios/fondos-inversion-colectiva" title="" target="_blank">
+                              https://fiduciaria.grupobancolombia.com/wps/portal/fiduciaria/productos-servicios/fondos-inversion-colectiva 
+                            </a>
+ <br>
+                          
+                            <p>Fondos de Capital Privado: </p>
+                            <a href="https://fiduciaria.grupobancolombia.com/wps/portal/fiduciaria/productos-servicios/fondos-capital-privado" title="" target="_blank">
+                                https://fiduciaria.grupobancolombia.com/wps/portal/fiduciaria/productos-servicios/fondos-capital-privado 
+                            </a>
+                            </br>
+                            <p>Portafolios Delegados: </p>
+                            <a href="https://fiduciaria.grupobancolombia.com/wps/portal/fiduciaria/productos-servicios/portafolios-delegados" title="" target="_blank">
+                                https://fiduciaria.grupobancolombia.com/wps/portal/fiduciaria/productos-servicios/portafolios-delegados 
+                            </a>
+                            <br>
+                             <p>Negocios Fiduciarios: </p>
+                            <a href="https://fiduciaria.grupobancolombia.com/wps/portal/fiduciaria/productos-servicios/negocios-fiduciarios" title="" target="_blank">
+                                https://fiduciaria.grupobancolombia.com/wps/portal/fiduciaria/productos-servicios/negocios-fiduciarios   
+                            </a>
+                            <br>
+                             <p>Emisión de Bonos: </p>
+                            <a href="https://fiduciaria.grupobancolombia.com/wps/portal/fiduciaria/productos-servicios/emision-bonos" title="" target="_blank">
+                              https://fiduciaria.grupobancolombia.com/wps/portal/fiduciaria/productos-servicios/emision-bonos 
+                            </a>
+                        </div>
+
+                        <div class="content">
+                            <p>
+                                Capital Inteligente   
+                            </p>
+                          
+                            <a href="https://www.grupobancolombia.com/wps/portal/empresas/capital-inteligente" title="" target="_blank">
+                               https://www.grupobancolombia.com/wps/portal/empresas/capital-inteligente 
+                            </a>
+ 
+                          
+                            
+                             
+                        </div>
+                         <div class="content">
+                           
+                            <p>Contáctanos <br>
+
+En Fiduciaria Bancolombia disponemos de diversos canales para que puedas comunicarte con nosotros de manera directa, clara y sencilla. Conócelos en este espacio.   </p>
+                            <a href="https://fiduciaria.grupobancolombia.com/wps/portal/fiduciaria/contactanos" title="" target="_blank">
+                                https://fiduciaria.grupobancolombia.com/wps/portal/fiduciaria/contactanos  
+                            </a>
+ 
+                          
+                            
+                             
+                        </div>
+                        <div class="content">
+                           
+                            <p>Autorregulador del Mercado de Valores (AMV) 
+
+  </p>
+                            <a href="https://www.amvcolombia.org.co/" title="" target="_blank">
+                             https://www.amvcolombia.org.co/ 
+                            </a>
+ 
+                          
+                            
+                             
+                        </div>
+                    </div>
+                </li>
+  <!------------------------------------------------------------------------------------------------------------------>
+                <li class="itemTab">
+                    <div class="headItem">
+                        <p>
+                            Valores Bancolombia S.A.
+                        </p>
+                        <svg width="18" height="10" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M17.092 0.293007L9.607 7.77801C9.216 8.16801 8.583 8.16801 8.193 7.77801L0.707 0.293007L0 1.00001L7.486 8.48501C8.265 9.26501 9.534 9.26501 10.314 8.48501L17.799 1.00001L17.092 0.293007Z"
+                                fill="#2C2A29" />
+                        </svg>
+                    </div>
+                    <div class="bodyItem">
+                       <div class="content">
+                            <p>
+                               A cerca de Valores Bancolombia <br>
+
+En Valores Bancolombia queremos que conozcas más sobre nosotros. Por eso, ponemos a tu disposición información detallada de nuestro negocio.  
+                            </p>
+                            <a href="https://valores.grupobancolombia.com/wps/portal/valores-bancolombia/acerca-de/sobre-nosotros" title="" target="_blank">
+https://valores.grupobancolombia.com/wps/portal/valores-bancolombia/acerca-de/sobre-nosotros                              </a>
+                        </div>
+                        <div class="content">
+                            <p>
+                                Productos y Servicios 
+                            </p>
+                            <p>Apertura e inscripción de cuentas:</p>
+                            <a href="https://valores.grupobancolombia.com/wps/portal/valores-bancolombia/vinculacion-otros-procesos" title="" target="_blank">
+                                https://valores.grupobancolombia.com/wps/portal/valores-bancolombia/vinculacion-otros-procesos 
+                            </a>
+ 
+                          <br>
+                            <p>Fondos de Inversión Colectiva: </p>
+                            <a href="https://valores.grupobancolombia.com/wps/portal/valores-bancolombia/productos-servicios/fondos-inversion-colectiva" title="" target="_blank">
+                                https://valores.grupobancolombia.com/wps/portal/valores-bancolombia/productos-servicios/fondos-inversion-colectiva 
+                            </a>
+                            <br>
+                            <p>Fondos de Capital Privado: </p>
+                            <a href="https://valores.grupobancolombia.com/wps/portal/valores-bancolombia/productos-servicios/fondos-capital-privado" title="" target="_blank">
+                                https://valores.grupobancolombia.com/wps/portal/valores-bancolombia/productos-servicios/fondos-capital-privado 
+                            </a>
+                            <br>
+                             <p>Portafolios Delegados: </p>
+                            <a href="https://valores.grupobancolombia.com/wps/portal/valores-bancolombia/productos-servicios/portafolios-delegados" title="" target="_blank">
+                                https://valores.grupobancolombia.com/wps/portal/valores-bancolombia/productos-servicios/portafolios-delegados  
+                            </a>
+                            <br>
+                             <p>Mercado Monetario: </p>
+                            <a href="https://valores.grupobancolombia.com/wps/portal/valores-bancolombia/productos-servicios/mercadomonetario" title="" target="_blank">
+                               https://valores.grupobancolombia.com/wps/portal/valores-bancolombia/productos-servicios/mercadomonetario  
+                            </a>
+                            <br>
+                            <p>Acciones: </p>
+                            <a href="https://valores.grupobancolombia.com/wps/portal/valores-bancolombia/productos-servicios/acciones" title="" target="_blank">
+                               https://valores.grupobancolombia.com/wps/portal/valores-bancolombia/productos-servicios/acciones   
+                            </a>
+                             <br>
+                             <p>Formadores de Liquidez: </p>
+                            <a href="https://valores.grupobancolombia.com/wps/portal/valores-bancolombia/productos-servicios/formadores-liquidez" title="" target="_blank">
+                        https://valores.grupobancolombia.com/wps/portal/valores-bancolombia/productos-servicios/formadores-liquidez                             </a>
+ <br>
+                 <p>Renta Fija: </p>
+                            <a href="https://valores.grupobancolombia.com/wps/portal/valores-bancolombia/productos-servicios/renta-fija" title="" target="_blank">
+                           https://valores.grupobancolombia.com/wps/portal/valores-bancolombia/productos-servicios/renta-fija    </a>
+                            <br>
+                          <p>Futuros: </p>
+                            <a href="https://valores.grupobancolombia.com/wps/portal/valores-bancolombia/productos-servicios/futuros" title="" target="_blank">
+https://valores.grupobancolombia.com/wps/portal/valores-bancolombia/productos-servicios/futuros    </a>
+ <br>
+ <p>Corresponsalía: </p>
+                            <a href="https://valores.grupobancolombia.com/wps/portal/valores-bancolombia/productos-servicios/corresponsalias" title="" target="_blank">
+https://valores.grupobancolombia.com/wps/portal/valores-bancolombia/productos-servicios/corresponsalias   </a>
+ <br>
+<p>Fondos de Terceros:</p>
+                            <a href="https://valores.grupobancolombia.com/wps/portal/valores-bancolombia/productos-servicios/fondo-de-terceros" title="" target="_blank">
+https://valores.grupobancolombia.com/wps/portal/valores-bancolombia/productos-servicios/fondo-de-terceros   </a>
+ <br>
+<p>Invesbot:</p>
+                            <a href="https://valores.grupobancolombia.com/wps/portal/valores-bancolombia/productos-servicios/canales/invesbot" title="" target="_blank">
+https://valores.grupobancolombia.com/wps/portal/valores-bancolombia/productos-servicios/canales/invesbot    </a>
+                        </div>
+
+                        <div class="content">
+                            <p>
+                              Capital Inteligente   
+                            </p>
+                        
+       <a href="https://www.grupobancolombia.com/wps/portal/empresas/capital-inteligente" title="" target="_blank">
+                             https://www.grupobancolombia.com/wps/portal/empresas/capital-inteligente  
+                            </a>
+ 
+                          
+                        
+                             
+                        </div>
+                         <div class="content">
+                           
+                            <p>Contáctanos <br>
+
+En Valores Bancolombia disponemos de diversos canales para que puedas comunicarte con nosotros de manera directa, clara y sencilla. Conócelos en este espacio.  </p>
+
+<p>Chat en línea con un asesor:</p>
+                            <a href="https://valores.grupobancolombia.com/wps/portal/valores-bancolombia/chatea-con-nosotros" title="" target="_blank">
+                               https://valores.grupobancolombia.com/wps/portal/valores-bancolombia/chatea-con-nosotros 
+                            </a>
+                             <br>
+                            <p>Comunícate aquí con un asesor sin costo:  </p>
+                            <a href="https://valores.grupobancolombia.com/wps/portal/valores-bancolombia/llamanos" title="" target="_blank">
+                              https://valores.grupobancolombia.com/wps/portal/valores-bancolombia/llamanos  
+                            </a>
+                             <br>
+                             <p>Deja aquí tus datos y pronto te llamaremos:</p>
+                            <a href="https://valores.grupobancolombia.com/wps/portal/valores-bancolombia/dejanos-llamarte" title="" target="_blank">
+                              https://valores.grupobancolombia.com/wps/portal/valores-bancolombia/dejanos-llamarte  
+                            </a>
+                             <br>
+                             <p>Visítanos: </p>
+                            <a href="https://valores.grupobancolombia.com/wps/portal/valores-bancolombia/puntos-de-atencion" title="" target="_blank">
+https://valores.grupobancolombia.com/wps/portal/valores-bancolombia/puntos-de-atencion                             </a>
+ 
+                          
+                            
+                             
+                        </div>
+                        
+                    </div>
+                </li>
+
+  <!------------------------------------------------------------------------------------------------------------------>
+
+                <li class="itemTab">
+                    <div class="headItem">
+                        <p>
+                            Banca de Inversión Bancolombia S.A.
+                        </p>
+                        <svg width="18" height="10" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M17.092 0.293007L9.607 7.77801C9.216 8.16801 8.583 8.16801 8.193 7.77801L0.707 0.293007L0 1.00001L7.486 8.48501C8.265 9.26501 9.534 9.26501 10.314 8.48501L17.799 1.00001L17.092 0.293007Z"
+                                fill="#2C2A29" />
+                        </svg>
+                    </div>
+                    <div class="bodyItem">
+                        <div class="content">
+                            <p>
+                               Acerca de Banca de Inversión Bancolombia <br>
+
+Queremos que conozca más sobre nosotros. Por eso, ponemos a su disposición información detallada de nuestro negocio. 
+                            </p>
+                            <a href="https://bancainversion.grupobancolombia.com/wps/portal/banca-inversion/acerca-de/sobre-nosotros" title="" target="_blank">
+                                https://bancainversion.grupobancolombia.com/wps/portal/banca-inversion/acerca-de/sobre-nosotros 
+                            </a>
+                        </div>
+                        <div class="content">
+                            <p>
+                                Productos y Servicios 
+                            </p>
+                            <p>Financiamiento estructurado:</p>
+                            <a href="https://bancainversion.grupobancolombia.com/wps/portal/banca-inversion/productos-servicios/financiamiento-estructurado" title="" target="_blank">
+                                https://bancainversion.grupobancolombia.com/wps/portal/banca-inversion/productos-servicios/financiamiento-estructurado
+                            </a>
+  <br>
+                          
+                            <p>Fusiones y adquisiciones: </p>
+                            <a href="https://bancainversion.grupobancolombia.com/wps/portal/banca-inversion/productos-servicios/fusiones-adquisiciones" title="" target="_blank">
+                                https://bancainversion.grupobancolombia.com/wps/portal/banca-inversion/productos-servicios/fusiones-adquisiciones 
+                            </a>
+                             <br>
+                            <p>Inversiones de Capital: </p>
+                            <a href="https://bancainversion.grupobancolombia.com/wps/portal/banca-inversion/productos-servicios/fusiones-adquisiciones" title="" target="_blank">
+                                https://bancainversion.grupobancolombia.com/wps/portal/banca-inversion/productos-servicios/fusiones-adquisiciones 
+                            </a>
+                             <br>
+                             <p>Mercado de Capitales: </p>
+                            <a href="https://bancainversion.grupobancolombia.com/wps/portal/banca-inversion/productos-servicios/mercado-capitales" title="" target="_blank">
+                                https://bancainversion.grupobancolombia.com/wps/portal/banca-inversion/productos-servicios/mercado-capitales  
+                            </a>
+                             <br>
+                             <p>Gestión de Riesgo de Mercado: </p>
+                            <a href="https://bancainversion.grupobancolombia.com/wps/portal/banca-inversion/productos-servicios/consultoria-financiera-gestion-de-riesgos" title="" target="_blank">
+                               https://bancainversion.grupobancolombia.com/wps/portal/banca-inversion/productos-servicios/consultoria-financiera-gestion-de-riesgos  
+                            </a>
+                        </div>
+
+                        <div class="content">
+                            <p>
+                                Industrias  
+                            </p>
+                            <p>Energía y Recursos Naturales:</p>
+                            <a href="https://bancainversion.grupobancolombia.com/wps/portal/banca-inversion/industrias/energia-recursos-naturales" title="" target="_blank">
+                                https://bancainversion.grupobancolombia.com/wps/portal/banca-inversion/industrias/energia-recursos-naturales  
+                            </a>
+ 
+                           <br>
+                            <p>Industria y Comercio: </p>
+                            <a href="https://bancainversion.grupobancolombia.com/wps/portal/banca-inversion/industrias/industria-comercio" title="" target="_blank">
+                              https://bancainversion.grupobancolombia.com/wps/portal/banca-inversion/industrias/industria-comercio 
+                            </a>
+                             <br>
+                            <p>Infraestructura e Inmobiliario:</p>
+                            <a href="https://bancainversion.grupobancolombia.com/wps/portal/banca-inversion/industrias/infraestructura" title="" target="_blank">
+                                https://bancainversion.grupobancolombia.com/wps/portal/banca-inversion/industrias/infraestructura 
+                            </a>
+                             <br>
+                             <p>Servicios Financieros y No Financieros: </p>
+                            <a href="https://bancainversion.grupobancolombia.com/wps/portal/banca-inversion/industrias/instituciones-financieras" title="" target="_blank">
+                                https://bancainversion.grupobancolombia.com/wps/portal/banca-inversion/industrias/instituciones-financieras   
+                            </a>
+                             
+                        </div>
+                         <div class="content">
+                           
+                            <p>Capital Inteligente  </p>
+                            <a href="https://www.grupobancolombia.com/wps/portal/empresas/capital-inteligente" title="" target="_blank">
+                                https://www.grupobancolombia.com/wps/portal/empresas/capital-inteligente  
+                            </a>
+ 
+                          
+                            
+                             
+                        </div>
+                        <div class="content">
+                           
+                            <p>Contáctanos <br>
+
+En Banca de Inversión Bancolombia disponemos de diversos canales para que pueda comunicarse con nosotros de manera directa, clara y sencilla. Conózcalos en este espacio.  </p>
+                            <a href="https://bancainversion.grupobancolombia.com/wps/portal/banca-inversion/contactenos" title="" target="_blank">
+                               https://bancainversion.grupobancolombia.com/wps/portal/banca-inversion/contactenos 
+                            </a>
+ 
+                          
+                            
+                             
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script async>
+const breakpoint = window.matchMedia("(min-width:31.25em)");
+let mySwiper;
+const breakpointChecker = function () {
+    if (!0 !== breakpoint.matches)
+      return !1 === breakpoint.matches ? enableSwiper() : void 0;
+    void 0 !== mySwiper && mySwiper.destroy(!0, !0);
+  },
+  enableSwiper = function () {
+    let e = document.getElementsByClassName("itemColumna"),
+      t = document.getElementsByClassName("subItemPasoPaso"),
+      n = document.getElementsByClassName("itemContenedorPreguntasFrecuentes"),
+      a = document.getElementsByClassName("ancla"),
+      s = document.getElementsByClassName("itemPrincipios");
+    for (let t = 0; t < e.length; t++) {
+      e[t].classList.add("swiper-slide");
+    }
+    const i = document.createElement("div");
+    i.classList.add("subItemPasoPaso"),
+      (imagenColumnDesk = document.querySelector(".itemPasoPaso:nth-child(1)")
+        .childNodes[1]),
+      (txtColumnDesk = document.querySelector(".itemPasoPaso:nth-child(1)")
+        .childNodes[3]),
+      (btnColumnDesk = document.querySelector(".itemPasoPaso:nth-child(1)")
+        .childNodes[5]),
+      console.log(imagenColumnDesk),
+      i.appendChild(imagenColumnDesk, txtColumnDesk, btnColumnDesk),
+      i.appendChild(txtColumnDesk),
+      i.appendChild(btnColumnDesk),
+      (sliderMovil = document.querySelector(".itemPasoPaso:nth-child(2)")),
+      sliderMovil.insertBefore(i, sliderMovil.firstChild),
+      (itemHidden = document.querySelector(".itemPasoPaso:nth-child(1)")),
+      itemHidden.classList.add("hidden");
+    for (let e = 0; e < t.length; e++) {
+      t[e].classList.add("swiper-slide");
+    }
+    for (let e = 0; e < n.length; e++) {
+      n[e].classList.add("swiper-slide");
+    }
+    for (let e = 0; e < a.length; e++) {
+      a[e].classList.add("swiper-slide");
+    }
+    for (let e = 0; e < s.length; e++) {
+      s[e].classList.add("swiper-slide");
+    }
+    (mySwiper = new Swiper(".swiper1", {
+      slidesPerView: 1,
+      spaceBetween: 0,
+      a11y: !0,
+      keyboardControl: !0,
+      grabCursor: !0,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: !0,
+        renderBullet: function (e, t) {
+          return '<span class="' + t + '">' + (e + 1) + "</span>";
+        },
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    })),
+      (mySwiper2 = new Swiper(".swiper2", {
+        slidesPerView: 1,
+        spaceBetween: 0,
+        a11y: !0,
+        keyboardControl: !0,
+        grabCursor: !0,
+        pagination: {
+          el: "#swiper-pagination2",
+          clickable: !0,
+          renderBullet: function (e, t) {
+            return '<span class="' + t + '">' + (e + 1) + "</span>";
+          },
+        },
+        navigation: {
+          nextEl: "#swiper-button-next",
+          prevEl: "#swiper-button-prev",
+        },
+      })),
+      (mySwiper3 = new Swiper(".swiper3", {
+        slidesPerView: 1,
+        spaceBetween: 0,
+        a11y: !0,
+        keyboardControl: !0,
+        grabCursor: !0,
+        pagination: {
+          el: ".swiper-pagination3",
+          clickable: !0,
+          renderBullet: function (e, t) {
+            return '<span class="' + t + '">' + (e + 1) + "</span>";
+          },
+        },
+        navigation: {
+          nextEl: "#swiper-button-next2",
+          prevEl: "#swiper-button-prev2",
+        },
+      })),
+      (mySwiperAncla = new Swiper(".swiperAncla", {
+        slidesPerView: "auto",
+        spaceBetween: 0,
+        a11y: !0,
+        keyboardControl: !0,
+        grabCursor: !0,
+      })),
+      (mySwiper3 = new Swiper(".swiperPracticas", {
+        slidesPerView: 1,
+        spaceBetween: 0,
+        a11y: !0,
+        keyboardControl: !0,
+        grabCursor: !0,
+      }));
+  };
+breakpoint.addEventListener("change", () => {}), breakpointChecker();
+const itemTab = document.getElementsByClassName("itemTab"),
+  collapseEevent = function () {
+    for (let e = 0; e < itemTab.length; e++) {
+      const t = itemTab[e];
+      t.onclick = function () {
+        t.classList.contains("active")
+          ? t.classList.remove("active")
+          : t.classList.add("active");
+      };
+    }
+  },
+  itemTabs = document.getElementsByClassName("itemTabPasoPaso"),
+  contentTabs = document.getElementsByClassName("step"),
+  content1 = document.getElementById("content1"),
+  content2 = document.getElementById("content2"),
+  content3 = document.getElementById("content3"),
+  tabsFunction = () => {
+    content1.classList.add("active");
+    for (let e = 0; e < itemTabs.length; e++) {
+      const t = itemTabs[e];
+      t.onclick = function () {
+        if (t.classList.contains("active"));
+        else {
+          for (let e = 0; e < itemTabs.length; e++) {
+            itemTabs[e].classList.remove("active");
+          }
+          for (let e = 0; e < contentTabs.length; e++) {
+            contentTabs[e].classList.remove("active");
+          }
+          t.classList.add("active"),
+            "navItem1" === t.id
+              ? content1.classList.add("active")
+              : "navItem2" === t.id
+              ? content2.classList.add("active")
+              : "navItem3" === t.id && content3.classList.add("active");
+        }
+      };
+    }
+  },
+  buenasPracticas = document.getElementById("buenasPracticas"),
+  principios = document.getElementById("principios"),
+  obligacionesEspeciales = document.getElementById("obligacionesEspeciales"),
+  sistemaAtencion = document.getElementById("sistemaAtencion"),
+  derechos = document.getElementById("derechos"),
+  itemContentAncla = document.getElementsByClassName("itemContentAncla"),
+  ancla = document.getElementsByClassName("ancla"),
+  tabsFunctionAncla = () => {
+    sistemaAtencion.classList.add("active");
+    for (let e = 0; e < ancla.length; e++) {
+      const t = ancla[e];
+      t.onclick = function () {
+        if (t.classList.contains("active"));
+        else {
+          for (let e = 0; e < ancla.length; e++) {
+            ancla[e].classList.remove("active");
+          }
+          for (let e = 0; e < itemContentAncla.length; e++) {
+            itemContentAncla[e].classList.remove("active");
+          }
+          t.classList.add("active"),
+            "buenasPracticasAncla" === t.id
+              ? buenasPracticas.classList.add("active")
+              : "principiosAncla" === t.id
+              ? principios.classList.add("active")
+              : "obligacionesEspecialesAncla" === t.id
+              ? obligacionesEspeciales.classList.add("active")
+              : "sistemaAtencionAncla" === t.id
+              ? sistemaAtencion.classList.add("active")
+              : "derechosAncla" === t.id && derechos.classList.add("active");
+        }
+      };
+    }
+  },
+  anclas = document.getElementsByClassName("ancla"),
+  anclaMenu = () => {
+    for (let e = 0; e < anclas.length; e++) {
+      anclas[e].onclick = function (e) {
+        let t = e.target.parentNode;
+        "ancla active" == t.className
+          ? removerClaseAncla()
+          : (removerClaseAncla(), t.classList.add("active"));
+      };
+    }
+  },
+  removerClaseAncla = () => {
+    for (let e = 0; e < anclas.length; e++) {
+      anclas[e].classList.remove("active");
+    }
+  }
+  //closeCard = document.getElementById("closeCard"),
+  //contentCloseCard = document.getElementById("carditem");
+  // closeCard.onclick = function () {
+  //   contentCloseCard.classList.add("hidden");
+  // };
+const linkModal = document.getElementById("linkModal"),
+  modalConsumidor = document.getElementById("modalConsumidor"),
+  closeModal = document.getElementsByClassName("closeModal"),
+  modalBackdrop = document.getElementById("modalBackdrop");
+linkModal.onclick = function (e) {
+  e.preventDefault(),
+    modalConsumidor.classList.contains("active") ||
+      (modalConsumidor.classList.add("active"),
+      modalBackdrop.classList.add("active"));
+};
+for (let e = 0; e < closeModal.length; e++) {
+  closeModal[e].onclick = function () {
+    modalConsumidor.classList.contains("active") &&
+      (modalConsumidor.classList.remove("active"),
+      modalBackdrop.classList.remove("active"));
+  };
+}
+window.addEventListener("DOMContentLoaded", () => {
+  collapseEevent(), tabsFunction(), tabsFunctionAncla();
+});
+</script>
+
+Se solicta desde el área de Negocio -> SEO - Mercadeo Digital actualizar redirecciones orígen - destino de URL's en el Portal de Contenidos, con el fin de optimizar estrategias de posicionamiento SEO en motores de búsqueda como Google; dicha actividad se hace sobre los archivos de configuración HTACCESS dentro de los IHS's de los Ambientes de Producción Viejo (8.5) y de los ambientes de produccion nuevo (9) de IBM Portal .
+# -------------------------------#
+| Máquinas Produccion Bancolombia|
+# -------------------------------#
+# -------------------------------#
+| Máquinas Produccion Version 8.5|
+# -------------------------------#
+
+-Bancolombia
+
+WDC04:
+Xrbcpihs01h.bancolombia.com - 10.170.194.131
+Xrbcpihs02h.bancolombia.com - 10.170.194.132
+Xrbcpihs03h.bancolombia.com - 10.170.194.133
+Xrbcpihs04h.bancolombia.com - 10.170.194.134
+DAL13:
+xrbcpihs01d.bancolombia.com - 10.73.73.201
+Xrbcpihs02d.bancolombia.com - 10.73.73.202
+Xrbcpihs03d.bancolombia.com - 10.73.73.203
+Xrbcpihs04d.bancolombia.com - 10.73.73.204
+
+
+- En éste Ambiente de Producción se debe actualizar los siguientes archivos:
+
+
+**Bancolombia.htaccess ( HTPROD8.5Bancolombia.htaccess )
+
+
+
+- Se debe reiniciar el IHS luego de la actualización del archivo
+
+# -----------------------------#
+| Máquinas Produccion version 9|
+# -----------------------------#
+
+-Bancolombia
+
+DAL13:
+Xrbcpihs05d.bancolombia.com 10.73.73.211
+Xrbcpihs06d.bancolombia.com 10.73.73.212
+Xrbcpihs07d.bancolombia.com 10.73.73.213
+Xrbcpihs08d.bancolombia.com 10.73.73.214
+
+WDC04:
+Xrbcpihs05w.bancolombia.com 10.170.194.139
+Xrbcpihs06w.bancolombia.com 10.170.194.140
+Xrbcpihs07w.bancolombia.com 10.170.194.142
+Xrbcpihs08w.bancolombia.com 10.170.194.141
+
+- En éste Ambiente de Producción se debe actualizar los siguientes archivos:
+
+Bancolombia
+
+**Bancolombia.htaccess ( ht9PRODBancolombia.htaccess )
+
+
+- Se debe reiniciar el IHS luego de la actualización.
+• Problema o Situación Actual: Se requiere la actualización del contexto de las URL's en cuestión.
+# -----------------------#
+| Solución funcional |
+# -----------------------#
+- Se deben ejecutar las actualizaciones de los archivos adjuntos.
+# --------------------#
+| Solución técnica |
+# --------------------#
+- Implementar regla de redirección tipo 301 (redirección de tipo permanente) en el archivo .HTACCESS de Producción Viejo (Versión 8.5) y de Produccion nuevo (Version 9).
+• Beneficio: Validar en Ambientes de Producción que la actualización de los archivos HTACCESS cumplan con la reglas de redirección de forma correcta.
+• Impacto: Bajo, no se genera indisponibilidad del aplicativo en Producción. Se aplica el reinicio por instancia de IHS.
+
+
+Cordial saludo!
+
+Se solicta desde el área de Negocio -> SEO - Mercadeo Digital actualizar redirecciones Bancolombia y GrupoBancolombia - destino de URL's en el Portal de Contenidos, con el fin de optimizar estrategias de posicionamiento SEO en motores de búsqueda como Google; dicha actividad se hace sobre los archivos de configuración HTACCESS y SITEMAP dentro de los IHS's de los Ambientes de produccion nuevo (9) y producción Viejo(8.5) de IBM Portal .
+
+# -------------------------------#
+| Máquinas Produccion Bancolombia|
+# -------------------------------#
+
+# --------------------------------#
+| Máquinas Produccion version 8.5|
+# --------------------------------#
+
+-Bancolombia
+
+WDC04:
+Xrbcpihs01h.bancolombia.com - 10.170.194.131
+Xrbcpihs02h.bancolombia.com - 10.170.194.132
+Xrbcpihs03h.bancolombia.com - 10.170.194.133
+Xrbcpihs04h.bancolombia.com - 10.170.194.134
+
+DAL13:
+xrbcpihs01d.bancolombia.com - 10.73.73.201
+Xrbcpihs02d.bancolombia.com - 10.73.73.202
+Xrbcpihs03d.bancolombia.com - 10.73.73.203
+Xrbcpihs04d.bancolombia.com - 10.73.73.204
+
+# -----------------------------#
+| Máquinas Produccion version 9|
+# -----------------------------#
+
+-Bancolombia
+
+DAL13:
+Xrbcpihs05d.bancolombia.com 10.73.73.211
+Xrbcpihs06d.bancolombia.com 10.73.73.212
+Xrbcpihs07d.bancolombia.com 10.73.73.213
+Xrbcpihs08d.bancolombia.com 10.73.73.214
+
+WDC04:
+Xrbcpihs05w.bancolombia.com 10.170.194.139
+Xrbcpihs06w.bancolombia.com 10.170.194.140
+Xrbcpihs07w.bancolombia.com 10.170.194.142
+Xrbcpihs08w.bancolombia.com 10.170.194.141
+
+- En éstos Ambientes de Producción se debe actualizar los siguientes archivos:
+
+Bancolombia
+
+**Bancolombia.htaccess ( ht9PRODBancolombia.htaccess )
+**Banco sitemap.xml
+
+- Se debe reiniciar el IHS luego de la actualización.
+• Problema o Situación Actual: Se requiere la actualización del contexto de las URL's en cuestión.
+# -----------------------#
+| Solución funcional |
+# -----------------------#
+- Se deben ejecutar las actualizaciones de los archivos adjuntos.
+# --------------------#
+| Solución técnica |
+# --------------------#
+- Implementar regla de redirección tipo 301 (redirección de tipo permanente) en el archivo .HTACCESS de Produccion nuevo (Version 9).
+- Actualización Sitemap
+• Beneficio: Validar en Ambientes de Producción que la actualización de los archivos HTACCESS cumplan con la reglas de redirección de forma correcta y adicional actualizar el sitemap del sitio.
+
+https://autenticacion.grupobancolombia.com/login/oauth/authorize/?response_type=code&client_id=PCB&redirect_uri=https://www.bancolombia.com/fua/contenido
+
+
+https://fua-qa.apps.ambientesbc.com/login/oauth/authorize/?response_type=code&client_id=PCB&redirect_uri=https://ecosistemas-ext-qa.apps.ambientesbc.com/networking/api/v1/security/linkages
+
+
+https://autenticaqa3.bancolombia.com/login/oauth/authorize?response_type=code&client_id=PCB&redirect_uri=https://qa.grupobancolombia.com/fua/contenido
+
+
+https://fua-qa.apps.ambientesbc.com/login/oauth/authorize?response_type=code&client_id=PCB&redirect_uri=https://qa.grupobancolombia.com/fua/contenido
+
+
+
+16 ihs
+8 por cada datacenter
+4 por cada nodo
+
+
+3955135 Creación de DNS
+3958703
+3940280 Generación de Request para las filiales
+3958824 Firma Certificado Digital de QA para 5 filiales
+3939781 Creacion de Portales Virtuales de Filiales
+
+
+egacosta
+daflopez
+yentobon
+resparra
+hcamacho
+edmrodri
+gcaldero
+
+3548155 - oc vpn segmentos de red
+3554624 - oc creacion de usuarios dllo qa
+3572515 - oc htaccess
+3576797 - oc contexto pdn negocios
+3578692 - oc paso pdn
+3678286 - oc htaccess 8.5 qa
+3663137 - oc htaccess 9.0 qa
+2184740 - oc usuario so
+3663137 - 3666906 aducuara
+3836417 gcaldero sistemas operativos
+
+
+3774513 - qa ihs bancolombia capital
+
+Portal de Contenidos Grupo Bancolombia_AW1218001
+%Portales_xrbcp%
+RFC estado oc
+
+ejbeltra
+
+certificados
+red
+portales
+
+portal virtual
+qa
+
+pdn
+oc theme
+oc sindicador
+oc exportar xml importar xml
+oc cabeceras
+aprovisonar ihs y nodos
+
+3804601 - oc desaprovicionar sistemas operativo filial vieja de cayman
+3775200 - oc paralela aprovisionamniento virtual server a nivel de balanceador
+3775215 - oc para generar request
+3786221 oc para firma de certificdo digital
+
+
+3795468
+3795468
+3793916
+
+3809068
+
+oc para instalar certificado
+oc para sindicadores qa a produccion
+oc para pagina de contingencia
+oc para creacion de portal virtual
+oc dominio dns glsb
+
+
+desaprovicionar cayman
+
+
+https://10.170.199.66:1443/empresas ihs grupo
+https://10.170.199.75:1443/empresas ihs www
+https://10.73.71.104:443/wps/portal/empresas qa 8.5
+
+10.73.71.78 qa database
+
+
+
+cursos/estrategias-ingles/
+cursos/english-activities/
+cursos/ingles-principiantes/
+cursos/taller-descripciones-personales/
+cursos/ingles-basico-principiantes/
+cursos/taller-elementos-trabajo/
+cursos/presente-simple-vocabulario-comun/
+cursos/descripcion-familia/
+cursos/fechas-horas-expresiones-simples/
+cursos/preguntas-respuestas/
+cursos/basico-elementos-casa/
+cursos/articulos-verbosmodales/
+cursos/adverbios-sustantivos/
+cursos/taller-practica-cocina/
+cursos/cantidad-gerundios/
+cursos/a2-preposiciones-y-presente-continuo/
+cursos/conjunciones-superlativos/
+cursos/taller-partes-cuerpo/
+cursos/experiencias-pasadas/
+cursos/ingles-basico-descripciones-comparativos/
+cursos/basico-vocabulario-expresiones/
+cursos/basico-pronunciacion/
+cursos/ingles-basico-escritura/
+cursos/ingles-basico-networking/
+cursos/ingles-compras/
+cursos/ingles-uso-cotidiano/
+cursos/misterio/
+cursos/interactivo-atrapados-tecnologia/
+cursos/ingles-viajes/
+
+cursos/ingles-intermedio-tiempo-cantidad/
+cursos/conectores-preferencias/
+cursos/infinitivos-transitivos/
+cursos/presente-perfecto/
+cursos/pronombres-clausulas/
+cursos/adjetivos-voz-pasiva/
+cursos/prefijos-adjetivos/
+cursos/solicitudes/
+cursos/palabras-interrogativas/
+cursos/estructuras-paralelas/
+cursos/comparativos-paralelos/
+cursos/verbos-causativos/
+cursos/practica-gramatical-condicionales/
+cursos/intermedio-vocabulario-expresiones/
+cursos/ingles-intermedio-pronunciacion/
+cursos/intermedio-escritura/
+cursos/intermedio-gramatica/
+cursos/ingles-intermedio-conversacion/
+cursos/ingles-intermedio-trabajo/
+
+cursos/oraciones-relativas/
+cursos/intenciones-comparaciones/
+cursos/pasado-perfecto-pasivo-adverbiales/
+cursos/condicionales-situaciones-hipoteticas/
+cursos/ingles-avanzado-argumentacion/
+cursos/recursos-linguisticos/
+cursos/habilidades-comunicacion/
+cursos/expresiones-idiomaticas/
+cursos/avanzado-vocabulario-expresiones/
+cursos/reducciones-conectores/
+cursos/ingles-avanzado-pronunciacion/
+cursos/ingles-avanzado-escritura/
+cursos/frases-expresiones-comunes/
+cursos/frases-expresiones-negocios/
+cursos/gramatica-b2/
+cursos/avanzado-gramatica/
+cursos/inglesb2-conversacion/
+cursos/conversacion-avanzado/
+cursos/avanzado-trabajo/
+
+cursos/ingles-customer-service/
+cursos/entrevistas-ingles/
+cursos/preparacion-toefl/
+cursos/preparacion-ielts/
+cursos/ingles-developers/
+cursos/ingles-avanzado-developers/
+cursos/ingles-marketing/
+cursos/ingles-ventas-negocios/
+cursos/ingles-finanzas/
+cursos/ingles-startups/
+cursos/ingles-produccion/
+
+
+mo71u27c62ug
+
+contenful
+
+Personal Access Token
+CFPAT-pyW2A7fkLd7nXPEJRjfE1ZxiQslt4a5C-_o_SvHSwpw
+
+user: calde6088@gmail.com
+pass: cursos2019.
+
+url new
+https://library-sdb.apps.bancolombia.com/bds/3.0.0/bds.min.css
+https://library-sdb.apps.bancolombia.com/bds/3.0.0/bds.min.js
+
+url old
+https://library-sdb.apps.bancolombia.com/2.0.27/js/bds.min.js
+https://library-sdb.apps.bancolombia.com/2.0.27/bds.min.css
+
+https://galatea-dev.apps.ambientesbc.com/2.0.20/bds.min.css
+
+<a rel="dynamic-content" href="dyn-cs:id:st_wcm_content?path=Script+Portlet+Library/Script+Portlet+Applications/chatLeasing"></a>
+
+169.62.243.131 leasing.grupobancolombia.com
+10.73.71.104 leasing.grupobancolombia.com
+
+
+http://devpanama.grupobancolombia.com:10039/myportal/panama/productos-servicios/vinculaci%C3%B3n%20y%20actualizaci%C3%B3n%20bancolombia%20panam%C3%A1/
+http://devpanama.grupobancolombia.com:10039/myportal/panama/productos-servicios/conexi%C3%B3n%20empresarial%20grupo%20bancolombia
+http://devpanama.grupobancolombia.com:10039/myportal/panama/productos-servicios/cuentas-ahorro-dolares
+http://devpanama.grupobancolombia.com:10039/myportal/panama/productos-servicios/depositos-plazos-cdt
+http://devpanama.grupobancolombia.com:10039/myportal/panama/productos-servicios/capital-trabajo
+http://devpanama.grupobancolombia.com:10039/myportal/panama/productos-servicios/factoring-importacion
+http://devpanama.grupobancolombia.com:10039/myportal/panama/productos-servicios/cuentas-corrientes-dolares-euros
+http://devpanama.grupobancolombia.com:10039/myportal/panama/productos-servicios/Sucursal-Virtual-Empresas-filiales
+http://devpanama.grupobancolombia.com:10039/myportal/panama/productos-servicios/credito-tesoreria
+http://devpanama.grupobancolombia.com:10039/myportal/panama/productos-servicios/factoring-exportacion-con-recursos
+http://devpanama.grupobancolombia.com:10039/myportal/panama/productos-servicios/tarjetas_credito_cayman_visa
+http://devpanama.grupobancolombia.com:10039/myportal/panama/productos-servicios/tarjetas_credito_cayman_visa/tarjeta_cr%C3%A9dito_cayman_visa_empresarial
+http://devpanama.grupobancolombia.com:10039/myportal/panama/productos-servicios/prefinanciaci%C3%B3n-de-exportaciones-panam%C3%A1
+http://devpanama.grupobancolombia.com:10039/myportal/panama/productos-servicios/leasing-internacional-panam%C3%A1
+
+
+
+empresas
+salida 19 de dic
+10-30pm
+
+personas
+10 de enero
+10-30pm
+
+19-20 empresas no tendra onclick*
+
+
+Diseño
+Stefany Paola Jaramillo Gonzalez
+Ingrid Veronica Porras Tobon
+Marolin Paola Solano Blanco
+Nelson Augusto Angel Gomez
+
+Seo
+Lizeth Mayerly Baez Catano
+
+Contenidos
+Camilo Gomez Rodriguez​
+
+Montajista
+Juan Pablo Valencia Gomez​
+
+Procesos
+Laura Vanessa Torres Hormechea
+
+Desarrollo
+Maria Andrea Carrero Nuñez​​
+Alexis David Rendon Chica​
+Catalina Sofia del Rio Orozco​​ Soto
+Mario Stiverson Florez Vasquez​  ​
+Reynaldo Esparragoza Villalba ​
+
+2-2
+3-2-1-2
+
+volver si funciona el x no
+2 minutos debe ser el contador
+3 minutos aparece el contador
+
+const decorateURL = (url: string) => {
+  let destinationLink = false;
+  var ga = window[window['GoogleAnalyticsObject']];
+  console.log(ga,'ga test decorate')
+  if (ga) {
+    let tracker = ga.getAll()[0];
+    let linker = new window.gaplugins.Linker(tracker);
+    destinationLink = linker.decorate(url);
+  }
+
+  return (destinationLink ? url + '?' + destinationLink : url);
+}
+
+(()=>{
+  document.addEventListener("click", decorateUrl)
+})()
+
+
+
+Paso 1
+
+oc: 2766414
+cat: Gestion de Plataforma.Bancolombia.Dir Disponibilidad de Servicios.Gcia Plataformas Distribuidas.Operación.Directorio Activo
+Resumen:  Solicitud creación registro DNS - Dominios Legados - Portal de Contenidos Bancolombia Capital (Ambiente de Producción)
+
+
+Cordial saludo!
+
+Se solicita llevar a cabo la siguiente actividad:
+
+Creación de registros tipo A “Externos”:
+
+www.bancolombiacapital.com IN A 52.117.60.202
+www.bancolombiacapital.com IN A 150.239.98.68
+
+
+Tipo CNAME (Redireccionamientos - Same as Parent (DNS Externo)):
+
+bancolombiacapital.com IN A 169.62.185.109
+
+bancolombiacapital.com IN A 169.45.202.144
+
+
+
+Tipo de Solicitud	Registro DNS	Seleccionar de la lista el tipo de solicitud.
+Tipo de Registro DNS	Ambos	Tipo de Registro DNS (solo aplica para registros DNS).
+Reserva IP		Solo aplica para reservas de direcciones IP.
+Nombre del equipo		Nombre del equipo (solo aplica para reservas de direcciones IP).
+MAC		MAC (solo aplica para reservas de direcciones IP)
+Gateway		Solo aplica para reserva de scope de direcciones.
+Mascara		Solo aplica para reserva de scope de direcciones.
+Direccionamiento		Solo aplica para reserva de scope de direcciones.
+Unidad Organizacional		Solo aplica para Unidades Organizacionales.
+Dominio		Indicar el dominio a modificar.
+Site		Nombre del Site a modificar (Solo aplica para Site).
+Controlador de Dominio/Cod. Sucursal		Controlador de Dominio/Cod. Sucursal.
+Ambiente	Producción	Ambiente.
+
+
+OC CREADA: 3811645
+
+--------------------------------------------------------
+
+Pasos 2
+1 - 3804601 Desaprovisionar filial Bancolombia Renting
+Categoria : Cambio en Produccion.Bancolombia.Estandar.Administrativo.Portales
+
+Aprobacion Jefe Plataforma -- OC Disponibilidad Servicios Infraestructura Jefes	
+Implementación del Cambio -- OC Disponibilidad Servicios Integrales Contenidos Kyndryl	
+
+Elementos de configuración: Portal de Contenidos Grupo Bancolombia_AW1218001
+
+Resumen: Portal de Contenidos Bancolombia Capital - Desaprovisionar la filial Bancolombia Renting
+
+Cordial saludo!
+
+Se solicita al área de Sistema operativo desaprovisionar las siguientes ip's antereriormente ultizados en Bancolombia Renting ya que seran usados para el nuevo dominio de bancolombiacapital.com
+
+- renting.grupobancolombia.com
+
+WASHINGTON 04
+
+IHS02 -> 10.170.240.45
+IHS03 -> 10.170.240.46
+IP Publica NETSCALER -> 52.117.60.202
+
+DALLAS 13
+
+IHS02 -> 10.73.239.170
+IHS03 -> 10.73.239.171
+IP Publica NETSCALER -> 150.239.98.68
+
+Por favor adicionar esos mismos segmentos en los ihs 5 y 6 de la version 9, 10.170.194.139 10.170.194.140 10.73.73.211 10.73.73.212
+
+
+OC CREADA: 3811327
+
+---------------------------------------------------------------
+Paso 3
+
+oc: 3775200
+Categoria: Cambio en Produccion.Bancolombia.Estandar.Aprovisionamiento.Portales
+
+Resumen: Aprovisionamiento de Virtual Server en PROD -> bancolombiacapital.com
+
+Se requiere creación de Virtual Server en PROD a nivel de Balanceador para bancolombiacapital.com (reuso IP's antigua filial Bancolombia Renting)
+
+
+WASHINGTON 04
+
+IHS02 -> 10.170.240.45
+IHS03 -> 10.170.240.46
+IP Publica NETSCALER -> 52.117.60.202
+
+DALLAS 13
+
+IHS02 -> 10.73.239.170
+IHS03 -> 10.73.239.171
+IP Publica NETSCALER -> 150.239.98.68
+
+
+Dependencia	Entorno Mercadeo - EVC Ventas Dig y Tecno de Mercadeo - Portal de Contenidos	Dirección - Gerencia - Jefatura del Promotor que registra el Cambio.
+Clasificación	Software	Clasificación del Cambio
+Servicio/Módulo/Aplicación/Canal	Portal de Contenidos Bancolombia Capital	Servicios, Módulos, Aplicaciones y/o Canales afectados.
+Equipo	Portal de Contenidos Bancolombia Capital	Nombre del Equipo en que se implementará el Cambio.
+Origen	Solicitud Usuario	Origen del Cambio.
+
+Workflow
+Aprobacion Jefe Plataforma ---  OC Disponibilidad Servicios Infraestructura Jefes
+Análisis del Cambio  --- 	OC Disponibilidad Servicios Integrales Contenidos Kyndryl
+Gestión Licenciamiento  --  OC Infraestructura Plataformas Centrales Gestion Configuracion y Activos Kyndryl
+Implementación del Cambio -- OC Disponibilidad Servicios Integrales Contenidos Kyndryl	
+
+
+OC CREADA: 3811380
+-------------------------------------------------------------
+
+
+Paso 4
+
+oc: 3775215
+categoria: Cambio en Produccion.Bancolombia.Estandar.Aprovisionamiento.Portales
+
+Resumen: Aprovisionamiento de IHS y Portal en PROD -> bancolombiacapital.com
+
+Se requiere aprovisionar nuevos IHS's y Portal en PROD para bancolombiacapital.com (reuso de IP's antigua filial Bancolombia Renting)
+
+WASHINGTON 04
+
+IHS02 -> 10.170.240.45
+IHS03 -> 10.170.240.46
+IP Publica NETSCALER -> 52.117.60.202
+
+DALLAS 13
+
+IHS02 -> 10.73.239.170
+IHS03 -> 10.73.239.171
+IP Publica NETSCALER -> 150.239.98.68
+
+Elementos de configuración (una vez sea ejecutada la oc para [Desarpovisionar filial Bancolombia Renting]) se generan los nuevos elementos.
+(
+xrbcpihs05d_wompi	Web Server	Software Integracion	 
+xrbcpihs05w_wompi	Web Server	Software Integracion	 
+xrbcpihs06d_wompi	Web Server	Software Integracion	 
+xrbcpihs06w_wompi )
+
+
+OC CREADA: 3811381
+
+----------------------------------------
+
+Paso 5
+
+oc: 3786221
+categoria: Cambio en Produccion.Bancolombia.Estandar.Administrativo.Portales
+
+Resumen: Portal de Contenidos Bancolombia Capital - Solicitud Generación Request en Ambiente de Producción para Firma del Certificado Digital de bancolombiacapital.com
+
+Se requiere la generación de un nuevo Request para el dominio bancolombiacapital.com,
+
+Se proporcionan los siguientes datos:
+
+Common Name (CN) bancolombiacapital.com
+Organizational Unit (OU) VICEPRESIDENCIA DE TECNOLOGIA
+Organization (O) BANCOLOMBIA S.A.
+Locality (L) MEDELLIN
+State (ST) ANTIOQUIA
+Country (C) CO
+
+Key Size 2048 bits
+Key Algorithm RSA
+Sig. Algorithm sha256WithRSAEncryption
+
+SANs: bancolombiacapital.com, www.bancolombiacapital.com
+
+workflow:
+
+Aprobacion Jefe Plataforma -- OC Disponibilidad Servicios Infraestructura Jefes	
+Implementación del Cambio -- OC Disponibilidad Servicios Integrales Contenidos Kyndryl	
+
+
+Gestion de la configuracion: Portal de Contenidos Grupo Bancolombia_AW1218001
+
+Propiedades: 
+
+Dependencia	Entorno Mercadeo - EVC Ventas Dig y Tecno de Mercadeo - Portal de Contenidos	Dirección - Gerencia - Jefatura del Promotor que registra el Cambio.
+Clasificación	Software	Clasificación del cambio.
+Servicio/Módulo/Aplicación/Canal	Portal de Contenidos Bancolombia Capital	Servicios, Módulos, Aplicaciones y/o Canales afectados.
+Equipo	10.170.240.45, 10.170.240.46, 10.73.239.170, 10.73.239.171	Nombre del Equipo en que se implementará el Cambio.
+Origen	Certificado Digital	Origen del Cambio.
+Código del Origen	NA	Registrar el Número del Origen del Cambio.
+Tipo de Novedad	Instalación	Tipo de Novedad a realizar en el Cambio.
+Actividad	Ajuste vulnerabilidades de seguridad	Actividades permitidas para la Plataforma en este Tipo de Cambio.
+SLA	No Aplica	
+Contacto	Edinson Jair Beltran Alvarez	Nombre del Contacto Responsable del Cambio
+
+
+OC CREADA: 3811447
+---------------------------------------------------------------------------------------------
+
+Paso 6 : 
+
+oc: 3797604
+ctaegoria: Paso a Ambientes NO Productivos.Bancolombia.Gcia Plataformas Centrales.Administrativo.Portales
+
+Solicitud de permisos para usuarios Softlayer
+
+Se requiere dar permisos a los siguientes usuarios a las direcciones suministradas para el servidor PROD de Bancolombia Capital:
+
+Usuarios:
+
+- johseher
+- adoming
+- gcaldero
+- arendon
+- bbatista
+
+Direcciones para asignar permisos
+
+WASHINGTON 04
+
+IHS02 -> 10.170.240.45
+IHS03 -> 10.170.240.46
+IP Publica NETSCALER -> 52.117.60.202
+
+DALLAS 13
+
+IHS02 -> 10.73.239.170
+IHS03 -> 10.73.239.171
+IP Publica NETSCALER -> 150.239.98.68
+
+
+
+OC CREADA: 3811465
+
+
+--------------------------------------------------------------------
+
+paso 7
+oc: 3800512
+categoria: Seguridad Corporativa.Gestión de Certificados Digitales
+
+Resumen: Portal de contenidos Bancolombia Capital - Instalación del certficado digital de bancolombiacapital.com
+
+Cordial saludo!
+
+Se requiere la instalación del Certificado Digital para bancolombiacapital.com
+
+Ambiente de PROD:
+
+Common Name (CN) bancolombiacapital.com
+Beneficio: Poder adecuar con los estándares de seguridad requeridos los Ambientes productivos
+Nota : El Request se encuentra adjunto en la actual OC
+
+Adjunta certificado generado en la oc anterior .cer
+
+Propiedades: 
+Tipo Solicitud ----- 	Nuevo	Seleccionar de la lista el tipo de solicitud del certificado. Recuerde que Re-Emisión solo aplica para certificados Externos.
+Solicitud masiva -----	No	Es una solicitud masiva, si son 10 o mas certificados
+Tipo de Certificado -----	Externo	Seleccione Interno (Corporativo), Externo (Público). (se va a realizar la valicación del tipo de certificado)
+Centro de Costos/PMO ----	C504900003	Centro de Costos/PMO
+Servicio/Módulo/Aplicación/Canal -------	Portal de Contenidos Bancolombia Capital	Relacionar las aplicaciones o módulos que se usarán el certificado.
+SOX -----	No	Es SOX, si el cambio se ejecuta en PKI9 y PKI12
+Entidad Emisora	 ----- DigiCert	Entidad emisora del certificado.
+Categoría Certificado -------  Secure Site Validacón Extendida   	Seleccionar de la lista la categoría del certificado. Seleccione "Otro" para certificados internos.
+Ambiente	----- Certificación	Ambiente
+Nombre del Servidor -----------	bancolombiacapital.com	Nombre del servidor en el cual se implmentará el cambio.
+Dirección IP	-------- bancolombiacapital.com	Dirección IP del Servidor.
+Algoritmo de Firma --------	SHA2	Elija el algoritmo de firma. Si es SHA1 adjuntar la ERO con su respectiva aprobación.
+Keylabel -------	bancolombiacapital.com	Diligencie el Nombre(s) de Usuario(s) de Conexión.
+Nombre del Certificado (Common Name o CN) -----	bancolombiacapital.com	Diligencie el Nombre del Certificado (NombreEquipo o NombreServicio + .Dominio).
+Nombres Alternativos (SANS / DNS) ------ 	bancolombiacapital.com; www.bancolombiacapital.com	(SANs) Debe contener los siguientes atributos: El mismo nombre del Certificado (CN) + Nombre Corto (Nombre del Servicio/Servidor sin Dominio)
+Nombre Keystore	 ------	Nombre del almacén donde se alojará el certificado.
+ID PKI ---	NA	Identificador del request registrado en la PKI.
+Fecha emisión (dd/mm/aaaa)--- se define cuando nos entreguen el certificado---	21/07/2022	Fecha emisión (dd/mm/aaaa).
+Fecha vencimiento (dd/mm/aaaa)--- se define cuando nos lo entreguen	------25/07/2023	Fecha vencimiento (dd/mm/aaaa).
+Ventas digitales y Tecnología de Mercadeo  
+Sin serial
+
+
+workflow
+Aprobacion Jefe	
+Analisis del Cambio --- OC Administrativo Implementacion de Proyectos Ciberseguridad
+Registro Certificado Digital --- OC Administrativo Controles de Ciberseguridad Gestion Certificados Digitales
+
+
+OC CREADA: 3811529 -- falta adjuntar el .ram (certificado)
+
+-------------------------------------------------------------------
+
+paso 8
+
+oc: 3797748
+
+categoria: Paso a Ambientes NO Productivos.Bancolombia.Gcia Plataformas Centrales.Administrativo.Portales
+
+Portal de contenidos Bancolombia Capital - Creación de sindicadores de QA - PROD
+
+Se requiere crear por favor los sindicadores de QA-PROD en el portal de Bancolombia Capital de las siguientes bibliotecas:
+
+CapitalContenido
+CapitalDiseno
+CapitalImagenes
+
+Adicionalmente, asignar permisos de usuario para poder visualizar las bibliotecas en ambientes PROD
+
+Lista de usuarios:
+
+- johseher
+- adoming
+- gcaldero
+- arendon
+- bbatista
+
+WASHINGTON 04
+
+IHS02 -> 10.170.240.45
+IHS03 -> 10.170.240.46
+IP Publica NETSCALER -> 52.117.60.202
+
+DALLAS 13
+
+IHS02 -> 10.73.239.170
+IHS03 -> 10.73.239.171
+IP Publica NETSCALER -> 150.239.98.68
+
+Adicionalmente poblar el ambiente productivo en el siguiente orden
+
+CapitalImagenes (Imagenes)
+CapitalDiseno (Diseño)
+CapitalContenido (Contenido)
+
+
+propiedades: 
+
+Dependencia	Entorno Mercadeo - EVC Ventas Dig y Tecno de Mercadeo - Portal de Contenidos	Jefatura del Promotor del Cambio.
+Clasificación	Software	Clasificación del cambio.
+Equipo	10.170.240.45, 10.170.240.46, 52.117.60.202, 10.73.239.170, 10.73.239.171, 150.239.98.68	Nombre del Equipo en que se implementará el Cambio.
+Plataforma	Portales	Plataforma en la cual se implementará el cambio.
+Origen	EVC	Origen del Cambio.
+Código del Origen	EVC00011	Registrar el Número del Origen del Cambio.
+Componente	WebSphere Portal	Componente que será afectado por el cambio.
+Tipo de Novedad	Creación	Tipo de Novedad a realizar en el Cambio.
+
+
+OC CREADA: 3811539
+
+--------------------------------------------------------------
+
+paso 9.
+
+oc: 3798207
+categoria: Cambio en Produccion.Bancolombia.Programado.Agil.Proveedores
+
+Instalacion de Tema al portal Prod de Bancolombia Capital
+
+¡Cordial saludo!
+
+ 
+
+Se requiere la instalación del siguiente archivo por favor-> BancolombiaMiami.paa en las siguientes maquinas:
+
+ 
+
+#========================= WAS 9.0 ==============================#
+
+ 
+
+WDC04:
+
+Xrbcppor03w -> 10.170.187.29
+
+Xrbcppor04w -> 10.170.187.30
+
+Xrbcppor05w -> 10.170.187.31
+
+ 
+
+DAL13:
+
+Xrbcppor03d -> 10.73.29.101
+
+Xrbcppor04d -> 10.73.29.102
+
+Xrbcppor05d -> 10.73.29.103
+
+ 
+
+ 
+
+==================================================
+
+ 
+
+El artefacto por instalar está ubicado en la Máquina:
+
+IP -> 10.73.71.76
+
+Ruta del archivo -> /wrkdirr/instalacionTemas
+
+Nombre del archivo -> BancolombiaMiami.paa 
+
+ 
+
+Para más información por favor contactar a Sebastian Hernandez -> 3015521952
+
+ 
+
+# ----------------------#
+
+| Solución funcional |
+
+# ----------------------#
+
+ 
+
+Se requiere instalar el Tema " BancolombiaMiami " en ambientes productivos (Producción).
+
+ 
+
+# --------------------#
+
+| Solución técnica |
+
+# --------------------#
+
+ 
+
+- Instalar el archivo " BancolombiaMiami.paa" mediante "Wevdav"
+
+ 
+
+• Impacto: Bajo, no se genera indisponibilidad de ningún aplicativo.
+
+ 
+
+# -------------------------------------------------------------------------------------------#
+
+| Para ésta OC de Proveedor se gestiona el DOD pendiente y necesario |
+
+# --------------------------------------------------------------------------------------------#
+
+
+información adicional
+
+Dependencia	Entorno Mercadeo - EVC Ventas Dig y Tecno de Mercadeo - Portal de Contenidos	Dirección - Gerencia - Jefatura del Promotor que registra el Cambio.
+Grupo Aprobadores	OC Entorno Mercadeo Portal de Contenidos Aprobadores Cambios TI	Grupo de Lideres que validará el Cambio.
+Clasificación	Software	Si vas a implementar un Cambio de DATA, recuerda que debes seguir el Proceso de Cambios Directos en BD, definido por Habilitar y Mantener Soluciones.
+Servicio/Módulo/Aplicación/Canal	Portal de Contenidos Bancolombia Capital Servicios, Módulos, Aplicaciones y/o Canales afectados.
+Proveedor	TCS	Proveedor que realizará el Cambio.
+Plataforma	Portales	Plataforma en que se implementará el Cambio.
+Equipo	10.170.240.45, 10.170.240.46, 52.117.60.202, 10.73.239.170, 10.73.239.171, 150.239.98.68	Nombre del equipo en que se implementará el Cambio.
+Origen	Solicitud Usuario	Origen del Cambio.
+Código Origen	NA	Registrar el código del origen del Cambio.
+¿Requiere cambios en el Centro Alterno de Procesamiento de Datos?	No	Si la respuesta es SI, se enviará un email al grupo de correo CAPD.
+
+Gestion configuracion: Portal de Contenidos Grupo Bancolombia_AW1218001
+
+
+Adjuntos: 
+
+-- Plan de montaje 
+-- Manual de instalación del theme
+
+
+OC CREADA: 3811608
+
+-----------------------------
+
+paso 10.
+
+oc: 3800702
+categoria: Cambio en Produccion.Bancolombia.Programado.Agil.Proveedores
+
+
+Portal de contenido Bancolombia Capital - Carga del certificado digital bancolombiacapital.com en balanceadores
+
+Cordial saludo,
+
+Se requiere la carga del certificado digital a nivel de balanceadores de bancolombiacapital.com
+
+Adicionalmente se requier la creacion del registro de www.bancolombiacapital.com en adns
+
+WASHINGTON 04
+
+IHS02 -> 10.170.240.45
+IHS03 -> 10.170.240.46
+IP Publica NETSCALER -> 52.117.60.202
+
+DALLAS 13
+
+IHS02 -> 10.73.239.170
+IHS03 -> 10.73.239.171
+IP Publica NETSCALER -> 150.239.98.68
+
+
+propiedades: 
+
+Dependencia	Entorno Mercadeo - EVC Ventas Dig y Tecno de Mercadeo - Portal de Contenidos	Dirección - Gerencia - Jefatura del Promotor que registra el Cambio.
+Grupo Aprobadores	OC Entorno Mercadeo Portal de Contenidos Aprobadores Cambios TI	Grupo de Lideres que validará el Cambio.
+Clasificación	Software	Si vas a implementar un Cambio de DATA, recuerda que debes seguir el Proceso de Cambios Directos en BD, definido por Habilitar y Mantener Soluciones.
+Servicio/Módulo/Aplicación/Canal	Portal de Contenidos Bancolombiba Capital	Servicios, Módulos, Aplicaciones y/o Canales afectados.
+Proveedor	TCS	Proveedor que realizará el Cambio.
+Plataforma	Portales	Plataforma en que se implementará el Cambio.
+Equipo	10.170.240.45, 10.170.240.46, 52.117.60.202, 10.73.239.170, 10.73.239.171, 150.239.98.68	Nombre del equipo en que se implementará el Cambio.
+Origen	Solicitud Usuario	Origen del Cambio.
+Código Origen	NA	Registrar el código del origen del Cambio.
+¿Requiere cambios en el Centro Alterno de Procesamiento de Datos?	No	Si la respuesta es SI, se enviará un email al grupo de correo CAPD.
+
+
+workflow: 
+Aprobacion Cambio -- OC Entorno Mercadeo Portal de Contenidos Aprobadores Cambios TI	
+Implementación Cambio	---- OC Servicios Tecnologia de Informacion Networking Firewall DR Kyndryl	
+
+
+
+OC CREADA: 3811616
+
+
+
+-----------------------------------------------------------
+
+paso 11.
+oc: 3800703
+categoria: Cambio en Produccion.Bancolombia.Programado.Agil.Proveedores
+
+Resumen: Portal de contenido Bancolombia Capital - Carga del certificado digital bancolombiacapital.com en IHS
+
+Cordial saludo,
+
+Se requiere la carga del certificado digital a nivel de IHS de bancolombiacapital.com
+
+WASHINGTON 04
+
+IHS02 -> 10.170.240.45
+IHS03 -> 10.170.240.46
+IP Publica NETSCALER -> 52.117.60.202
+
+DALLAS 13
+
+IHS02 -> 10.73.239.170
+IHS03 -> 10.73.239.171
+IP Publica NETSCALER -> 150.239.98.68
+
+propiedades:
+
+Dependencia	Entorno Mercadeo - EVC Ventas Dig y Tecno de Mercadeo - Portal de Contenidos	Dirección - Gerencia - Jefatura del Promotor que registra el Cambio.
+Grupo Aprobadores	OC Entorno Mercadeo Portal de Contenidos Aprobadores Cambios TI	Grupo de Lideres que validará el Cambio.
+Clasificación	Software	Si vas a implementar un Cambio de DATA, recuerda que debes seguir el Proceso de Cambios Directos en BD, definido por Habilitar y Mantener Soluciones.
+Servicio/Módulo/Aplicación/Canal	Portal de Contenidos Bancolombia Capital	Servicios, Módulos, Aplicaciones y/o Canales afectados.
+Proveedor	TCS	Proveedor que realizará el Cambio.
+Plataforma	Portales	Plataforma en que se implementará el Cambio.
+Equipo	10.170.240.45, 10.170.240.46, 52.117.60.202, 10.73.239.170, 10.73.239.171, 150.239.98.68	Nombre del equipo en que se implementará el Cambio.
+Origen	Solicitud Usuario	Origen del Cambio.
+Código Origen	NA	Registrar el código del origen del Cambio.
+¿Requiere cambios en el Centro Alterno de Procesamiento de Datos?	No	Si la respuesta es SI, se enviará un email al grupo de correo CAPD.
+
+workflow: 
+
+Aprobacion Cambio -- OC Entorno Mercadeo Portal de Contenidos Aprobadores Cambios TI	
+Implementación Cambio	---- Disponibilidad Servicios Integrales Contenidos Kyndryl	
+
+
+Adjuntar el .zip con los cert
+
+
+OC CREADA: 3811617 -- falta adjuntar el .zip
+
+-------------------------------------------------------------------------------------------
+
+
+Paso 12.
+
+oc: 3793916
+categoria: Cambio en Produccion.Bancolombia.Programado.Agil.Proveedores	
+
+Resumen: Portal de contenidos Bancolombia Capital - Configuración sitemap, robots y htaccess
+
+Se requiere adecuar el archivo de configuración de los IHS's correspondientes a las filiales, para que carguen el archivo htacccess Robots.txt y Sitemap.xml de forma correcta.
+
+www.bancolombiacapital.com
+
+
+Actividades:
+
+1. Crear los directorios que contengan los archivos adjuntos
+2. Comprobar que tengan la siguiente configuración apuntando el directorio.
+
+RewriteEngine on
+
+RewriteRule ^/sitemap.xml$ - [E=SKIPWAS:1]
+RewriteRule ^/robots.txt$ - [E=SKIPWAS:1]
+
+
+Dependencia -- 	Entorno Mercadeo - EVC Ventas Dig y Tecno de Mercadeo - Portal de Contenidos	Dirección - Gerencia - Jefatura del Promotor que registra el Cambio.
+Grupo Aprobadores ---	OC Entorno Mercadeo Portal de Contenidos Aprobadores Cambios TI	Grupo de Lideres que validará el Cambio.
+Clasificación	Software	Si vas a implementar un Cambio de DATA, recuerda que debes seguir el Proceso de Cambios Directos en BD, definido por Habilitar y Mantener Soluciones.
+Servicio/Módulo/Aplicación/Canal	Portal de Contenidos Bancolombia Capital	Servicios, Módulos, Aplicaciones y/o Canales afectados.
+Proveedor --	TCS	Proveedor que realizará el Cambio.
+Plataforma	Portales	Plataforma en que se implementará el Cambio.
+Equipo	Portal de Contenidos Bancolombia Capital	Nombre del equipo en que se implementará el Cambio.
+Origen	EVC	Origen del Cambio.
+Código Origen	EVC00011	Registrar el código del origen del Cambio.
+¿Requiere cambios en el Centro Alterno de Procesamiento de Datos?	No	Si la respuesta es SI, se enviará un email al grupo de correo CAPD.
+
+
+workflow:
+
+Aprobacion Cambio	-- OC Entorno Mercadeo Portal de Contenidos Aprobadores Cambios TI	
+Implementación Cambio	 -- OC Disponibilidad Servicios Integrales Contenidos Kyndryl	
+
+
+gestión conf: Portal de Contenidos Grupo Bancolombia_AW1218001
+
+
+Adjuntar: 
+
+- Plan de montaje
+- Robot
+- Sitemap
+- .Htaccess
+
+OC CREADA: 3811656 
+--------------------------------------------------------------------
+
+paso 13.  Contingencia GLSB
+
+oc: 3765884
+categoria: Cambio en Produccion.Bancolombia.Estandar.Administrativo.Portales
+
+Portal de contenidos Bancolombia Capital - Página de mantenimiento para bancolombiacapital.com en ambiente de PROD
+
+Cordial saludo!
+
+Se requiere de la creación y configuración de un Virtual Server mantenimiento bancolombiacapital.com para instalar la página de mantenimiento adjunta en la OC.
+
+dominio: https://bancolombiacapital.com
+
+Propiedades: 
+
+Dependencia	Entorno Mercadeo - EVC Ventas Dig y Tecno de Mercadeo - Portal de Contenidos	Dirección - Gerencia - Jefatura del Promotor que registra el Cambio.
+Clasificación	Software	Clasificación del cambio.
+Servicio/Módulo/Aplicación/Canal	portal de contenidos / qa.bancolombiacapital.com	Servicios, Módulos, Aplicaciones y/o Canales afectados.
+Equipo	GLSB	Nombre del Equipo en que se implementará el Cambio.
+Origen	EVC	Origen del Cambio.
+Código del Origen	EVC00011	Registrar el Número del Origen del Cambio.
+Tipo de Novedad	Modificación	Tipo de Novedad a realizar en el Cambio.
+Actividad	Instalacion Upgrade	Actividades permitidas para la Plataforma en este Tipo de Cambio.
+
+
+Portal de Contenidos Grupo Bancolombia_AW1218001
+
+
+Se necesita adjuntar los html 500.html
+
+OC CREADA: 3811926  --- Falta adjuntar el archivo 500.html
+
+---------------------------------------------------------------------
+
+paso 14.   Contingencia portales
+
+oc:  3766374
+categoria:  Paso a Ambientes NO Productivos.Bancolombia.Gcia Plataformas Centrales.Administrativo.Portales
+
+Portal de contenidos Bancolombia Capital - Página de mantenimiento para qa.bancolombiacapital.com en ambiente de QA
+
+Cordial saludo!
+
+Se requiere la configuración de la página de mantenimiento para qa.bancolombiacapital.com en los IH's
+
+Máquina: QA
+
+Xrbcqihs03.bancolombia.com -> 10.170.199.120
+Xrbcqihs04.bancolombia.com -> 10.170.199.121
+
+dominio: https://qa.bancolombiacapital.com
+
+NOTA: se adjunta el html
+
+
+Dependencia	Entorno Mercadeo - EVC Ventas Dig y Tecno de Mercadeo - Portal de Contenidos	Jefatura del Promotor del Cambio.
+Clasificación	Software	Clasificación del cambio.
+Equipo	Xrbcqihs03, Xrbcqihs04	Nombre del Equipo en que se implementará el Cambio.
+Plataforma	Portales	Plataforma en la cual se implementará el cambio.
+Origen	EVC	Origen del Cambio.
+Código del Origen	EVC00011	Registrar el Número del Origen del Cambio.
+Componente	IHS	Componente que será afectado por el cambio.
+Tipo de Novedad	Modificación	Tipo de Novedad a realizar en el Cambio.
+
+
+Falta archivo adjunto: del 500.html 
+
+
+OC CREADA: 3811952  --- falta adjuntar archivo.html
+
+
+--------------------------------------------------------------------------
+
+paso 15. CORS  en duda
+
+oc: 3808751
+categoria:  Cambio en Produccion.Bancolombia.Programado.Agil.General
+
+
+Portal de Contenidos Bancolombia Capital - Cambio en cabecera CSP
+
+
+Cordial saludo!
+
+Se solicita por medio de esta Oc la ejecución de dos actividades. Ambas serán divididas para evitar inconsistencias en la misma
+
+Actividad #1 - Cabecera CSP
+
+Se requiere actualizar la cabecera CSP para el dominio https://bancolombiacapital.com
+
+En las máquinas:
+
+==================================================
+
+WASHINGTON 04
+
+IHS02 -> 10.170.194.132
+IHS03 -> 10.170.194.133
+
+DALLAS 13
+
+IHS02 -> 10.73.73.202
+IHS03 -> 10.73.73.203
+==================================================
+
+Se deben ejecutar los siguientes pasos:
+
+1 - Eliminar o comentar la línea: "Content-Security-Policy".
+2 - Agregar las líneas del archivo adjunto CSP.txt en el archivo de configuración del IHS bancolombia.conf
+3 - Reiniciar cada IHS.
+4 - Notificar al promotor de la OC con el fin validar, revisar, diagnosticar y refinar la CSP.(Se puede generear indisponibilidad del servicio la cual debe ser diagnosticada y evaluada)
+
+En los archivos adjuntos se deja el documento que contiene la información que contienen las cabeceras
+
+--------------------------------------------------------------------
+
+paso 16. Producción
+
+oc: 3807009
+categoria: Cambio en Produccion.Bancolombia.Programado.Agil.General
+
+Resumen: Portal de Contenidos Bancolombia Capital - Paso a producción
+
+Se requiere llevar a la salida a producción del Portal de contenidos de Bancolombia Capital y la correspondiente sindicacion de QA a Prod.
+
+Por favor tambien realizar el redireccionamiento desde los DNS's de Bancolombia Renting hacia el Portal de Contenidos de Bancolombia Capital.
+
+
+propiedades:
+
+Dependencia	Entorno Mercadeo - EVC Ventas Dig y Tecno de Mercadeo - Portal de Contenidos	Dirección - Gerencia - Jefatura del Promotor que registra el Cambio.
+Grupo Aprobadores	OC Entorno Mercadeo Portal de Contenidos Aprobadores Cambios TI	Grupo de Lideres que validará el Cambio.
+Clasificación	Software	Si vas a implementar un Cambio de DATA, recuerda que debes seguir el Proceso de Cambios Directos en BD, definido por Habilitar y Mantener Soluciones.
+Servicio/Módulo/Aplicación/Canal	Portal de Contenidos Bancolombia Capital	Servicios, Módulos, Aplicaciones y/o Canales afectados.
+Plataforma	Portales	Plataforma en que se implementará el Cambio.
+Equipo	10.170.240.45, 10.170.240.46, 52.117.60.202, 10.73.239.170, 10.73.239.171, 150.239.98.68	Nombre del equipo en que se implementará el Cambio.
+Origen	Solicitud Usuario	Origen del Cambio.
+Código Origen	NA	Registrar el código del origen del Cambio.
+Código Definición de Terminado	3081859	NO APLICA para: Mantenimientos de HW/BD y Reinicios de componentes HW/SW registrados x cualquier Dirección; Cambios de Certificados Digitales y Cambios registrados x Promotores de Disponibilidad o de Vicepresidencias diferentes a la VSTI.
+¿Requiere cambios en el Centro Alterno de Procesamiento de Datos?	No	Si la respuesta es SI, se enviará un email al grupo de correo CAPD.
+
+
+DOD es necesario
+
+
+workflow: 
+Aprobacion Cambio	-- OC Entorno Mercadeo Portal de Contenidos Aprobadores Cambios TI	
+Implementación Cambio	 --- Disponibilidad Servicios Integrales Contenidos Kyndryl	
+
+
+---------------------------------------------------------
+
+
+Cordial saludo!
+
+Se solicita al área de Sistema operativo desaprovisionar las antiguas ip's antereriormente ultizados en Bancolombia Cayman ya que seran usados para el dubdominio dominio de qa.bancolombiacapital.com
+
+- qacayman.grupobancolombia.com
+
+WASHINGTON 04
+
+IHS02 -> 10.170.240.45
+IHS03 -> 10.170.240.46
+IP Publica NETSCALER -> 52.117.60.202
+
+DALLAS 13
+
+IHS02 -> 10.73.239.170
+IHS03 -> 10.73.239.171
+IP Publica NETSCALER -> 150.239.98.68
+
+Por favor adicionar esos mismos segmentos en los ihs 5 y 6 de la version 9, 10.170.194.139 10.170.194.140 10.73.73.211 10.73.73.212
+
+
+3821518
+
+
+
+
+Nuevo Proceso
+------------------------------
+Puerto rico
+Bancolombia Panama
+Sucursal Panama
+Valores Bancolombia
+Valores Banistmo  --  falta portal virtual en QA
+Banca Inversión
+Fiduciaria
+Leasing
+Factoring
+
+
+
+Oc #1 
+Resumen: Creación de portales virtuales para las 9 filiales
+
+Oc: #2
+Resumen: Desaprovisionar (?) pendiente Filiales
+
+Oc: #3
+Resumen: Aprovisionar (?) pendiente IHS - portal
+
+Oc: #4
+Resumen: Aprovisionar (?) pendiente Virtual server
+
+Oc: #5
+Resumen: Gestión sindicadores QA - PDN
+
+Oc: #6
+Resumen: Proceso de Devops - (Tableros, agentes) - Themes  ref: 3811539
+
+Oc: #7
+Resumen: Carga del certificado digital IHS (Pendiente?) - Dependencia de la oc #3 ref: 3811616
+
+Oc: #8
+Resumen: Duda? Reu con SO e infra --| Carga del certificado digital Balanceadores (Pendiente?)| - Dependencia #3 ref: 3811616
+
+Oc: #9
+Resumen: Solicitud modificación registro DNS interno (Pendiente) ----- ref: 3811645
+
+Oc: #10
+Resumen: Carga de archivos sitemap. robots, htaccess  ----- ref: 3811656
+
+Oc: #11
+Resumen: Página de mantenimiento QA (500.html, 404.html)---- ref: 3811952
+
+Oc: #12
+Resumen: Página de mantenimiento PROD (500.html, 404.html)  ---- ref: 3811926
+
+Oc: #13
+Resumen: Cambio en cabecera CSP (Pendiente) | Security [Ej:.Leasing Chat] Se puede agrupar* --- ref: 
+
+Oc: #14
+Resumen: Se requiere confirmar la configuración de los segmentos de Red --- ref: 3835125
+
+Oc: #15
+Resumen: Salida a producción 
+
+PASOS A PRODUCCIÓN  --- 15x9 = 135 OCs (Dependiendo si algunas se pueden agrupar)
+Posibles 12+1x9 = 14
+
+
+---------------------------------------------------------------------------------------------
+
+PASOS A QA
+
+Oc: #16
+Resumen: Generación request certificado 
+
+Oc: #17
+Resumen: Aprovisionar IHS -- QA  
+
+Oc: #18
+Resumen: Firma certificado digital Depende de la #16 -- obtenemos .zip
+
+Oc: #19
+Resumen: Instalación del certificado Depende de la #18 se adjunta el .arm
+
+Oc: #20
+Resumen: Creación de los DNS cada el sub-dominio
+
+Oc: #21
+Resumen: Exposición del sitio
+
+
+20 OCS EN General
+QA = 6
+PDN = 14
+
+sabados
+6:00am-6:00pm
+
+tarjeta
+$1.360.000
+
+31 julio
+5 junio
+
+6.000.000 en octubre 2020
+6.270.000 en octubre 2021
+6.646.000 en mayo 2022
+7.144.000 en abril 2023
+
+http://devpanama.grupobancolombia.com:10039/
+https://qapanama.grupobancolombia.com/
+https://panama.grupobancolombia.com/wps/portal/panama
+
+http://devsucursalpanama.grupobancolombia.com:10039/
+https://qasucursalpanama.grupobancolombia.com/
+https://sucursalpanama.grupobancolombia.com/wps/portal/sucursal-panama
+
+https://www.bancolombia.com/empresas/necesidades/documentos
+https://www.bancolombia.com/empresas/contactanos/bancolombia
+https://www.bancolombia.com/empresas/empresas-chat
+
+https://leasing.grupobancolombia.com/wps/portal/leasing-bancolombia/productos-servicios/documentos
+https://leasing.grupobancolombia.com/wps/portal/leasing-bancolombia/contactanos
+https://leasing.grupobancolombia.com/wps/portal/leasing-bancolombia/chat-leasing
+
+https://grupobancolombia.visualstudio.com/Vicepresidencia%20Servicios%20de%20Tecnolog%C3%ADa/_sprints/backlog/VDTM01%20-%20CORPORATIVOS/Vicepresidencia%20Servicios%20de%20Tecnolog%C3%ADa/2023/Sprint%20157
+
+https://panama.grupobancolombia.com/wps/portal/panama/productos-servicios/cuentas-money-market
+https://panama.grupobancolombia.com/wps/portal/panama/productos-servicios/transferencias-internacionales
+https://sucursalpanama.grupobancolombia.com/wps/portal/sucursal-panama/productos-servicios/cuentas-money-market
+https://sucursalpanama.grupobancolombia.com/wps/portal/sucursal-panama/acerca-de/puntos-atencion
+https://sucursalpanama.grupobancolombia.com/wps/portal/sucursal-panama/acerca-de/sobre-nosotros
+
+https://bancolombia.sharepoint.com.mcas.ms/teams/MigracinaPortalNegociosEspecializados/_layouts/15/doc2.aspx?action=edit&cid=d0282e83-bbf3-4090-ae32-1481f50d2979&sourcedoc=%7B609f9806-1692-444d-98ff-982b24c88951%7D&wdExp=TEAMS-CONTROL&wdOrigin=TEAMS-WEB.teamsSdk.openFilePreview
+https://bancolombia.sharepoint.com.mcas.ms/:x:/t/SquadraTeam/EVHDqmoQ11ZKrSYbhj04kEkBfIG3gf9g2q2QdiT01wduvA?e=EbwbJp
+https://bancolombia.sharepoint.com.mcas.ms/:x:/r/teams/SquadraTeam/_layouts/15/Doc.aspx?sourcedoc=%7B005EFC02-F75E-4082-A517-40DD59003C0A%7D&file=Revisi%C3%B3n%20QA%20-%20Sucursal%20Panama.xlsx&action=default&mobileredirect=true&cid=a729519a-2946-47bd-8d85-35fe636e8f64
+
+con / al final funciona
+https://bancolombia.sharepoint.com.mcas.ms/sites/co-portal/SitePages/caso-phising016.aspx
+https://bancolombia.sharepoint.com.mcas.ms/sites/co-clh/SitePages/gestion-humana/Quinquenios.aspx
+https://bancolombia.sharepoint.com.mcas.ms/sites/co-clh/SitePages/gestion-humana/gestion-humana.aspx
+https://bancolombia.sharepoint.com.mcas.ms/sites/co-dco/SitePages/Plan-de-Carrera.aspx
+https://bancolombia.sharepoint.com.mcas.ms/sites/co-vsti/SitePages/skill-hacking-rutas-de-conocimiento.aspx
+https://empleo.grupobancolombia.com/bancolombia/lp/guia%20de%20desarrollo/cfdf7c0c99c0aef0/
+
+vpn.wdc01.softlayer.com
+
+WDC Sucursal Panama
+10.170.102.68
+10.170.102.69
+10.170.102.70
+
+DAL Sucursal Panama
+10.209.12.78
+10.209.12.79
+10.209.12.80
+
+WDC Panama
+10.170.102.71
+10.170.102.72
+10.170.102.73
+
+DAL Panama
+10.209.12.81
+10.209.12.82
+10.209.12.83
+
+Washington Panamá
+IHS05 con IP: 10.170.176.40
+IHS07 con IP: 10.170.176.41
+IHS08 con IP: 10.170.176.42
+
+DALLAS Panamá
+IHS05 - 10.209.12.81
+IHS07 - 10.209.12.82
+IHS08 - 10.209.12.83
+
+Washington Sucursal Panamá
+IHS06 con IP: 10.170.176.43
+IHS07 con IP:10.170.176.44
+IHS08 con IP:10.170.176.45
+
+DALLAS Sucursal Panamá
+IHS06 - 10.209.12.78
+IHS07 - 10.209.12.79
+IHS08 - 10.209.12.80
+
+10.170.176.42 no funciona
+10.209.12.83 no funciona
+10.170.176.43 no funciona
+10.170.176.45 no funciona
+10.209.12.78 no funciona
+10.209.12.80 no funciona
+
+Washington Panamá
+10.170.102.71
+10.170.102.72
+10.170.102.73
+
+Washington Sucursal Panamá
+10.170.102.68
+10.170.102.69
+10.170.102.70
+
+3811926 - Página de mantenimiento para xdominio en ambiente de PROD
+3811656 - Configuración sitemap, robots y htaccess
+3811645 - Solicitud creación registro DNS - Dominios Legados
+3811617 - Carga del certificado digital xdominio en IHS
+3811608 - Instalacion de Tema al portal Prod de xfilial
+3811539 - Creación de sindicadores de QA - PROD
+3811529 - Instalación del certficado digital de xdominio
+3811465 - Solicitud de permisos para usuarios Softlayer
+3811447 - Solicitud Generación Request en Ambiente de Producción para Firma del Certificado Digital de xdominio
+3811381 - Aprovisionamiento de IHS y Portal en PROD
+3811380 - Aprovisionamiento de Virtual Server en PROD
+3811327 - Desaprovisionar la filial x
+
+Creacion Portales virtuales
+Desaprovisionar filiales hablar con infraestructura - citar a julian betancourt -  anderson
+
+QA
+3811952 - Portal de contenidos Bancolombia Capital - Página de mantenimiento para qa.bancolombiacapital.com en ambiente de QA
+
+Sucursal Panama
+Valores Banistmo
+Bancolombia Puerto Rico
+Banca de Inversion Bancolombia
+Fiduciaria Bancolombia
+Leasing Bancolombia
+Valores Bancolombia
+Factoring Bancolombia
+Bancolombia Panama
+
+valores banistmo - falta crearlo en qa el portal virtual
+
+cada vez que se salga con una filial generar un correo
+
+https://fua-dev.apps.ambientesbc.com/login/oauth/authorize?response_type=code&client_id=PCB&redirect_uri=http://example.com
+
+https://fua-qa.apps.ambientesbc.com/login/oauth/authorize?response_type=code&client_id=PCB&redirect_uri=https://qa.grupobancolombia.com/fua/contenido
+
+https://autenticadds1.bancolombia.com/login/oauth/authorize?response_type=code&client_id=PCB&redirect_uri=https://dev.grupobancolombia.com/fua/contenido
+
+https://autenticaqa3.bancolombia.com/login/oauth/authorize/?response_type=code&client_id=PCB&redirect_uri=https://qa.grupobancolombia.com/fua/contenido
+
+https://api-aws-dev.apps.ambientesbc.com/int/development/v2/reference-data/party/customer-profile/security/credentials/authorization-codes
+
+https://api-aws-qa.apps.ambientesbc.com/int/testing/v2/reference-data/party/customer-profile/security/credentials/authorization-codes
+
+https://api-aws-dev.apps.ambientesbc.com/int/development/v4/sales-service/cross-channel/authentication/security/authorization-codes/validate-code
+
+https://api-aws-qa.apps.ambientesbc.com/int/testing/v4/sales-service/cross-channel/authentication/security/authorization-codes/validate-code
+
+https://apigw-dev.apps.ambientesbc.com:7443/int/development/v1/sales-service/cross-channel/authentication/security/credentials/authorization-codes
+
+https://apigw-qa.apps.ambientesbc.com:6443/int/testing/v1/sales-service/cross-channel/authentication/security/credentials/authorization-codes
+
+https://apigw-dev.apps.ambientesbc.com:7443/int/development/v3/sales-service/cross-channel/authentication/security/authorization-codes/validate-code
+
+https://apigw-qa.apps.ambientesbc.com:6443/int/testing/v3/sales-service/cross-channel/authentication/security/authorization-codes/validate-code
+
+https://internal-apigateway-dev.bancolombia.corp/int/development/v1/sales-service/cross-channel/authentication/security/credentials/authorization-codes
+
+https://internal-apigateway-qa.bancolombia.corp/int/testing/v1/sales-service/cross-channel/authentication/security/credentials/authorization-codes
+
+https://internal-apigateway-dev.bancolombia.corp/int/development/v3/sales-service/cross-channel/authentication/security/authorization-codes/validate-code
+
+https://internal-apigateway-qa.bancolombia.corp/int/testing/v3/sales-service/cross-channel/authentication/security/authorization-codes/validate-code
+
+https://ecosistemas-de-riesgos-ext-dev.apps.ambientesbc.com/fua/authentication/authentication-fua
+
+https://ecosistemas-de-riesgos-ext-qa.apps.ambientesbc.com/fua/authentication/authentication-fua
+
+https://autenticadds1.bancolombia.com/authfua/fua/auth
+
+https://autenticaqa3.bancolombia.com/authfua/fua/auth
